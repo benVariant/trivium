@@ -10,7 +10,7 @@
   background-color: var(--color-surface-default);
   font-family: "Manrope", sans-serif;
   font-size: var(--font-size-body-md);
-  color: var(--color-text-body-default);
+  color: var(--color-text-body-secondary);
   transition: all 0.2s ease;
   cursor: pointer;
   appearance: none;
@@ -19,6 +19,11 @@
   background-position: right var(--padding-300) center;
   padding-right: calc(var(--padding-400) + 30px);
 }
+
+.c-select:valid {
+  color: var(--color-text-body-default);
+}
+
 
 .c-select:hover:not(:disabled) {
   background-color: var(--color-surface-default-hover);
@@ -81,7 +86,6 @@
 .c-select option {
   background-color: var(--color-surface-default);
   color: var(--color-text-body-default);
-  padding: var(--padding-300);
   border: none;
 }
 
@@ -111,7 +115,7 @@
 .c-select-helper {
   font-family: "Manrope", sans-serif;  
   font-size: var(--font-size-body-xsm);
-  color: var(--color-text-secondary);
+  color: var(--color-text-body-secondary);
   margin-top: var(--gap-100);
 }
 

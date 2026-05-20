@@ -16,6 +16,7 @@
   color-scheme: dark;
 }
 
+/* Default icon styles */
 .c-date::-webkit-calendar-picker-indicator {
   filter: invert(0);
   cursor: pointer;
@@ -96,8 +97,9 @@
 
 /* Date helper text */
 .c-date-helper {
+  font-family: "Manrope", sans-serif;  
   font-size: var(--font-size-body-xsm);
-  color: var(--color-text-secondary);
+  color: var(--color-text-body-secondary);
   margin-top: var(--gap-100);
 }
 
@@ -222,7 +224,7 @@
 }
 
 .c-calendar-day.disabled {
-  color: var(--color-text-secondary);
+  color: var(--color-text-body-secondary);
   cursor: not-allowed;
   opacity: 0.5;
 }
@@ -289,6 +291,6 @@
 
 .c-date-range-separator {
   font-size: var(--font-size-body-md);
-  color: var(--color-text-secondary);
+  color: var(--color-text-body-secondary);
   text-align: center;
 }

@@ -1,0 +1,199 @@
+/* Base styles for the phone component */
+.c-phone-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-200);
+  width: 100%;
+}
+
+/* Phone label */
+.c-phone-label {
+  font-size: var(--font-size-body-sm);
+  font-weight: 500;
+  color: var(--color-text-label-default);
+  display: inline-block;
+}
+
+/* Phone wrapper - combines country selector and phone input */
+.c-phone-wrapper {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  border-radius: var(--radius-100);
+  border: 1px solid var(--color-border-default);
+  background-color: var(--color-surface-default);
+  overflow: hidden;
+  transition: all 0.2s ease;
+  gap: 0;
+}
+
+.c-phone-wrapper:hover:not(:has(:disabled)) {
+  background-color: var(--color-surface-default-hover);
+}
+
+.c-phone-wrapper:focus-within {
+  border-color: var(--color-border-action);
+  box-shadow: 0 0 0 3px var(--color-surface-action);
+}
+
+/* Error state */
+.c-phone-wrapper.error {
+  border-color: var(--color-border-destructive);
+}
+
+.c-phone-wrapper.error:focus-within {
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-destructive-100) 40%, transparent);
+}
+
+/* Success state */
+.c-phone-wrapper.success {
+  border-color: var(--color-border-success);
+}
+
+.c-phone-wrapper.success:focus-within {
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-success-100) 40%, transparent);
+}
+
+/* Country selector */
+.c-country-select {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-200);
+  padding: 0 var(--padding-300);
+  border: none;
+  background-color: transparent;
+  font-family: "Manrope", sans-serif;
+  font-size: var(--font-size-body-md);
+  color: var(--color-text-body-default);
+  cursor: pointer;
+  border-right: 1px solid var(--color-border-default);
+  flex-shrink: 0;
+  appearance: none;
+}
+
+.c-country-select:focus {
+  outline: none;
+}
+
+.c-country-select:disabled {
+  color: var(--color-label-disabled);
+  cursor: not-allowed;
+}
+
+/* Phone input */
+.c-phone {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 var(--padding-400);
+  background-color: transparent;
+  font-family: "Manrope", sans-serif;
+  font-size: var(--font-size-body-md);
+  color: var(--color-text-body-default);
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.c-phone::placeholder {
+  color: var(--color-text-placeholder-default);
+}
+
+.c-phone:focus {
+  outline: none;
+}
+
+.c-phone:disabled {
+  color: var(--color-label-disabled);
+  cursor: not-allowed;
+}
+
+.c-phone:disabled::placeholder {
+  color: var(--color-label-disabled);
+}
+
+/* Disabled state for wrapper */
+.c-phone-wrapper:has(.c-phone:disabled),
+.c-phone-wrapper:has(.c-country-select:disabled) {
+  background-color: var(--color-surface-disabled);
+  border-color: var(--color-border-disabled);
+}
+
+/* Sizes */
+.lg {
+  height: 60px;
+}
+
+.lg .c-country-select {
+  padding: 0 var(--padding-500);
+  font-size: var(--font-size-body-lg);
+}
+
+.lg .c-phone {
+  padding: 0 var(--padding-500);
+  font-size: var(--font-size-body-lg);
+}
+
+.md {
+  height: 48px;
+}
+
+.md .c-country-select {
+  padding: 0 var(--padding-400);
+  font-size: var(--font-size-body-md);
+}
+
+.md .c-phone {
+  padding: 0 var(--padding-400);
+  font-size: var(--font-size-body-md);
+}
+
+.sm {
+  height: 40px;
+}
+
+.sm .c-country-select {
+  padding: 0 var(--padding-300);
+  font-size: var(--font-size-body-sm);
+}
+
+.sm .c-phone {
+  padding: 0 var(--padding-300);
+  font-size: var(--font-size-body-sm);
+}
+
+/* Country flag icon styles */
+.c-country-flag {
+  display: inline-block;
+  width: 24px;
+  height: 16px;
+  border-radius: var(--radius-25);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+/* Phone helper text */
+.c-phone-helper {
+  font-size: var(--font-size-body-xsm);
+  color: var(--color-text-secondary);
+  margin-top: var(--gap-100);
+}
+
+.c-phone-helper.error {
+  color: var(--color-text-destructive);
+}
+
+.c-phone-helper.success {
+  color: var(--color-text-success);
+}
+
+/* Format hint */
+.c-phone-hint {
+  font-size: var(--font-size-body-xsm);
+  color: var(--color-text-secondary);
+  margin-top: var(--gap-200);
+  font-style: italic;
+}

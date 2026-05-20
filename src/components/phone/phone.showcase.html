@@ -1,0 +1,269 @@
+<!-- components/phone/phone.showcase.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Phone Showcase</title>
+      
+  <link rel="icon" type="image/png" href="/public/favicon.png">
+  <link rel="stylesheet" href="../../styles/index.css" />
+  <link rel="stylesheet" href="../../styles/showcase/showcase.css" />
+  <link rel="stylesheet" href="./phone.css" />
+
+  <!-- Phosphor icons -->
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+  />
+
+</head>
+
+<body>
+  <main class="showcase">
+    <header class="showcase__header">
+      <a href="/index.html" style="align-self: flex-start; margin-bottom: var(--gap-600);"><i class="ph ph-arrow-left" style="margin-right: var(--gap-200);"></i>Volver</a>
+      <p class="u-eyebrow">Component</p>
+      <h1>Phone</h1>
+      <p>
+        Showcase visual del componente Phone con selector de código de país.
+      </p>
+    </header>
+
+    <!-- Base States Section -->
+    <section class="showcase__group">
+      <h2 class="u-heading-sm">Base States</h2>
+
+      <div class="showcase__row">
+        <div class="c-phone-field">
+          <label class="c-phone-label">Default</label>
+          <div class="c-phone-wrapper md">
+            <select class="c-country-select">
+              <option value="mx">🇲🇽 +52</option>
+              <option value="us">🇺🇸 +1</option>
+              <option value="es">🇪🇸 +34</option>
+              <option value="ar">🇦🇷 +54</option>
+            </select>
+            <input type="tel" class="c-phone" placeholder="1234 5678" />
+          </div>
+        </div>
+
+        <div class="c-phone-field">
+          <label class="c-phone-label">Focus</label>
+          <div class="c-phone-wrapper md">
+            <select class="c-country-select" autofocus>
+              <option value="mx" selected>🇲🇽 +52</option>
+              <option value="us">🇺🇸 +1</option>
+              <option value="es">🇪🇸 +34</option>
+              <option value="ar">🇦🇷 +54</option>
+            </select>
+            <input type="tel" class="c-phone" placeholder="1234 5678" />
+          </div>
+        </div>
+
+        <div class="c-phone-field">
+          <label class="c-phone-label">Disabled</label>
+          <div class="c-phone-wrapper md">
+            <select class="c-country-select" disabled>
+              <option value="mx" selected>🇲🇽 +52</option>
+              <option value="us">🇺🇸 +1</option>
+              <option value="es">🇪🇸 +34</option>
+              <option value="ar">🇦🇷 +54</option>
+            </select>
+            <input type="tel" class="c-phone" placeholder="1234 5678" disabled />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Validation States Section -->
+    <section class="showcase__group">
+      <h2 class="u-heading-sm">Validation States</h2>
+
+      <div class="showcase__row" style="flex-direction: column; gap: var(--gap-600);">
+        <div class="c-phone-field">
+          <label class="c-phone-label">Success</label>
+          <div class="c-phone-wrapper md success">
+            <select class="c-country-select">
+              <option value="mx" selected>🇲🇽 +52</option>
+              <option value="us">🇺🇸 +1</option>
+              <option value="es">🇪🇸 +34</option>
+              <option value="ar">🇦🇷 +54</option>
+            </select>
+            <input type="tel" class="c-phone" value="5551234567" />
+          </div>
+          <span class="c-phone-helper success">✓ Número de teléfono válido</span>
+        </div>
+
+        <div class="c-phone-field">
+          <label class="c-phone-label">Error</label>
+          <div class="c-phone-wrapper md error">
+            <select class="c-country-select">
+              <option value="mx" selected>🇲🇽 +52</option>
+              <option value="us">🇺🇸 +1</option>
+              <option value="es">🇪🇸 +34</option>
+              <option value="ar">🇦🇷 +54</option>
+            </select>
+            <input type="tel" class="c-phone" value="123" />
+          </div>
+          <span class="c-phone-helper error">✗ El número debe tener al menos 10 dígitos</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sizes Section -->
+    <section class="showcase__group">
+      <h2 class="u-heading-sm">Sizes</h2>
+
+      <div class="showcase__row" style="flex-direction: column; gap: var(--gap-600);">
+        <div class="c-phone-field">
+          <label class="c-phone-label">Large</label>
+          <div class="c-phone-wrapper lg">
+            <select class="c-country-select">
+              <option value="mx" selected>🇲🇽 +52</option>
+              <option value="us">🇺🇸 +1</option>
+              <option value="es">🇪🇸 +34</option>
+              <option value="ar">🇦🇷 +54</option>
+            </select>
+            <input type="tel" class="c-phone" placeholder="Número de teléfono..." />
+          </div>
+        </div>
+
+        <div class="c-phone-field">
+          <label class="c-phone-label">Medium</label>
+          <div class="c-phone-wrapper md">
+            <select class="c-country-select">
+              <option value="mx" selected>🇲🇽 +52</option>
+              <option value="us">🇺🇸 +1</option>
+              <option value="es">🇪🇸 +34</option>
+              <option value="ar">🇦🇷 +54</option>
+            </select>
+            <input type="tel" class="c-phone" placeholder="Número de teléfono..." />
+          </div>
+        </div>
+
+        <div class="c-phone-field">
+          <label class="c-phone-label">Small</label>
+          <div class="c-phone-wrapper sm">
+            <select class="c-country-select">
+              <option value="mx" selected>🇲🇽 +52</option>
+              <option value="us">🇺🇸 +1</option>
+              <option value="es">🇪🇸 +34</option>
+              <option value="ar">🇦🇷 +54</option>
+            </select>
+            <input type="tel" class="c-phone" placeholder="Número..." />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Different Countries Section -->
+    <section class="showcase__group">
+      <h2 class="u-heading-sm">Different Countries</h2>
+
+      <div class="showcase__row" style="flex-direction: column; gap: var(--gap-600);">
+        <div class="c-phone-field">
+          <label class="c-phone-label">México</label>
+          <div class="c-phone-wrapper md">
+            <select class="c-country-select">
+              <option value="mx" selected>🇲🇽 +52</option>
+              <option value="us">🇺🇸 +1</option>
+              <option value="es">🇪🇸 +34</option>
+              <option value="ar">🇦🇷 +54</option>
+            </select>
+            <input type="tel" class="c-phone" placeholder="5551234567" />
+          </div>
+          <span class="c-phone-hint">Formato: 10 dígitos</span>
+        </div>
+
+        <div class="c-phone-field">
+          <label class="c-phone-label">Estados Unidos</label>
+          <div class="c-phone-wrapper md">
+            <select class="c-country-select">
+              <option value="mx">🇲🇽 +52</option>
+              <option value="us" selected>🇺🇸 +1</option>
+              <option value="es">🇪🇸 +34</option>
+              <option value="ar">🇦🇷 +54</option>
+            </select>
+            <input type="tel" class="c-phone" placeholder="(555) 123-4567" />
+          </div>
+          <span class="c-phone-hint">Formato: (XXX) XXX-XXXX</span>
+        </div>
+
+        <div class="c-phone-field">
+          <label class="c-phone-label">España</label>
+          <div class="c-phone-wrapper md">
+            <select class="c-country-select">
+              <option value="mx">🇲🇽 +52</option>
+              <option value="us">🇺🇸 +1</option>
+              <option value="es" selected>🇪🇸 +34</option>
+              <option value="ar">🇦🇷 +54</option>
+            </select>
+            <input type="tel" class="c-phone" placeholder="912 34 56 78" />
+          </div>
+          <span class="c-phone-hint">Formato: 9 dígitos</span>
+        </div>
+
+        <div class="c-phone-field">
+          <label class="c-phone-label">Argentina</label>
+          <div class="c-phone-wrapper md">
+            <select class="c-country-select">
+              <option value="mx">🇲🇽 +52</option>
+              <option value="us">🇺🇸 +1</option>
+              <option value="es">🇪🇸 +34</option>
+              <option value="ar" selected>🇦🇷 +54</option>
+            </select>
+            <input type="tel" class="c-phone" placeholder="11 2345 6789" />
+          </div>
+          <span class="c-phone-hint">Formato: 10 dígitos con área</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- With Pre-filled Data Section -->
+    <section class="showcase__group">
+      <h2 class="u-heading-sm">With Pre-filled Data</h2>
+
+      <div class="showcase__row" style="flex-direction: column; gap: var(--gap-600);">
+        <div class="c-phone-field">
+          <label class="c-phone-label">Teléfono de contacto</label>
+          <div class="c-phone-wrapper md">
+            <select class="c-country-select">
+              <option value="mx" selected>🇲🇽 +52</option>
+              <option value="us">🇺🇸 +1</option>
+              <option value="es">🇪🇸 +34</option>
+              <option value="ar">🇦🇷 +54</option>
+            </select>
+            <input type="tel" class="c-phone" value="5551234567" />
+          </div>
+          <span class="c-phone-helper">Tu número de contacto actual</span>
+        </div>
+
+        <div class="c-phone-field">
+          <label class="c-phone-label">Teléfono de emergencia</label>
+          <div class="c-phone-wrapper md">
+            <select class="c-country-select">
+              <option value="mx" selected>🇲🇽 +52</option>
+              <option value="us">🇺🇸 +1</option>
+              <option value="es">🇪🇸 +34</option>
+              <option value="ar">🇦🇷 +54</option>
+            </select>
+            <input type="tel" class="c-phone" placeholder="Ingresa un número de emergencia" />
+          </div>
+          <span class="c-phone-helper">Solo será usado en caso de emergencia</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+
+</html>
