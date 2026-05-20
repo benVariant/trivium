@@ -22,6 +22,21 @@
     --padding-1300: var(--spacing-1300);
     --padding-1400: var(--spacing-1400);
     --padding-1500: var(--spacing-1500);
+    --padding-1600: var(--spacing-1600);
+    --padding-1700: var(--spacing-1700);
+    --padding-1800: var(--spacing-1800);
+    --padding-1900: var(--spacing-1900);
+    --padding-2000: var(--spacing-2000);
+    --padding-2100: var(--spacing-2100);
+    --padding-2200: var(--spacing-2200);
+    --padding-2300: var(--spacing-2300);
+    --padding-2400: var(--spacing-2400);
+    --padding-2500: var(--spacing-2500);
+    --padding-2600: var(--spacing-2600);
+    --padding-2700: var(--spacing-2700);
+    --padding-2800: var(--spacing-2800);
+    --padding-2900: var(--spacing-2900);
+    --padding-3000: var(--spacing-3000);
 
     /* =========================================================
        GAP TOKENS

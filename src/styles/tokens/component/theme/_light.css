@@ -23,7 +23,7 @@
 
   /* Default surfaces */
   --color-surface-default: var(--color-foundation-black);
-  --color-surface-default-hover: var(--color-neutral-950);
+  --color-surface-default-hover: var(--color-secondary-600);
   --color-surface-default-deep: var(--color-foundation-ultrablack);
 
   /* Muted surfaces */
