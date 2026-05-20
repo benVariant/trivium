@@ -1,0 +1,82 @@
+/* =========================================================
+   TYPOGRAPHY TOKENS
+   Responsive Font Sizes
+========================================================= */
+
+:root {
+  /* =====================================================
+     HEADINGS — Mobile
+  ===================================================== */
+
+  --font-size-heading-xxlg: 2.625rem; /* 42px */
+  --font-size-heading-xlg: 1.875rem;  /* 30px */
+  --font-size-heading-lg: 1.5rem;     /* 24px */
+  --font-size-heading-md: 1.3125rem;  /* 21px */
+  --font-size-heading-sm: 1.125rem;   /* 18px */
+  --font-size-heading-xsm: 0.9375rem; /* 15px */
+
+  /* =====================================================
+     BODY — Mobile
+  ===================================================== */
+
+   --font-size-body-lg: 1.3125rem; /* 21px */
+   --font-size-body-md: 1.125rem; /* 18px */
+   --font-size-body-sm: 0.9375rem;  /* 15px */
+   --font-size-body-xsm: 0.75rem; /* 12px */
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (min-width: 48rem) {
+  :root {
+    /* =====================================================
+       HEADINGS — Tablet
+    ===================================================== */
+
+    --font-size-heading-xxlg: 3rem;      /* 48px */
+    --font-size-heading-xlg: 2.25rem;    /* 36px */
+    --font-size-heading-lg: 1.875rem;    /* 30px */
+    --font-size-heading-md: 1.5rem;      /* 24px */
+    --font-size-heading-sm: 1.3125rem;   /* 21px */
+    --font-size-heading-xsm: 1.125rem;   /* 18px */
+
+    /* =====================================================
+       BODY — Tablet
+    ===================================================== */
+
+    --font-size-body-lg: 1.3125rem; /* 21px */
+    --font-size-body-md: 1.125rem; /* 18px */
+    --font-size-body-sm: 0.9375rem;  /* 15px */
+    --font-size-body-xsm: 0.75rem; /* 12px */
+  }
+}
+
+/* =========================================================
+   DESKTOP
+========================================================= */
+
+@media (min-width: 64rem) {
+  :root {
+    /* =====================================================
+       HEADINGS — Desktop
+    ===================================================== */
+
+    --font-size-heading-xxlg: 3.375rem; /* 54px */
+    --font-size-heading-xlg: 2.625rem;  /* 42px */
+    --font-size-heading-lg: 2.25rem;    /* 36px */
+    --font-size-heading-md: 1.875rem;   /* 30px */
+    --font-size-heading-sm: 1.5rem;     /* 24px */
+    --font-size-heading-xsm: 1.3125rem; /* 21px */
+
+    /* =====================================================
+       BODY — Desktop
+    ===================================================== */
+
+    --font-size-body-lg: 1.3125rem; /* 21px */
+    --font-size-body-md: 1.125rem; /* 18px */
+    --font-size-body-sm: 0.9375rem;  /* 15px */
+    --font-size-body-xsm: 0.75rem; /* 12px */
+  }
+}

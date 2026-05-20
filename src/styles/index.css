@@ -1,0 +1,40 @@
+/* =========================================================
+   PRIMITIVE TOKENS
+   Base foundation colors and scale system
+========================================================= */
+@import "/src/styles/tokens/primitive/_colors.css";
+@import "/src/styles/tokens/primitive/_scale.css";
+
+/* =========================================================
+   SEMANTIC TOKENS
+   Semantic color and scale mappings
+========================================================= */
+@import "/src/styles/tokens/semantic/_colors.css";
+@import "/src/styles/tokens/semantic/_scale.css";
+
+/* =========================================================
+   COMPONENT TOKENS
+   Theme, spacing, and border tokens for components
+========================================================= */
+@import "/src/styles/tokens/component/theme/_light.css";
+@import "/src/styles/tokens/component/theme/_dark.css";
+@import "/src/styles/tokens/component/layout/_spacing.css";
+@import "/src/styles/tokens/component/layout/_font.css";
+@import "/src/styles/tokens/component/layout/_border.css";
+
+/* =========================================================
+   FOUNDATIONS
+   Reset, base styles, and typography
+========================================================= */
+@import "/src/styles/foundations/reset.css";
+@import "/src/styles/foundations/base.css";
+@import "/src/styles/foundations/typography.css";
+
+/* =========================================================
+   UTILITIES
+   Display and layout utility classes
+========================================================= */
+@import "/src/styles/utilities/display.css";
+@import "/src/styles/utilities/layout.css";
+@import "/src/styles/utilities/typography.css";
+

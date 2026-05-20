@@ -1,0 +1,222 @@
+<!-- components/input/input.showcase.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Input Showcase</title>
+      
+  <link rel="icon" type="image/png" href="/public/favicon.png">
+  <link rel="stylesheet" href="../../styles/index.css" />
+  <link rel="stylesheet" href="../../styles/showcase/showcase.css" />
+  <link rel="stylesheet" href="./input.css" />
+
+  <!-- Phosphor icons -->
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+  />
+
+</head>
+
+<body>
+  <main class="showcase">
+    <header class="showcase__header">
+      <p class="u-eyebrow">Component</p>
+      <h1>Input</h1>
+      <p>
+        Showcase visual del componente Input (text).
+      </p>
+    </header>
+
+    <!-- Base States Section -->
+    <section class="showcase__group">
+      <h2 class="u-heading-sm">Base States</h2>
+
+      <div class="showcase__row">
+        <div class="c-input-field">
+          <label class="c-input-label">Default</label>
+          <input type="text" class="c-input md" placeholder="Enter text..." />
+        </div>
+
+        <div class="c-input-field">
+          <label class="c-input-label">Hover</label>
+          <input type="text" class="c-input md" placeholder="Hover here..." style="border-color: var(--color-border-secondary-on-alt-hover);" />
+        </div>
+
+        <div class="c-input-field">
+          <label class="c-input-label">Focus</label>
+          <input type="text" class="c-input md" placeholder="Focused input..." autofocus />
+        </div>
+
+        <div class="c-input-field">
+          <label class="c-input-label">Disabled</label>
+          <input type="text" class="c-input md" placeholder="Disabled input" disabled />
+        </div>
+      </div>
+    </section>
+
+    <!-- Validation States Section -->
+    <section class="showcase__group">
+      <h2 class="u-heading-sm">Validation States</h2>
+
+      <div class="showcase__row">
+        <div class="c-input-field">
+          <label class="c-input-label">Success</label>
+          <input type="text" class="c-input md success" placeholder="Valid input" value="Valid input" />
+          <span class="c-input-helper success">✓ This input is valid</span>
+        </div>
+
+        <div class="c-input-field">
+          <label class="c-input-label">Error</label>
+          <input type="text" class="c-input md error" placeholder="Invalid input" value="Invalid input" />
+          <span class="c-input-helper error">✗ This input has an error</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sizes Section -->
+    <section class="showcase__group">
+      <h2 class="u-heading-sm">Sizes</h2>
+
+      <div class="showcase__row" style="flex-direction: column; gap: var(--gap-600);">
+        <div class="c-input-field">
+          <label class="c-input-label">Large</label>
+          <input type="text" class="c-input lg" placeholder="Large input" />
+        </div>
+
+        <div class="c-input-field">
+          <label class="c-input-label">Medium</label>
+          <input type="text" class="c-input md" placeholder="Medium input" />
+        </div>
+
+        <div class="c-input-field">
+          <label class="c-input-label">Small</label>
+          <input type="text" class="c-input sm" placeholder="Small input" />
+        </div>
+      </div>
+    </section>
+
+    <!-- With Icons Section -->
+    <section class="showcase__group">
+      <h2 class="u-heading-sm">With Icons</h2>
+
+      <div class="showcase__row" style="flex-direction: column; gap: var(--gap-600);">
+        <div class="c-input-field">
+          <label class="c-input-label">Prefix Icon</label>
+          <div class="c-input-wrapper md">
+            <div class="c-input-icon c-input-prefix">
+              <i class="ph ph-magnifying-glass"></i>
+            </div>
+            <input type="text" class="c-input" placeholder="Search..." />
+          </div>
+        </div>
+
+        <div class="c-input-field">
+          <label class="c-input-label">Suffix Icon</label>
+          <div class="c-input-wrapper md">
+            <input type="text" class="c-input" placeholder="Enter email..." />
+            <div class="c-input-icon c-input-suffix">
+              <i class="ph ph-check-circle-fill"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="c-input-field">
+          <label class="c-input-label">Both Icons</label>
+          <div class="c-input-wrapper md">
+            <div class="c-input-icon c-input-prefix">
+              <i class="ph ph-envelope"></i>
+            </div>
+            <input type="text" class="c-input" placeholder="Email address" />
+            <div class="c-input-icon c-input-suffix">
+              <i class="ph ph-x-circle"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- With Labels and Helper Text Section -->
+    <section class="showcase__group">
+      <h2 class="u-heading-sm">With Labels and Helper Text</h2>
+
+      <div class="showcase__row" style="flex-direction: column; gap: var(--gap-600);">
+        <div class="c-input-field">
+          <label class="c-input-label required">Full Name</label>
+          <input type="text" class="c-input md" placeholder="Enter your full name" />
+          <span class="c-input-helper">Your full name as it appears on your ID</span>
+        </div>
+
+        <div class="c-input-field">
+          <label class="c-input-label required">Email Address</label>
+          <input type="text" class="c-input md error" placeholder="Enter your email" value="invalid-email" />
+          <span class="c-input-helper error">Please enter a valid email address</span>
+        </div>
+
+        <div class="c-input-field">
+          <label class="c-input-label">Username</label>
+          <input type="text" class="c-input md success" placeholder="Choose your username" value="johndoe" />
+          <span class="c-input-helper success">Username is available</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Complex Examples Section -->
+    <section class="showcase__group">
+      <h2 class="u-heading-sm">Complex Examples</h2>
+
+      <div class="showcase__row" style="flex-direction: column; gap: var(--gap-600);">
+        <div class="c-input-field">
+          <label class="c-input-label required">Search with Icon</label>
+          <div class="c-input-wrapper md success">
+            <div class="c-input-icon c-input-prefix">
+              <i class="ph ph-magnifying-glass"></i>
+            </div>
+            <input type="text" class="c-input" placeholder="Search users..." value="Search results" />
+            <div class="c-input-icon c-input-suffix">
+              <i class="ph ph-check-circle-fill"></i>
+            </div>
+          </div>
+          <span class="c-input-helper success">3 results found</span>
+        </div>
+
+        <div class="c-input-field">
+          <label class="c-input-label">Payment Card</label>
+          <div class="c-input-wrapper md">
+            <div class="c-input-icon c-input-prefix">
+              <i class="ph ph-credit-card"></i>
+            </div>
+            <input type="text" class="c-input" placeholder="1234 5678 9012 3456" />
+          </div>
+          <span class="c-input-helper">We encrypt your card information</span>
+        </div>
+
+        <div class="c-input-field">
+          <label class="c-input-label required">Password</label>
+          <div class="c-input-wrapper md error">
+            <div class="c-input-icon c-input-prefix">
+              <i class="ph ph-lock"></i>
+            </div>
+            <input type="password" class="c-input" placeholder="Enter your password" />
+            <div class="c-input-icon c-input-suffix" style="cursor: pointer;">
+              <i class="ph ph-eye"></i>
+            </div>
+          </div>
+          <span class="c-input-helper error">Password must be at least 8 characters</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

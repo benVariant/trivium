@@ -1,0 +1,118 @@
+:root {
+  /* =========================================================
+     SEMANTIC COLOR TOKENS
+     Design system semantic color mappings for UI components
+  ========================================================= */
+
+  /* =========================================================
+     FOUNDATIONS
+     Core semantic foundation colors
+  ========================================================= */
+
+  --color-foundation-white: var(--color-white);
+  --color-foundation-black: var(--color-black);
+  --color-foundation-ultrablack: var(--color-ultrablack);
+
+  /* =========================================================
+     PRIMARY COLORS
+     Mapped to Oro Viejo (primary brand color)
+  ========================================================= */
+
+  --color-primary-50: var(--color-oro-viejo-50);
+  --color-primary-100: var(--color-oro-viejo-100);
+  --color-primary-200: var(--color-oro-viejo-200);
+  --color-primary-300: var(--color-oro-viejo-300);
+  --color-primary-400: var(--color-oro-viejo-400);
+  --color-primary-500: var(--color-oro-viejo-500);
+  --color-primary-600: var(--color-oro-viejo-600);
+  --color-primary-700: var(--color-oro-viejo-700);
+  --color-primary-800: var(--color-oro-viejo-800);
+  --color-primary-900: var(--color-oro-viejo-900);
+  --color-primary-950: var(--color-oro-viejo-950);
+
+  /* =========================================================
+     SUCCESS COLORS
+     Mapped to Green (positive/success states)
+  ========================================================= */
+
+  --color-success-50: var(--color-green-50);
+  --color-success-100: var(--color-green-100);
+  --color-success-200: var(--color-green-200);
+  --color-success-300: var(--color-green-300);
+  --color-success-400: var(--color-green-400);
+  --color-success-500: var(--color-green-500);
+  --color-success-600: var(--color-green-600);
+  --color-success-700: var(--color-green-700);
+  --color-success-800: var(--color-green-800);
+  --color-success-900: var(--color-green-900);
+  --color-success-950: var(--color-green-950);
+
+  /* =========================================================
+     INFO COLORS
+     Mapped to Blue (informational states)
+  ========================================================= */
+
+  --color-info-50: var(--color-blue-50);
+  --color-info-100: var(--color-blue-100);
+  --color-info-200: var(--color-blue-200);
+  --color-info-300: var(--color-blue-300);
+  --color-info-400: var(--color-blue-400);
+  --color-info-500: var(--color-blue-500);
+  --color-info-600: var(--color-blue-600);
+  --color-info-700: var(--color-blue-700);
+  --color-info-800: var(--color-blue-800);
+  --color-info-900: var(--color-blue-900);
+  --color-info-950: var(--color-blue-950);
+
+  /* =========================================================
+     DESTRUCTIVE COLORS
+     Mapped to Red (destructive/error states)
+  ========================================================= */
+
+  --color-destructive-50: var(--color-red-50);
+  --color-destructive-100: var(--color-red-100);
+  --color-destructive-200: var(--color-red-200);
+  --color-destructive-300: var(--color-red-300);
+  --color-destructive-400: var(--color-red-400);
+  --color-destructive-500: var(--color-red-500);
+  --color-destructive-600: var(--color-red-600);
+  --color-destructive-700: var(--color-red-700);
+  --color-destructive-800: var(--color-red-800);
+  --color-destructive-900: var(--color-red-900);
+  --color-destructive-950: var(--color-red-950);
+
+  /* =========================================================
+     WARNING COLORS
+     Mapped to Yellow (warning states)
+  ========================================================= */
+
+  --color-warning-50: var(--color-yellow-50);
+  --color-warning-100: var(--color-yellow-100);
+  --color-warning-200: var(--color-yellow-200);
+  --color-warning-300: var(--color-yellow-300);
+  --color-warning-400: var(--color-yellow-400);
+  --color-warning-500: var(--color-yellow-500);
+  --color-warning-600: var(--color-yellow-600);
+  --color-warning-700: var(--color-yellow-700);
+  --color-warning-800: var(--color-yellow-800);
+  --color-warning-900: var(--color-yellow-900);
+  --color-warning-950: var(--color-yellow-950);
+
+  /* =========================================================
+     NEUTRAL COLORS
+     Mapped to Taupe (neutral/disabled states)
+  ========================================================= */
+
+  --color-neutral-50: var(--color-taupe-50);
+  --color-neutral-100: var(--color-taupe-100);
+  --color-neutral-200: var(--color-taupe-200);
+  --color-neutral-300: var(--color-taupe-300);
+  --color-neutral-400: var(--color-taupe-400);
+  --color-neutral-500: var(--color-taupe-500);
+  --color-neutral-600: var(--color-taupe-600);
+  --color-neutral-700: var(--color-taupe-700);
+  --color-neutral-800: var(--color-taupe-800);
+  --color-neutral-900: var(--color-taupe-900);
+  --color-neutral-950: var(--color-taupe-950);
+
+}

@@ -1,0 +1,41 @@
+:root {
+  /* =========================================================
+     SCALE TOKENS
+     Base measurement scale in pixels (increments of 3px)
+     Used as foundation for spacing, sizing, and borders
+  ========================================================= */
+
+  --scale-0: 0px;
+  --scale-25: 1px;
+  --scale-50: 2px;
+  --scale-100: 3px;
+  --scale-200: 6px;
+  --scale-300: 9px;
+  --scale-400: 12px;
+  --scale-500: 15px;
+  --scale-600: 18px;
+  --scale-700: 21px;
+  --scale-800: 24px;
+  --scale-900: 27px;
+  --scale-1000: 30px;
+  --scale-1100: 36px;
+  --scale-1200: 42px;
+  --scale-1300: 48px;
+  --scale-1400: 54px;
+  --scale-1500: 60px;
+  --scale-1600: 66px;
+  --scale-1700: 72px;
+  --scale-1800: 78px;
+  --scale-1900: 84px;
+  --scale-2000: 90px;
+  --scale-2100: 96px;
+  --scale-2200: 112px;
+  --scale-2300: 118px;
+  --scale-2400: 124px;
+  --scale-2500: 130px;
+  --scale-2600: 136px;
+  --scale-2700: 142px;
+  --scale-2800: 148px;
+  --scale-2900: 154px;
+  --scale-3000: 160px;
+}

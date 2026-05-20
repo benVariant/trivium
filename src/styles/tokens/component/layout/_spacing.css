@@ -1,0 +1,74 @@
+:root {
+    /* =========================================================
+       PADDING TOKENS
+       Spacing values for padding properties
+    ========================================================= */
+
+    --padding-0: var(--spacing-0);
+    --padding-25: var(--spacing-25);
+    --padding-50: var(--spacing-50);
+    --padding-100: var(--spacing-100);
+    --padding-200: var(--spacing-200);
+    --padding-300: var(--spacing-300);
+    --padding-400: var(--spacing-400);
+    --padding-500: var(--spacing-500);
+    --padding-600: var(--spacing-600);
+    --padding-700: var(--spacing-700);
+    --padding-800: var(--spacing-800);
+    --padding-900: var(--spacing-900);
+    --padding-1000: var(--spacing-1000);
+    --padding-1100: var(--spacing-1100);
+    --padding-1200: var(--spacing-1200);
+    --padding-1300: var(--spacing-1300);
+    --padding-1400: var(--spacing-1400);
+    --padding-1500: var(--spacing-1500);
+
+    /* =========================================================
+       GAP TOKENS
+       Spacing values for gap properties (flexbox/grid)
+    ========================================================= */
+
+    --gap-0: var(--spacing-0);
+    --gap-25: var(--spacing-25);
+    --gap-50: var(--spacing-50);
+    --gap-100: var(--spacing-100);
+    --gap-200: var(--spacing-200);
+    --gap-300: var(--spacing-300);
+    --gap-400: var(--spacing-400);
+    --gap-500: var(--spacing-500);
+    --gap-600: var(--spacing-600);
+    --gap-700: var(--spacing-700);
+    --gap-800: var(--spacing-800);
+    --gap-900: var(--spacing-900);
+    --gap-1000: var(--spacing-1000);
+    --gap-1100: var(--spacing-1100);
+    --gap-1200: var(--spacing-1200);
+    --gap-1300: var(--spacing-1300);
+    --gap-1400: var(--spacing-1400);
+    --gap-1500: var(--spacing-1500);
+
+    /* =========================================================
+       MARGIN TOKENS
+       Spacing values for margin properties
+    ========================================================= */
+
+    --margin-0: var(--spacing-0);
+    --margin-25: var(--spacing-25);
+    --margin-50: var(--spacing-50);
+    --margin-100: var(--spacing-100);
+    --margin-200: var(--spacing-200);
+    --margin-300: var(--spacing-300);
+    --margin-400: var(--spacing-400);
+    --margin-500: var(--spacing-500);
+    --margin-600: var(--spacing-600);
+    --margin-700: var(--spacing-700);
+    --margin-800: var(--spacing-800);
+    --margin-900: var(--spacing-900);
+    --margin-1000: var(--spacing-1000);
+    --margin-1100: var(--spacing-1100);
+    --margin-1200: var(--spacing-1200);
+    --margin-1300: var(--spacing-1300);
+    --margin-1400: var(--spacing-1400);
+    --margin-1500: var(--spacing-1500);
+
+}

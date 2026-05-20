@@ -1,0 +1,42 @@
+/* =========================================================
+   DARK THEME TOKENS
+   Semantic color tokens for dark mode (currently empty)
+   Ready for dark theme implementation following light theme structure
+========================================================= */
+
+:root[data-theme="dark"] {
+  /* =========================================================
+     PAGE
+     Dark theme background colors for pages and overlays
+  ========================================================= */
+
+  /* To be implemented: dark page backgrounds */
+
+  /* =========================================================
+     SURFACE
+     Dark theme surface colors for components
+  ========================================================= */
+
+  /* To be implemented: dark surface colors */
+
+  /* =========================================================
+     TEXT
+     Dark theme text colors for all hierarchy levels
+  ========================================================= */
+
+  /* To be implemented: dark text colors */
+
+  /* =========================================================
+     BORDERS
+     Dark theme border colors
+  ========================================================= */
+
+  /* To be implemented: dark border colors */
+
+  /* =========================================================
+     ICONS
+     Dark theme icon colors
+  ========================================================= */
+
+  /* To be implemented: dark icon colors */
+}

@@ -1,0 +1,77 @@
+/* =========================================================
+   TYPOGRAPHY
+   Headings, paragraphs, and text element defaults
+========================================================= */
+
+/* =========================================================
+   HEADINGS
+   All heading elements with serif font family
+========================================================= */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "latienne-pro", serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2;
+    color: var(--color-text-heading-default);
+}
+
+/* =========================================================
+   PARAGRAPHS
+   Body text with sans-serif font family
+========================================================= */
+
+p  {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--font-size-body-lg);
+    line-height: 1.5;
+    color: var(--color-text-body-default);
+}
+
+/* =========================================================
+   HEADING SIZES
+   Font size scale for heading hierarchy
+========================================================= */
+
+h1 {
+    font-size: var(--font-size-heading-xxlg);
+}
+
+h2 {
+    font-size: var(--font-size-heading-xlg);
+}
+
+h3 {
+    font-size: var(--font-size-heading-lg);
+}
+
+h4 {
+    font-size: var(--font-size-heading-md);
+}
+
+h5 {
+    font-size: var(--font-size-heading-sm);
+}
+
+h6 {
+    font-size: var(--font-size-heading-xsm);
+}
+
+/* =========================================================
+   STRONG TEXT
+   Bold and strong emphasis
+========================================================= */
+
+b, strong {
+    font-weight: 700;
+}
+
+label   {
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-size: var(--font-size-body-sm);
+    line-height: 1.5;
+    color: var(--color-label-default);
+}
