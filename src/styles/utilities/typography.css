@@ -1,3 +1,79 @@
+/* =========================================================
+   TYPOGRAPHY UTILITIES
+   Font styles, size and color utilities
+========================================================= */
+
+/* =========================================================
+   HEADINGS
+   Heading size  and colors utilities
+========================================================= */
+
+/* Sizes */
+
+.u-heading-xxlg {
+  font-size: var(--font-size-heading-xxlg);
+}
+
+.u-heading-xlg {
+  font-size: var(--font-size-heading-xlg);
+}
+
+.u-heading-lg {
+  font-size: var(--font-size-heading-lg);
+}
+
+.u-heading-md {
+  font-size: var(--font-size-heading-md);
+}
+
+.u-heading-sm {
+  font-size: var(--font-size-heading-sm);
+}
+
+.u-heading-xsm {
+  font-size: var(--font-size-heading-xsm);
+}
+
+
+/* Color */
+
+.u-heading-color-default {
+  color: var(--color-text-heading-default);
+}
+
+.u-heading-color-secondary {
+  color: var(--color-text-heading-secondary);
+}
+
+/* =========================================================
+   BODY
+   Body text size and color utilities
+========================================================= */
+
+/* Sizes */
+
+.u-body-lg {
+  font-size: var(--font-size-body-lg);
+}
+
+.u-body-md {
+  font-size: var(--font-size-body-md);
+}
+
+.u-body-sm {
+  font-size: var(--font-size-body-sm);
+}
+
+.u-body-xsm {
+  font-size: var(--font-size-body-xsm);
+}
+
+/* Color */
+
+.u-body-color-default {
+  color: var(--color-text-body-default);
+}
+
 
 /* =========================================================
    EYEBROW UTILITY
@@ -9,8 +85,10 @@
 
   color: var(--color-text-eyebrow-default);
 
-  font-size: var(--font-size-body-xsm);
-  font-weight: 400;
-  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: var(--font-size-body-sm);
+  font-weight: 600;
+  line-height: 1.5;
 
 }

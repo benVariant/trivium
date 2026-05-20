@@ -61,6 +61,21 @@
     --gap-1300: var(--spacing-1300);
     --gap-1400: var(--spacing-1400);
     --gap-1500: var(--spacing-1500);
+    --gap-1600: var(--spacing-1600);
+    --gap-1700: var(--spacing-1700);
+    --gap-1800: var(--spacing-1800);
+    --gap-1900: var(--spacing-1900);
+    --gap-2000: var(--spacing-2000);
+    --gap-2100: var(--spacing-2100);
+    --gap-2200: var(--spacing-2200);
+    --gap-2300: var(--spacing-2300);
+    --gap-2400: var(--spacing-2400);
+    --gap-2500: var(--spacing-2500);
+    --gap-2600: var(--spacing-2600);
+    --gap-2700: var(--spacing-2700);
+    --gap-2800: var(--spacing-2800);
+    --gap-2900: var(--spacing-2900);
+    --gap-3000: var(--spacing-3000);
 
     /* =========================================================
        MARGIN TOKENS
@@ -85,5 +100,5 @@
     --margin-1300: var(--spacing-1300);
     --margin-1400: var(--spacing-1400);
     --margin-1500: var(--spacing-1500);
-
+    --margin-1600: var(--spacing-1600);
 }

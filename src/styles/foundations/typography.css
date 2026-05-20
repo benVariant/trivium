@@ -27,7 +27,7 @@ p  {
     font-style: normal;
     font-size: var(--font-size-body-lg);
     line-height: 1.5;
-    color: var(--color-text-body-default);
+    color: var(--color-text-body-secondary);
 }
 
 /* =========================================================

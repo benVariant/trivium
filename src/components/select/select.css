@@ -1,0 +1,130 @@
+/* Base styles for the select component */
+.c-select {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 var(--padding-400);
+  border-radius: var(--radius-100);
+  border: 1px solid var(--color-border-default);
+  background-color: var(--color-surface-default);
+  font-family: "Manrope", sans-serif;
+  font-size: var(--font-size-body-md);
+  color: var(--color-text-body-default);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M5 7.5L10 12.5L15 7.5' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right var(--padding-300) center;
+  padding-right: calc(var(--padding-400) + 30px);
+}
+
+.c-select:hover:not(:disabled) {
+  background-color: var(--color-surface-default-hover);
+}
+
+.c-select:focus {
+  outline: none;
+  border-color: var(--color-border-action);
+  box-shadow: 0 0 0 3px var(--color-surface-action);
+}
+
+.c-select:disabled {
+  background-color: var(--color-surface-disabled);
+  color: var(--color-label-disabled);
+  cursor: not-allowed;
+  border-color: var(--color-border-disabled);
+}
+
+/* Error state */
+.c-select.error {
+  border-color: var(--color-border-destructive);
+}
+
+.c-select.error:focus {
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-destructive-100) 40%, transparent);
+}
+
+/* Success state */
+.c-select.success {
+  border-color: var(--color-border-success);
+}
+
+.c-select.success:focus {
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-success-100) 40%, transparent);
+}
+
+/* Sizes */
+.lg {
+  height: 60px;
+  padding: 0 var(--padding-500);
+  padding-right: calc(var(--padding-500) + 30px);
+  font-size: var(--font-size-body-lg);
+}
+
+.md {
+  height: 48px;
+  padding: 0 var(--padding-400);
+  padding-right: calc(var(--padding-400) + 30px);
+  font-size: var(--font-size-body-md);
+}
+
+.sm {
+  height: 40px;
+  padding: 0 var(--padding-300);
+  padding-right: calc(var(--padding-300) + 30px);
+  font-size: var(--font-size-body-sm);
+}
+
+/* Select option styling (browser-dependent) */
+.c-select option {
+  background-color: var(--color-surface-default);
+  color: var(--color-text-body-default);
+  padding: var(--padding-300);
+  border: none;
+}
+
+.c-select option:checked {
+  background: linear-gradient(var(--color-border-action), var(--color-border-action));
+  background-color: var(--color-border-action);
+  color: white;
+}
+
+/* Select wrapper - for grouped selects with labels */
+.c-select-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-400);
+  width: 100%;
+}
+
+/* Select label */
+.c-select-label {
+  font-size: var(--font-size-body-sm);
+  font-weight: 600;
+  color: var(--color-text-label-default);
+  display: inline-block;
+}
+
+/* Select helper text */
+.c-select-helper {
+  font-family: "Manrope", sans-serif;  
+  font-size: var(--font-size-body-xsm);
+  color: var(--color-text-secondary);
+  margin-top: var(--gap-100);
+}
+
+.c-select-helper.error {
+  color: var(--color-text-destructive);
+}
+
+.c-select-helper.success {
+  color: var(--color-text-success);
+}
+
+/* Optgroup styling */
+.c-select optgroup {
+  font-weight: 600;
+  color: var(--color-text-label-default);
+}
