@@ -98,6 +98,21 @@
 .u-gap-1300 { gap: var(--gap-1300); }
 .u-gap-1400 { gap: var(--gap-1400); }
 .u-gap-1500 { gap: var(--gap-1500); }
+.u-gap-1600 { gap: var(--gap-1600); }
+.u-gap-1700 { gap: var(--gap-1700); }
+.u-gap-1800 { gap: var(--gap-1800); }
+.u-gap-1900 { gap: var(--gap-1900); }
+.u-gap-2000 { gap: var(--gap-2000); }
+.u-gap-2100 { gap: var(--gap-2100); }
+.u-gap-2200 { gap: var(--gap-2200); }
+.u-gap-2300 { gap: var(--gap-2300); }
+.u-gap-2400 { gap: var(--gap-2400); }
+.u-gap-2500 { gap: var(--gap-2500); }
+.u-gap-2600 { gap: var(--gap-2600); }
+.u-gap-2700 { gap: var(--gap-2700); }
+.u-gap-2800 { gap: var(--gap-2800); }
+.u-gap-2900 { gap: var(--gap-2900); }
+.u-gap-3000 { gap: var(--gap-3000); }
 
 /* =========================================================
    ROW / COLUMN GAP

@@ -32,29 +32,31 @@
 
 </head>
 
-<body>
-    <header class="u-flex u-flex-column u-items-center u-py-600 u-px-400 u-gap-1300">
+<body class="u-flex u-flex-column u-items-center u-gap-1500">
+
+
+  <header class="u-flex u-flex-column u-items-center u-p-1200 u-gap-1300">
       <img src="/public/trivium-logo.svg" alt="Trivium Logo">
       <div class="u-flex u-flex-column u-items-center u-gap-400">
         <h1 class="u-heading-xlg">Sistema de Diseño</h1>
         <p class="u-body-lg">Fundamentos, tokens y convenciones que forman la base del sistema de diseño de Trivium.</p>
       </div>
-    </header>
+  </header>
 
 
-  <main class="u-flex u-flex-column u-items-center">    
+  <main class="u-flex u-flex-column u-items-center u-gap-1500">    
     <!-- Design System Documentation Section -->
-    <section class="u-flex u-flex-column u-section-max-w u-gap-1200 u-py-1000 u-px-600">
+    <section class="u-flex u-flex-column u-section-max-w u-gap-2000 u-py-1000 u-px-600">
 
       <!-- Tokens Section -->
       <div class="u-flex u-flex-column u-w-full u-gap-800">
-        <h3 class="u-heading-md">Sistema de Tokens</h3>
+        <h2 class="u-heading-md">Sistema de Tokens</h2>
         <p class="u-body-md">Nuestro sistema está organizado en tres capas jerárquicas de tokens CSS:</p>
         
         <div class="u-grid u-grid-cols-3 u-gap-600">
           <!-- Primitive Tokens -->
           <div class="docCard">
-            <h4 class="u-heading-xsm u-heading-color-default">Tokens Primitivos</h4>
+            <h3 class="u-heading-xsm u-heading-color-default">Tokens Primitivos</h3>
             <p class="u-body-sm">Valores base sin significado específico. Incluyen:</p>
             <ul class="u-body-sm">
               <li><strong>Colores:</strong> Paletas (Oro Viejo, Verde Botella, Taupe)</li>
@@ -63,8 +65,8 @@
           </div>
 
           <!-- Semantic Tokens -->
-          <div class="u-flex u-flex-column u-radius-600 u-gap-400 u-p-800" style="background: var(--color-surface-muted); border-radius: var(--radius-100);">
-            <h4 class="u-heading-xsm u-heading-color-default">Tokens Semánticos</h4>
+          <div class="docCard">
+            <h3 class="u-heading-xsm u-heading-color-default">Tokens Semánticos</h3>
             <p class="u-body-sm">Mapeos con propósito funcional:</p>
             <ul class="u-body-sm">
               <li><strong>Primary:</strong> Oro Viejo</li>
@@ -74,10 +76,10 @@
           </div>
 
           <!-- Component Tokens -->
-          <div class="u-flex u-flex-column u-radius-600 u-gap-400 u-p-800" style="background: var(--color-surface-muted); border-radius: var(--radius-100);">
-            <h4 class="u-heading-xsm u-heading-color-default">Tokens de Componentes</h4>
+          <div class="docCard">
+            <h3 class="u-heading-xsm u-heading-color-default">Tokens de Componentes</h3>
             <p class="u-body-sm">Propiedades específicas:</p>
-            <ul class="u-body-sm" style="margin: 0; padding-left: 20px;">
+            <ul class="u-body-sm">
               <li><strong>Layout:</strong> Padding, Gap, Margin</li>
               <li><strong>Tipografía:</strong> Tamaños responsive</li>
               <li><strong>Theme:</strong> Light & Dark</li>
@@ -87,25 +89,27 @@
       </div>
 
       <!-- Typography Section -->
-      <div class="u-flex u-flex-column u-gap-600">
-        <h3 class="u-heading-md">Tipografía</h3>
-        <div class="u-flex u-flex-column u-gap-400">
-          <p class="u-body-md"><strong>Familia:</strong> Manrope</p>
-          <div class="u-grid u-grid-cols-2 u-gap-400">
-            <div style="padding: var(--padding-400); background: var(--color-surface-muted); border-radius: var(--radius-100);">
-              <p class="u-body-sm" style="color: var(--color-text-label-default); margin-bottom: 8px;"><strong>Headings (Móvil)</strong></p>
-              <p style="font-size: var(--font-size-heading-xxlg); margin: 4px 0;">42px XXL</p>
-              <p style="font-size: var(--font-size-heading-lg); margin: 4px 0;">24px LG</p>
-              <p style="font-size: var(--font-size-heading-sm); margin: 4px 0;">18px SM</p>
-            </div>
-            <div style="padding: var(--padding-400); background: var(--color-surface-muted); border-radius: var(--radius-100);">
-              <p class="u-body-sm" style="color: var(--color-text-label-default); margin-bottom: 8px;"><strong>Body (Móvil)</strong></p>
-              <p style="font-size: var(--font-size-body-lg); margin: 4px 0;">21px LG</p>
-              <p style="font-size: var(--font-size-body-md); margin: 4px 0;">18px MD</p>
-              <p style="font-size: var(--font-size-body-xsm); margin: 4px 0;">12px XSM</p>
-            </div>
+      <div class="u-flex u-flex-column u-gap-1000">
+
+          <div class="u-flex u-flex-column u-gap-800">
+            <h2 class="u-heading-md">Tipografía</h2>
+            <p class="u-body-md"><strong>Familia primaria: </strong>Lattiene<br><strong>Familia secundaria: </strong>Manrope</p>
           </div>
-        </div>
+
+          <div class="docCard">
+            <p class="u-body-sm" style="color: var(--color-text-label-default); margin-bottom: 8px;"><strong>Headings (Móvil)</strong></p>
+            <p style="font-size: var(--font-size-heading-xxlg); margin: 4px 0;">42px XXL</p>
+            <p style="font-size: var(--font-size-heading-lg); margin: 4px 0;">24px LG</p>
+            <p style="font-size: var(--font-size-heading-sm); margin: 4px 0;">18px SM</p>
+          </div>
+          
+          <div class="docCard">
+            <p class="u-body-sm" style="color: var(--color-text-label-default); margin-bottom: 8px;"><strong>Body (Móvil)</strong></p>
+            <p style="font-size: var(--font-size-body-lg); margin: 4px 0;">21px LG</p>
+            <p style="font-size: var(--font-size-body-md); margin: 4px 0;">18px MD</p>
+            <p style="font-size: var(--font-size-body-xsm); margin: 4px 0;">12px XSM</p>
+          </div>
+
       </div>
 
       <!-- Color System Section -->
@@ -190,54 +194,56 @@ src/styles/<br>
     </section>
 
     <!-- Components Catalog Section -->
-      <section class="u-flex u-flex-column u-gap-800 u-p-500">
+    <section class="u-flex u-flex-column u-w-full u-section-max-w u-gap-1200"> 
+
+      <div class="u-flex u-flex-column u-gap-800 u-p-500">
         <div class="u-flex u-flex-column u-gap-800">
           <h2 class="u-heading-md">Button</h2>
           <p class="u-body-md">Componente de botón con múltiples variantes y estados.</p>
         </div>
         <a href="/src/components/global/button/button.showcase.html" class="c-button primary md">Ver Showcase</a>
-      </section>
+      </div>
 
-      <section class="u-flex u-flex-column u-gap-800 u-p-500">
+      <div class="u-flex u-flex-column u-gap-800 u-p-500">
         <div class="u-flex u-flex-column u-gap-800">
           <h2 class="u-heading-md">Input</h2>
           <p class="u-body-md">Componente de entrada de texto con diferentes estados y validaciones.</p>
         </div>
         <a href="/src/components/global/input/input.showcase.html" class="c-button primary md">Ver Showcase</a>
-      </section>
+      </div>
 
-      <section class="u-flex u-flex-column u-gap-800 u-p-500">
+      <div class="u-flex u-flex-column u-gap-800 u-p-500">
         <div class="u-flex u-flex-column u-gap-800">
           <h2 class="u-heading-md">Textarea</h2>
           <p class="u-body-md">Componente para entrada de texto multilínea con múltiples tamaños.</p>
         </div>
         <a href="/src/components/global/textarea/textarea.showcase.html" class="c-button primary md">Ver Showcase</a>
-      </section>
+      </div>
 
-      <section class="u-flex u-flex-column u-gap-800 u-p-500">
+      <div class="u-flex u-flex-column u-gap-800 u-p-500">
         <div class="u-flex u-flex-column u-gap-800">
           <h2 class="u-heading-md">Select</h2>
           <p class="u-body-md">Componente dropdown para seleccionar opciones de una lista.</p>
         </div>
         <a href="/src/components/global/select/select.showcase.html" class="c-button primary md">Ver Showcase</a>
-      </section>
+      </div>
 
-      <section class="u-flex u-flex-column u-gap-800 u-p-500">
+      <div class="u-flex u-flex-column u-gap-800 u-p-500">
         <div class="u-flex u-flex-column u-gap-800">
           <h2 class="u-heading-md">Date</h2>
           <p class="u-body-md">Componente para seleccionar fechas con calendario interactivo.</p>
         </div>
         <a href="/src/components/global/date/date.showcase.html" class="c-button primary md">Ver Showcase</a>
-      </section>
+      </div>
 
-      <section class="u-flex u-flex-column u-gap-800 u-p-500">
+      <div class="u-flex u-flex-column u-gap-800 u-p-500">
         <div class="u-flex u-flex-column u-gap-800">
           <h2 class="u-heading-md">Phone</h2>
           <p class="u-body-md">Componente de teléfono con selector de código de país.</p>
         </div>
         <a href="/src/components/global/phone/phone.showcase.html" class="c-button primary md">Ver Showcase</a>
-      </section>
-  </div>
+      </div>
+    </section>
   </main>
 </body>
 

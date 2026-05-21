@@ -22,4 +22,5 @@
   --radius-200: var(--scale-200);
   --radius-300: var(--scale-300);
   --radius-500: var(--scale-500);
+   --radius-600: var(--scale-600);
 }
