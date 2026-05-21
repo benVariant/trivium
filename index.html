@@ -32,23 +32,170 @@
 
 </head>
 
-<body class="u-p-800">
-  <div class="u-flex u-flex-column u-items-center u-gap-1500">
+<body>
     <header class="u-flex u-flex-column u-items-center u-py-600 u-px-400 u-gap-1300">
       <img src="/public/trivium-logo.svg" alt="Trivium Logo">
       <div class="u-flex u-flex-column u-items-center u-gap-400">
-        <h1 class="u-heading-xlg">Sistema de Diseño Trivium</h1>
-        <p class="u-body-lg">Una colección de componentes reutilizables diseñados para crear experiencias consistentes y accesibles.</p>
+        <h1 class="u-heading-xlg">Sistema de Diseño</h1>
+        <p class="u-body-lg">Fundamentos, tokens y convenciones que forman la base del sistema de diseño de Trivium.</p>
       </div>
     </header>
 
-    <main class="u-grid u-grid-cols-2 u-gap-1500">
+
+  <main class="u-flex u-flex-column u-items-center">    
+    <!-- Design System Documentation Section -->
+    <section class="u-flex u-flex-column u-section-max-w u-gap-1200 u-py-1000 u-px-600">
+
+      <!-- Tokens Section -->
+      <div class="u-flex u-flex-column u-w-full u-gap-800">
+        <h3 class="u-heading-md">Sistema de Tokens</h3>
+        <p class="u-body-md">Nuestro sistema está organizado en tres capas jerárquicas de tokens CSS:</p>
+        
+        <div class="u-grid u-grid-cols-3 u-gap-600">
+          <!-- Primitive Tokens -->
+          <div class="docCard">
+            <h4 class="u-heading-xsm u-heading-color-default">Tokens Primitivos</h4>
+            <p class="u-body-sm">Valores base sin significado específico. Incluyen:</p>
+            <ul class="u-body-sm">
+              <li><strong>Colores:</strong> Paletas (Oro Viejo, Verde Botella, Taupe)</li>
+              <li><strong>Escala:</strong> Incrementos de 3px (0px → 160px)</li>
+            </ul>
+          </div>
+
+          <!-- Semantic Tokens -->
+          <div class="u-flex u-flex-column u-radius-600 u-gap-400 u-p-800" style="background: var(--color-surface-muted); border-radius: var(--radius-100);">
+            <h4 class="u-heading-xsm u-heading-color-default">Tokens Semánticos</h4>
+            <p class="u-body-sm">Mapeos con propósito funcional:</p>
+            <ul class="u-body-sm">
+              <li><strong>Primary:</strong> Oro Viejo</li>
+              <li><strong>Secondary:</strong> Verde Botella</li>
+              <li><strong>Status:</strong> Success, Destructive, Warning, Info</li>
+            </ul>
+          </div>
+
+          <!-- Component Tokens -->
+          <div class="u-flex u-flex-column u-radius-600 u-gap-400 u-p-800" style="background: var(--color-surface-muted); border-radius: var(--radius-100);">
+            <h4 class="u-heading-xsm u-heading-color-default">Tokens de Componentes</h4>
+            <p class="u-body-sm">Propiedades específicas:</p>
+            <ul class="u-body-sm" style="margin: 0; padding-left: 20px;">
+              <li><strong>Layout:</strong> Padding, Gap, Margin</li>
+              <li><strong>Tipografía:</strong> Tamaños responsive</li>
+              <li><strong>Theme:</strong> Light & Dark</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Typography Section -->
+      <div class="u-flex u-flex-column u-gap-600">
+        <h3 class="u-heading-md">Tipografía</h3>
+        <div class="u-flex u-flex-column u-gap-400">
+          <p class="u-body-md"><strong>Familia:</strong> Manrope</p>
+          <div class="u-grid u-grid-cols-2 u-gap-400">
+            <div style="padding: var(--padding-400); background: var(--color-surface-muted); border-radius: var(--radius-100);">
+              <p class="u-body-sm" style="color: var(--color-text-label-default); margin-bottom: 8px;"><strong>Headings (Móvil)</strong></p>
+              <p style="font-size: var(--font-size-heading-xxlg); margin: 4px 0;">42px XXL</p>
+              <p style="font-size: var(--font-size-heading-lg); margin: 4px 0;">24px LG</p>
+              <p style="font-size: var(--font-size-heading-sm); margin: 4px 0;">18px SM</p>
+            </div>
+            <div style="padding: var(--padding-400); background: var(--color-surface-muted); border-radius: var(--radius-100);">
+              <p class="u-body-sm" style="color: var(--color-text-label-default); margin-bottom: 8px;"><strong>Body (Móvil)</strong></p>
+              <p style="font-size: var(--font-size-body-lg); margin: 4px 0;">21px LG</p>
+              <p style="font-size: var(--font-size-body-md); margin: 4px 0;">18px MD</p>
+              <p style="font-size: var(--font-size-body-xsm); margin: 4px 0;">12px XSM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Color System Section -->
+      <div class="u-flex u-flex-column u-gap-600">
+        <h3 class="u-heading-md">Paleta de Colores</h3>
+        <div class="u-grid u-grid-cols-3 u-gap-600">
+          <div class="u-flex u-flex-column u-gap-300">
+            <p class="u-body-sm" style="color: var(--color-text-label-default);"><strong>Oro Viejo (Primary)</strong></p>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 4px;">
+              <div style="width: 100%; height: 30px; background: var(--color-primary-500); border-radius: 4px; border: 1px solid var(--color-border-default);"></div>
+              <div style="width: 100%; height: 30px; background: var(--color-primary-600); border-radius: 4px; border: 1px solid var(--color-border-default);"></div>
+              <div style="width: 100%; height: 30px; background: var(--color-primary-700); border-radius: 4px; border: 1px solid var(--color-border-default);"></div>
+              <div style="width: 100%; height: 30px; background: var(--color-primary-100); border-radius: 4px; border: 1px solid var(--color-border-default);"></div>
+            </div>
+          </div>
+          <div class="u-flex u-flex-column u-gap-300">
+            <p class="u-body-sm" style="color: var(--color-text-label-default);"><strong>Verde Botella (Secondary)</strong></p>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 4px;">
+              <div style="width: 100%; height: 30px; background: var(--color-secondary-500); border-radius: 4px; border: 1px solid var(--color-border-default);"></div>
+              <div style="width: 100%; height: 30px; background: var(--color-secondary-600); border-radius: 4px; border: 1px solid var(--color-border-default);"></div>
+              <div style="width: 100%; height: 30px; background: var(--color-secondary-700); border-radius: 4px; border: 1px solid var(--color-border-default);"></div>
+              <div style="width: 100%; height: 30px; background: var(--color-secondary-100); border-radius: 4px; border: 1px solid var(--color-border-default);"></div>
+            </div>
+          </div>
+          <div class="u-flex u-flex-column u-gap-300">
+            <p class="u-body-sm" style="color: var(--color-text-label-default);"><strong>Estados</strong></p>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 4px;">
+              <div style="width: 100%; height: 30px; background: var(--color-success-500); border-radius: 4px; border: 1px solid var(--color-border-default);"></div>
+              <div style="width: 100%; height: 30px; background: var(--color-destructive-500); border-radius: 4px; border: 1px solid var(--color-border-default);"></div>
+              <div style="width: 100%; height: 30px; background: var(--color-warning-500); border-radius: 4px; border: 1px solid var(--color-border-default);"></div>
+              <div style="width: 100%; height: 30px; background: var(--color-info-500); border-radius: 4px; border: 1px solid var(--color-border-default);"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Spacing Section -->
+      <div class="u-flex u-flex-column u-gap-600">
+        <h3 class="u-heading-md">Escala de Espaciado</h3>
+        <p class="u-body-md">Sistema basado en incrementos de 3px:</p>
+        <div style="padding: var(--padding-400); background: var(--color-surface-muted); border-radius: var(--radius-100);">
+          <div class="u-grid u-grid-cols-4 u-gap-300">
+            <p class="u-body-sm"><strong>0px</strong> (0)</p>
+            <p class="u-body-sm"><strong>3px</strong> (100)</p>
+            <p class="u-body-sm"><strong>6px</strong> (200)</p>
+            <p class="u-body-sm"><strong>12px</strong> (400)</p>
+            <p class="u-body-sm"><strong>15px</strong> (500)</p>
+            <p class="u-body-sm"><strong>18px</strong> (600)</p>
+            <p class="u-body-sm"><strong>24px</strong> (800)</p>
+            <p class="u-body-sm"><strong>30px</strong> (1000)</p>
+            <p class="u-body-sm"><strong>36px</strong> (1100)</p>
+            <p class="u-body-sm"><strong>42px</strong> (1200)</p>
+            <p class="u-body-sm"><strong>60px</strong> (1500)</p>
+            <p class="u-body-sm"><strong>160px</strong> (3000)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Architecture Section -->
+      <div class="u-flex u-flex-column u-gap-600">
+        <h3 class="u-heading-md">Arquitectura</h3>
+        <div class="u-flex u-flex-column u-gap-400">
+          <div style="padding: var(--padding-400); background: var(--color-surface-muted); border-radius: var(--radius-100);">
+            <p class="u-body-sm"><strong>Estructura de carpetas:</strong></p>
+            <code style="display: block; margin-top: 8px; font-family: monospace; font-size: 12px; color: var(--color-text-body-default);">
+src/styles/<br>
+├── tokens/ → Definición de variables<br>
+├── foundations/ → Reset, base, tipografía<br>
+├── utilities/ → Clases utilitarias<br>
+└── showcase/ → Estilos para documentación
+            </code>
+          </div>
+          <div style="padding: var(--padding-400); background: var(--color-surface-muted); border-radius: var(--radius-100);">
+            <p class="u-body-sm"><strong>6 componentes base:</strong> Button, Input, Textarea, Select, Date, Phone</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="padding-top: var(--padding-800); border-top: 1px solid var(--color-border-default);">
+        <p class="u-body-sm" style="color: var(--color-text-body-secondary);">Esta documentación se nutre continuamente conforme el sistema se robustece.</p>
+      </div>
+    </section>
+
+    <!-- Components Catalog Section -->
       <section class="u-flex u-flex-column u-gap-800 u-p-500">
         <div class="u-flex u-flex-column u-gap-800">
           <h2 class="u-heading-md">Button</h2>
           <p class="u-body-md">Componente de botón con múltiples variantes y estados.</p>
         </div>
-        <a href="/src/components/button/button.showcase.html" class="c-button primary md">Ver Showcase</a>
+        <a href="/src/components/global/button/button.showcase.html" class="c-button primary md">Ver Showcase</a>
       </section>
 
       <section class="u-flex u-flex-column u-gap-800 u-p-500">
@@ -56,7 +203,7 @@
           <h2 class="u-heading-md">Input</h2>
           <p class="u-body-md">Componente de entrada de texto con diferentes estados y validaciones.</p>
         </div>
-        <a href="/src/components/input/input.showcase.html" class="c-button primary md">Ver Showcase</a>
+        <a href="/src/components/global/input/input.showcase.html" class="c-button primary md">Ver Showcase</a>
       </section>
 
       <section class="u-flex u-flex-column u-gap-800 u-p-500">
@@ -64,7 +211,7 @@
           <h2 class="u-heading-md">Textarea</h2>
           <p class="u-body-md">Componente para entrada de texto multilínea con múltiples tamaños.</p>
         </div>
-        <a href="/src/components/textarea/textarea.showcase.html" class="c-button primary md">Ver Showcase</a>
+        <a href="/src/components/global/textarea/textarea.showcase.html" class="c-button primary md">Ver Showcase</a>
       </section>
 
       <section class="u-flex u-flex-column u-gap-800 u-p-500">
@@ -72,7 +219,7 @@
           <h2 class="u-heading-md">Select</h2>
           <p class="u-body-md">Componente dropdown para seleccionar opciones de una lista.</p>
         </div>
-        <a href="/src/components/select/select.showcase.html" class="c-button primary md">Ver Showcase</a>
+        <a href="/src/components/global/select/select.showcase.html" class="c-button primary md">Ver Showcase</a>
       </section>
 
       <section class="u-flex u-flex-column u-gap-800 u-p-500">
@@ -80,7 +227,7 @@
           <h2 class="u-heading-md">Date</h2>
           <p class="u-body-md">Componente para seleccionar fechas con calendario interactivo.</p>
         </div>
-        <a href="/src/components/date/date.showcase.html" class="c-button primary md">Ver Showcase</a>
+        <a href="/src/components/global/date/date.showcase.html" class="c-button primary md">Ver Showcase</a>
       </section>
 
       <section class="u-flex u-flex-column u-gap-800 u-p-500">
@@ -88,10 +235,10 @@
           <h2 class="u-heading-md">Phone</h2>
           <p class="u-body-md">Componente de teléfono con selector de código de país.</p>
         </div>
-        <a href="/src/components/phone/phone.showcase.html" class="c-button primary md">Ver Showcase</a>
+        <a href="/src/components/global/phone/phone.showcase.html" class="c-button primary md">Ver Showcase</a>
       </section>
-    </main>
   </div>
+  </main>
 </body>
 
 </html>

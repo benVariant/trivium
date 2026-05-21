@@ -10,10 +10,14 @@
   background-color: var(--color-surface-default);
   font-family: "Manrope", sans-serif;
   font-size: var(--font-size-body-md);
-  color: var(--color-text-body-default);
+  color: var(--color-text-body-secondary);
   transition: all 0.2s ease;
   cursor: pointer;
   color-scheme: dark;
+}
+
+.c-date:valid{
+  color: var(--color-text-body-default);
 }
 
 /* Default icon styles */
