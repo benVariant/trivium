@@ -5,7 +5,7 @@ import ButtonShowcase from '@/views/ButtonShowcase.vue'
 
 const routes = [
   { path: '/', component: Index },
-  { path: '/button', component: ButtonShowcase },
+  { path: '/button-showcase', component: ButtonShowcase },
 ]
 
 export default createRouter({
