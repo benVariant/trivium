@@ -5,7 +5,6 @@
                 <h3 class="text-eyebrow">Prólogo</h3>
                 <ul class="list-none">
                     <li><RouterLink to="/#introduccion" class="text-xs">Introducción</RouterLink></li>
-                    <li><RouterLink to="/#estructura" class="text-xs">Estructura del Proyecto</RouterLink></li>
                     <li><RouterLink to="/tokens" class="text-xs">Tokens</RouterLink></li>
                 </ul>
             </div>
