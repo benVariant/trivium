@@ -1,5 +1,5 @@
 <template>
-    <aside class="hidden lg:block w-64 shrink-0 px-6 py-8 border border-[var(--color-border-secondary)] rounded-lg bg-[var(--color-surface-default-deep)]">
+    <aside class="hidden lg:block w-64 shrink-0 px-6 py-8 border border-[var(--color-border-secondary)] rounded-lg bg-[var(--color-surface-default-deep)] sticky top-6 self-start h-fit">
         <nav class="flex flex-col gap-4">
             <div class="flex flex-col gap-4">
                 <h3 class="eyebrow">Prólogo</h3>

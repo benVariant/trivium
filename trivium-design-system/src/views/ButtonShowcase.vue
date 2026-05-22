@@ -2,18 +2,19 @@
 import Header from '@/components/showcase/Header.vue'
 import Aside from '@/components/showcase/Aside.vue'
 import Button from '@/components/global/Button.vue'
+import { PhPlusCircle } from "@phosphor-icons/vue";
+
 </script>
 
 <template>
-    <body>
         <Header />
 
         <main class="flex flex-col items-center py-12">
-            <div class="flex flex-row gap-12 max-w-5xl w-full mx-auto py-12">
+            <div class="flex flex-row gap-12 max-w-5xl w-full mx-auto py-12 items-start">
                 
                 <Aside />
                 
-                <main class="flex flex-col gap-12 w-full">
+                <section class="flex flex-col gap-16 w-full">
                     
                     <section class="flex flex-col gap-8">
 
@@ -24,18 +25,66 @@ import Button from '@/components/global/Button.vue'
 
                         <div class="flex flex-col border border-[var(--color-border-secondary)] h-96 rounded-lg items-center justify-center gap-4">
                             
-                            <Button size="md" variant="primary">Botón Mediano</Button>
+                            <Button size="md" variant="primary">Button</Button>
 
+                        </div>
+
+                        <div class="flex flex-col gap-4">
+                            <h2 class="text-2xl">Variantes</h2>
+                            <p>Los botones vienen en cuatro variantes: primary, primaryOutline, neutral y neutralOutline.</p>
+                        </div>
+
+                        <div class="flex flex-row border border-[var(--color-border-secondary)] h-96 rounded-lg items-center justify-center gap-4">
+                            
+                            <Button size="lg" variant="primary">Button</Button>
+                            <Button size="lg" variant="primaryOutline">Button</Button>
+                            <Button size="lg" variant="neutral">Button</Button>
+                            <Button size="lg" variant="neutralOutline">Button</Button>
+
+
+                        </div>
+
+
+                        <div class="flex flex-col gap-4">
+                            <h2 class="text-2xl">Tamaños</h2>
+                            <p>Los botones vienen en tres tamaños: lg, md y sm.</p>
+                        </div>
+
+                        <div class="flex flex-row border border-[var(--color-border-secondary)] h-96 rounded-lg items-center justify-center gap-4">
+                            
+                            <Button size="lg" variant="primary">Button</Button>
+                            <Button size="md" variant="primaryOutline">Button</Button>
+                            <Button size="sm" variant="neutralOutline">Button</Button>
 
                         </div>
 
                     </section>
 
+                        <div class="flex flex-col gap-4">
+                            <h2 class="text-2xl">Estados</h2>
+                            <p>Los botones pueden estar en diferentes estados: normal(con hover) y disabled.</p>
+                        </div>
 
-                </main>
+                        <div class="flex flex-row border border-[var(--color-border-secondary)] h-96 rounded-lg items-center justify-center gap-4">
+                            
+                            <Button size="lg" variant="primary">Button</Button>
+                            <Button size="lg" variant="primary" disabled>Button</Button>
+                        </div>
+
+
+                        <div class="flex flex-col gap-4">
+                            <h2 class="text-2xl">Variante con iconos</h2>
+                            <p>Los botones pueden contener iconos al inicio o al final.</p>
+                        </div>
+
+                        <div class="flex flex-row border border-[var(--color-border-secondary)] h-96 rounded-lg items-center justify-center gap-4">
+                            <Button size="lg" variant="primary" :icon="PhPlusCircle">Button</Button>
+                            <Button size="lg" variant="primary" :icon="PhPlusCircle" iconPosition="right">Button</Button>
+                        </div>
+
+                </section>
 
             </div>
         </main>
-
-    </body> 
+ 
 </template>
