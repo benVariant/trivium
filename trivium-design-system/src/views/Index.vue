@@ -10,30 +10,31 @@ import Aside from '@/components/showcase/Aside.vue'
 
         <main class="flex flex-col items-center py-12">
 
-            <div class="flex flex-row gap-12 max-w-5xl w-full mx-auto py-12">
+            <div class="flex flex-row gap-12 max-w-5xl w-full mx-auto py-12 items-start">
 
                 <Aside />
                       
-            <main class="flex flex-col gap-16 w-full">
+                <section class="flex flex-col gap-12 w-full px-6 md:px-6">
 
-                <section id="introduccion" class="flex flex-col gap-4">
-                    <h2 class="text-4xl">Introducción</h2>
-                    <p>Bienvenido al sistema de diseño de <strong>Trivium</strong>. Este documento sirve como la única fuente de verdad para diseñadores y desarrolladores, asegurando que el producto mantenga coherencia visual y de comportamiento.</p>
-                </section>
+                    <section id="introduccion" class="flex flex-col gap-4">
+                        <h2 class="text-4xl">Introducción</h2>
+                        <p>Bienvenido al sistema de diseño de <strong>Trivium</strong>. Este documento sirve como la única fuente de verdad para diseñadores y desarrolladores, asegurando que el producto mantenga coherencia visual y de comportamiento.</p>
+                    </section>
 
 
 
-                <section id="estructura" class="flex flex-col gap-12">
-                    <div class="flex flex-col gap-4">
-                        <h2 class="text-2xl">Estructura del Proyecto</h2>
-                        <p>Trivium es un sistema de diseño modular construido con <strong>Vue 3 + TypeScript</strong>, que combina <strong>Tailwind CSS</strong> para la construcción de layouts con un <strong>sistema de tokens propio</strong> para las decisiones de diseño. Esta combinación permite escalabilidad, consistencia y reutilización en todos los productos de Trivium.</p>
-                    </div>
+                    <section id="estructura" class="flex flex-col gap-12">
+                        
+                        <div class="flex flex-col gap-4">
+                            <h2 class="text-2xl">Estructura del Proyecto</h2>
+                            <p>Trivium es un sistema de diseño modular construido con <strong>Vue 3 + TypeScript</strong>, que combina <strong>Tailwind CSS</strong> para la construcción de layouts con un <strong>sistema de tokens propio</strong> para las decisiones de diseño. Esta combinación permite escalabilidad, consistencia y reutilización en todos los productos de Trivium.</p>
+                        </div>
 
                     <div class="flex flex-col gap-4">
                         <h3 class="text-xl">Arquitectura Tecnológica</h3>
                         <ul>
-                            <li><strong>Tailwind CSS:</strong> Utilizado para construir layouts y estructuras de componentes de forma rápida y eficiente.</li>
-                            <li><strong>Sistema de Tokens:</strong> Define todas las decisiones de diseño del producto, enfocado principalmente en la paleta de colores y valores de tipografía que aseguran coherencia visual.</li>
+                            <li><strong>• Tailwind CSS:</strong> Utilizado para construir layouts y estructuras de componentes de forma rápida y eficiente.</li>
+                            <li><strong>• Sistema de Tokens:</strong> Define todas las decisiones de diseño del producto, enfocado principalmente en la paleta de colores y valores de tipografía que aseguran coherencia visual.</li>
                         </ul>
                     </div>
 
@@ -68,7 +69,7 @@ import Aside from '@/components/showcase/Aside.vue'
 
 
 
-            </main>
+            </section>
     </div>
 
     <footer>

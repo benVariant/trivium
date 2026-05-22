@@ -82,3 +82,62 @@ hr {
   border-top: 1px solid var(--color-border-secondary);
   margin: 2rem 0;
 }
+
+/* =========================================================
+   CODE ELEMENT
+    Simple inline code styling
+========================================================= */
+
+code {
+  background: var(--color-surface-muted);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+  color: var(--color-text-body-default);
+}
+
+/* =========================================================
+   LISTS
+    Basic styling for unordered and ordered lists
+========================================================= */
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+ol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* =========================================================
+   TABLES
+    Simple table styling for data display
+========================================================= */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid var(--color-border-secondary);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background: var(--color-surface-default);
+  font-size: var(--font-size-body-xsm);
+  font-weight: 600;
+  color: var(--color-text-body-default);
+}
+
+td {
+  font-size: var(--font-size-body-sm);
+  color: var(--color-text-body-secondary);
+}

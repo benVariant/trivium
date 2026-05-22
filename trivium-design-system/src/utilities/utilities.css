@@ -1,7 +1,9 @@
-.eyebrow {
+.text-eyebrow {
     font-family: "Manrope", sans-serif;
     font-weight: 600;
     font-size: var(--font-size-body-xsm);
     line-height: 1.5;
     color: var(--color-text-eyebrow-default);
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }

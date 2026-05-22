@@ -10,31 +10,30 @@ import { PhPlusCircle } from "@phosphor-icons/vue";
         <Header />
 
         <main class="flex flex-col items-center py-12">
+
             <div class="flex flex-row gap-12 max-w-5xl w-full mx-auto py-12 items-start">
                 
                 <Aside />
                 
-                <section class="flex flex-col gap-16 w-full">
+                <section class="flex flex-col gap-12 w-full px-6 md:px-6">
                     
-                    <section class="flex flex-col gap-8">
-
                         <div class="flex flex-col gap-4">
                             <h1 class="text-4xl">Botones</h1>
                             <p class="text-lg">Muestra un botón o un componente que se parece a un botón.</p>
                         </div>
 
-                        <div class="flex flex-col border border-[var(--color-border-secondary)] h-96 rounded-lg items-center justify-center gap-4">
+                        <div class="flex flex-col bg-[var(--color-surface-default)]  border border-[var(--color-border-secondary)] h-96 rounded-lg items-center justify-center gap-4">
                             
                             <Button size="md" variant="primary">Button</Button>
 
                         </div>
 
                         <div class="flex flex-col gap-4">
-                            <h2 class="text-2xl">Variantes</h2>
+                            <h2 class="text-2xl text-[var(--color-text-heading-secondary)]">Variantes</h2>
                             <p>Los botones vienen en cuatro variantes: primary, primaryOutline, neutral y neutralOutline.</p>
                         </div>
 
-                        <div class="flex flex-row border border-[var(--color-border-secondary)] h-96 rounded-lg items-center justify-center gap-4">
+                        <div class="flex flex-row flex-wrap bg-[var(--color-surface-default)] border border-[var(--color-border-secondary)] h-96 rounded-lg items-center justify-center gap-4">
                             
                             <Button size="lg" variant="primary">Button</Button>
                             <Button size="lg" variant="primaryOutline">Button</Button>
@@ -50,7 +49,7 @@ import { PhPlusCircle } from "@phosphor-icons/vue";
                             <p>Los botones vienen en tres tamaños: lg, md y sm.</p>
                         </div>
 
-                        <div class="flex flex-row border border-[var(--color-border-secondary)] h-96 rounded-lg items-center justify-center gap-4">
+                        <div class="flex flex-row bg-[var(--color-surface-default)] border border-[var(--color-border-secondary)] h-96 rounded-lg items-center justify-center gap-4">
                             
                             <Button size="lg" variant="primary">Button</Button>
                             <Button size="md" variant="primaryOutline">Button</Button>
@@ -58,14 +57,14 @@ import { PhPlusCircle } from "@phosphor-icons/vue";
 
                         </div>
 
-                    </section>
+                    
 
                         <div class="flex flex-col gap-4">
                             <h2 class="text-2xl">Estados</h2>
                             <p>Los botones pueden estar en diferentes estados: normal(con hover) y disabled.</p>
                         </div>
 
-                        <div class="flex flex-row border border-[var(--color-border-secondary)] h-96 rounded-lg items-center justify-center gap-4">
+                        <div class="flex flex-row bg-[var(--color-surface-default)] border border-[var(--color-border-secondary)] h-96 rounded-lg items-center justify-center gap-4">
                             
                             <Button size="lg" variant="primary">Button</Button>
                             <Button size="lg" variant="primary" disabled>Button</Button>
@@ -77,7 +76,7 @@ import { PhPlusCircle } from "@phosphor-icons/vue";
                             <p>Los botones pueden contener iconos al inicio o al final.</p>
                         </div>
 
-                        <div class="flex flex-row border border-[var(--color-border-secondary)] h-96 rounded-lg items-center justify-center gap-4">
+                        <div class="flex flex-row bg-[var(--color-surface-default)] border border-[var(--color-border-secondary)] h-96 rounded-lg items-center justify-center gap-4">
                             <Button size="lg" variant="primary" :icon="PhPlusCircle">Button</Button>
                             <Button size="lg" variant="primary" :icon="PhPlusCircle" iconPosition="right">Button</Button>
                         </div>

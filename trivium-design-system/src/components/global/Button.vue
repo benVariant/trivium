@@ -57,7 +57,7 @@ const variantClasses = {
         items-center
         justify-center
 
-        gap-2x
+        gap-2
 
         font-bold
 
@@ -66,8 +66,8 @@ const variantClasses = {
 
         focus:outline-none
         focus:ring-2
-        focus:ring-(var(--color-border-action))
-        focus:ring-offset-2
+        focus:ring-[var(--color-border-action)]
+        focus:ring-offset-0
 
         disabled:pointer-events-none
         disabled:cursor-not-allowed
