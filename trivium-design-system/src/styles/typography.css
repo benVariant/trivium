@@ -1,0 +1,56 @@
+/* =========================================================
+   TYPOGRAPHY
+   Headings, paragraphs, and text element defaults
+========================================================= */
+
+/* =========================================================
+   HEADINGS
+   All heading elements with serif font family
+========================================================= */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "latienne-pro", serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2;
+    color: var(--color-text-heading-default);
+}
+
+/* =========================================================
+   PARAGRAPHS
+   Body text with sans-serif font family
+========================================================= */
+
+p  {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+    color: var(--color-text-body-secondary);
+}
+
+
+/* =========================================================
+   STRONG TEXT
+   Bold and strong emphasis
+========================================================= */
+
+b, strong {
+    font-weight: 700;
+    color: var(--color-text-body-default);
+}
+
+ul,
+ol {
+  font-family: 'Manrope', sans-serif;
+  color: var(--color-text-body-secondary);
+
+}  
+
+label   {
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-size: var(--font-size-body-sm);
+    line-height: 1.5;
+    color: var(--color-label-default);
+}
