@@ -1,6 +1,7 @@
 <script setup>
 import Header from '@/components/showcase/Header.vue'
 import Aside from '@/components/showcase/Aside.vue'
+import Input from '@/components/global/Input.vue'
 import { PhPlusCircle } from "@phosphor-icons/vue";
 
 </script>
@@ -25,9 +26,11 @@ import { PhPlusCircle } from "@phosphor-icons/vue";
 
                     </section>
 
-
-
-
+                    <div class="flex flex-col bg-[var(--color-surface-default)]  border border-[var(--color-border-secondary)] h-96 rounded-lg items-center justify-center gap-4">
+                                            
+                        <Input label="Label"></Input>
+                
+                    </div>
 
                 </div>
 
