@@ -98,7 +98,7 @@ function toggleMenu() {
             
             <div class="flex-col text-end hidden md:flex">
 
-                <h1 class="text-xsm">Trivium Design System</h1>
+                <span class="text-heading text-xsm">Trivium Design System</span>
                 <p class="text-xs">Versión 1.0.0 — Guía oficial de estilos y componentes de la marca.</p>
             
             </div> 

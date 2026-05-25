@@ -7,3 +7,11 @@
     text-decoration: underline;
     text-underline-offset: 4px;
 }
+
+.text-heading {
+    font-family: "latienne-pro", serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2;
+    color: var(--color-text-heading-default);
+}

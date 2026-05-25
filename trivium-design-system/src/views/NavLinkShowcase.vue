@@ -21,7 +21,7 @@ import NavLink from '@/components/global/NavLink.vue'
 
                             <div class="container-text"> 
 
-                                <h1 class="text-4xl">Nav link</h1>
+                                <h1>Nav link</h1>
                                 <p class="text-lg">Enlace de navegación</p>
                             
                             </div>   
@@ -38,7 +38,7 @@ import NavLink from '@/components/global/NavLink.vue'
 
                             <div class="container-text"> 
 
-                                <h1 class="text-3xl">Varaintes</h1>
+                                <h2>Variantes</h2>
                                 <p class="text-lg">Existen 3 variantes: primary, neutral y neutralSecondary</p>
                             
                             </div>   

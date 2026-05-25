@@ -21,7 +21,7 @@ import { PhPlusCircle } from "@phosphor-icons/vue";
 
                             <div class="container-text"> 
 
-                                <h1 class="text-4xl">Botones</h1>
+                                <h1>Botones</h1>
                                 <p class="text-lg">Muestra un botón o un componente que se parece a un botón.</p>
                             
                             </div>   
@@ -39,7 +39,7 @@ import { PhPlusCircle } from "@phosphor-icons/vue";
                          
                             <div class="container-text">
 
-                                <h2 class="text-3xl text-[var(--color-text-heading-secondary)]">Variantes</h2>
+                                <h2>Variantes</h2>
                                 <p>Los botones vienen en cuatro variantes: primary, primaryOutline, neutral y neutralOutline.</p>
                             
                             </div>
@@ -59,7 +59,7 @@ import { PhPlusCircle } from "@phosphor-icons/vue";
 
                             <div class="container-text">
 
-                                <h2 class="text-3xl">Tamaños</h2>
+                                <h2>Tamaños</h2>
                                 <p>Los botones vienen en tres tamaños: lg, md y sm.</p>
 
                             </div>
@@ -78,7 +78,7 @@ import { PhPlusCircle } from "@phosphor-icons/vue";
 
                             <div class="container-text">
 
-                                <h2 class="text-3xl">Estados</h2>
+                                <h2>Estados</h2>
                                 <p>Los botones pueden estar en diferentes estados: normal(con hover) y disabled.</p>
                             
                             </div>
@@ -96,7 +96,7 @@ import { PhPlusCircle } from "@phosphor-icons/vue";
                          <section class="container-col-md">
 
                             <div class="container-text">
-                                <h2 class="text-3xl">Variante con iconos</h2>
+                                <h2>Variante con iconos</h2>
                                 <p>Los botones pueden contener iconos al inicio o al final.</p>
                             </div>
 
