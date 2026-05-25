@@ -1,9 +1,3 @@
-/* GLOBAL STYLESHEET
-   This file serves as the main entry point for all global styles, including tokens, foundations, and component styles.
-   It is structured to maintain a clear separation of concerns and ensure scalability as the project grows. */
-
-
-
 /* =========================================================
    PRIMITIVE TOKENS
    Base foundation colors
@@ -25,20 +19,29 @@
 @import "./tokens/component/layout/_font.css";
 
 /* =========================================================
-   FOUNDATIONS
-   Reset, base styles, and typography
+   GLOBAL STYLES
+   Reset, base styles, typography, and utilities
 ========================================================= */
 @import "./styles/reset.css";
 @import "./styles/base.css";
 @import "./styles/typography.css";
-
-/* =========================================================
-   UTILITIES
-   Utility classes for common patterns and text styles
-========================================================= */
-@import "./utilities/utilities.css";
+@import "./styles/utilities.css";
 
 /* =========================================================
    Tailwind
 ========================================================= */
 @import "tailwindcss";
+
+
+/* GLOBAL LAYOUTS 
+   Styles for layout components and page structures */
+   
+@import "./layouts/global/layouts.css";
+
+
+/* =========================================================
+   SHOWCASE LAYOUTS
+   Styles for layout components and page structures
+========================================================= */
+
+@import "./layouts/showcase/layouts.css";

@@ -236,6 +236,10 @@
   --color-border-secondary-on-alt: var(--color-neutral-700);
   --color-border-secondary-on-alt-hover: var(--color-neutral-800);
 
+  /* Tertiary borders */
+   --color-border-tertiary: var(--color-neutral-600);
+   --color-border-tertiary-hover: var(--color-neutral-700);
+
   /* Semantic borders */
   --color-border-action: var(--color-primary-500);
   --color-border-action-hover: var(--color-primary-600);

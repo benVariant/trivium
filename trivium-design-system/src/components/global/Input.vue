@@ -21,6 +21,16 @@ const props = defineProps({
     default: ''
   },
 
+    placeholderText: {
+    type: String,
+    default: 'Placeholder'
+  },
+
+  showPlaceholder: {
+    type: Boolean,
+    default: true
+  },
+
   icon: {
     type: [Object, Function],
     default: null
@@ -45,7 +55,7 @@ const sizeClasses = {
 }
 
 const variantClasses = {
-  default: `input-default`,
+
 }
 
 </script>
@@ -53,14 +63,13 @@ const variantClasses = {
 
 <template>
 
-    <div class="flex flex-col gap-2 w-full">
+    <div class="flex flex-col gap-2">
 
         <label
             v-if="label"
             :class="[
             `
             text-sm
-            font-bold
             `
         ]"
         >
@@ -70,12 +79,16 @@ const variantClasses = {
         <div class=" flex flex-row gap-2">
 
             <input
+                :placeholder="showPlaceholder ? placeholderText : ''" v-bind="$attrs"
                 :disabled="disabled"
                 :class="[
                     `
                     inline-flex
+                    w-full
+                    
+                    px-4
 
-                    rounded-lg
+                    rounded-sm
                     border
                     border-[var(--color-border-secondary)]
                     bg-[var(--color-surface-default)]
@@ -83,16 +96,16 @@ const variantClasses = {
                     text-[var(--color-text-body-default)]
                     
                     focus:outline-none
-                    focus:ring-2
+                    focus:ring-0
                     focus:ring-[var(--color-primary-default)]
-                    focus:ring-offset-2
+                    focus:ring-offset-0
                     focus:ring-offset-[var(--color-surface-default)]
 
                     disabled:cursor-not-allowed
                     disabled:bg-[var(--color-surface-default-disabled)]
                     disabled:border-[var(--color-border-secondary-disabled)]
                     disabled:text-[var(--color-text-body-disabled)]
-                    
+
                 `,
                 sizeClasses[size],
                 variantClasses[variant]
@@ -124,8 +137,25 @@ const variantClasses = {
 
 <style scoped>
 
-.input-default {
-    padding: 0.5rem 0.75rem;
+/* State variants */
+input:hover {
+    transition: border-color 0.2s, background-color 0.2s;
+    border-color: var(--color-border-default-hover);
+    background-color: var(--color-surface-default-hover);
 }
+
+input:disabled {
+    cursor: not-allowed;
+    background-color: var(--color-surface-default-disabled);
+    border-color: var(--color-border-secondary-disabled);
+    color: var(--color-text-body-disabled);
+}
+
+
+/* Size variants */
+.input-md {
+    height: 60px;
+}
+
 
 </style>

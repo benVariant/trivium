@@ -9,28 +9,48 @@ import { PhPlusCircle } from "@phosphor-icons/vue";
 <template>
         <Header />
 
-        <main class="flex flex-col items-center py-12">
+        <main class="flex flex-col items-center py-4 md:py-12">
             
-            <div class="flex flex-row gap-12 max-w-5xl w-full mx-auto py-12 items-start">
+            <div class="container-row-lg max-w-5xl w-full mx-auto py-12 items-start">
                 
                 <Aside />
 
-                <div class="flex flex-col gap-12 w-full px-6 md:px-6">
+                <div class="container-col-lg w-full px-6 md:px-6 lg:px-0">
                     
-                   <section id="intro" class="flex flex-col gap-8">
+                   <section id="intro" class="container-col-md">
 
-                        <div class="flex flex-col gap-4">
+                        <div class="container-text">
                             <h1 class="text-4xl">Input</h1>
                             <p class="text-lg">Muestra un input de texto.</p>
                         </div>
 
+                   
+                        <div class="container-case-col">
+                            
+                            <Input class="fit-content" label="Label" ></Input>
+                    
+                        </div>
+                    
                     </section>
 
-                    <div class="flex flex-col bg-[var(--color-surface-default)]  border border-[var(--color-border-secondary)] h-96 rounded-lg items-center justify-center gap-4">
-                                            
-                        <Input label="Label"></Input>
-                
-                    </div>
+
+                    <section id="variants" class="container-col-md">
+                        
+                        <div class="container-text">
+                            
+                            <h2 class="text-2xl text-[var(--color-text-heading-secondary)]">Estados</h2>
+                            <p>Los inputs pueden estar en diferentes estados: normal(con hover) y disabled.</p>
+                        
+                        </div>
+
+                        <div class="container-case-row">
+                            
+                            <Input label="Label"></Input>
+                            <Input label="Label" placeholder="Disabled" disabled></Input>
+
+                        </div>
+                   
+                    </section>    
 
                 </div>
 

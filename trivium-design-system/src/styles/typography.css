@@ -49,7 +49,7 @@ ol {
 
 label   {
     font-family: "Manrope", sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-size: var(--font-size-body-sm);
     line-height: 1.5;
     color: var(--color-label-default);

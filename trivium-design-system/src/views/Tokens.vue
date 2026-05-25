@@ -7,26 +7,26 @@ import Aside from '@/components/showcase/Aside.vue'
 <template>
         <Header />
 
-        <main class="flex flex-col items-center py-12">
+        <main class="flex flex-col items-center py-4 md:py-12">
 
-            <div class="flex flex-row gap-12 max-w-5xl w-full mx-auto py-12 items-start">
+            <div class="container-row-lg max-w-5xl w-full mx-auto py-12 items-start">
                 
                 <Aside />
                 
-                <div class="flex flex-col gap-12 w-full px-6 md:px-6">
+                <div class="container-col-lg w-full px-6 md:px-6 lg:px-0">
                     
-                    <section id="tokens-intro" class="flex flex-col gap-8">
+                    <section id="tokens-intro" class="container-col-md">
 
-                        <div class="flex flex-col gap-4">
+                        <div class="container-text">
                             <h1 class="text-4xl">Documentación de Design Tokens</h1>
                             <p class="text-lg">Esta sección documenta el modelo de abstracción y el catálogo completo de Design Tokens de Trivium.</p>
                         </div>
 
                     </section>
 
-                    <section id="tokens-architecture" class="flex flex-col gap-8">
+                    <section id="tokens-architecture" class="container-col-md">
                         
-                            <div class="flex flex-col gap-4">
+                            <div class="container-text">
                                 <h2 class="text-2xl">1. Arquitectura de Tokens</h2>
                                 <p>Para mantener un balance óptimo entre flexibilidad y consistencia, la arquitectura de Trivium se divide en tres niveles. Como desarrollador, interactuarás casi exclusivamente con el nivel de componentes (Component Tokens).</p>
                             </div>
@@ -51,60 +51,64 @@ import Aside from '@/components/showcase/Aside.vue'
                             
                     </section>    
                     
-                    <section id="tokens-page" class="flex flex-col gap-8">
+                    <section id="tokens-page" class="container-col-lg">
 
                             <h2 class="text-2xl">2. Catálogo de Component Tokens</h2>
 
-                            <div class="flex flex-col gap-4">
-                                <h3 class="text-eyebrow">Page & Overlay</h3>
-                                <p>Diseñados para los fondos generales de la aplicación, layouts principales y capas de superposición.</p>
+                            <div class="container-col-md">
+                                
+                                <div class="container-text">
+                                    <h3 class="text-xl">Page & Overlay</h3>
+                                    <p>Diseñados para los fondos generales de la aplicación, layouts principales y capas de superposición.</p>
+                                </div>
+                                
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Token</th>
+                                            <th>Valor Semántico de Referencia</th>
+                                            <th>Descripción / Caso de Uso</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>--color-page-default</code></td>
+                                            <td><code>var(--color-foundation-black)</code></td>
+                                            <td>Fondo base predeterminado de la aplicación (Modo Oscuro principal).</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>--color-page-alt</code></td>
+                                            <td><code>var(--color-foundation-white)</code></td>
+                                            <td>Fondo alternativo (Modo Claro) para romper secciones.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>--color-page-muted</code></td>
+                                            <td><code>var(--color-neutral-700)</code></td>
+                                            <td>Fondo suavizado para layouts secundarios o paneles laterales.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>--color-page-default-deep</code></td>
+                                            <td><code>var(--color-foundation-ultrablack)</code></td>
+                                            <td>Fondo ultra oscuro para contrastes máximos en el layout.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>--color-overlay</code></td>
+                                            <td><code>color-mix(...) 80% negro</code></td>
+                                            <td>Fondo para modales, <em>drawers</em> o efectos de <em>backdrop</em>.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
                             </div>
-                            
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Token</th>
-                                        <th>Valor Semántico de Referencia</th>
-                                        <th>Descripción / Caso de Uso</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><code>--color-page-default</code></td>
-                                        <td><code>var(--color-foundation-black)</code></td>
-                                        <td>Fondo base predeterminado de la aplicación (Modo Oscuro principal).</td>
-                                    </tr>
-                                    <tr>
-                                        <td><code>--color-page-alt</code></td>
-                                        <td><code>var(--color-foundation-white)</code></td>
-                                        <td>Fondo alternativo (Modo Claro) para romper secciones.</td>
-                                    </tr>
-                                    <tr>
-                                        <td><code>--color-page-muted</code></td>
-                                        <td><code>var(--color-neutral-700)</code></td>
-                                        <td>Fondo suavizado para layouts secundarios o paneles laterales.</td>
-                                    </tr>
-                                    <tr>
-                                        <td><code>--color-page-default-deep</code></td>
-                                        <td><code>var(--color-foundation-ultrablack)</code></td>
-                                        <td>Fondo ultra oscuro para contrastes máximos en el layout.</td>
-                                    </tr>
-                                    <tr>
-                                        <td><code>--color-overlay</code></td>
-                                        <td><code>color-mix(...) 80% negro</code></td>
-                                        <td>Fondo para modales, <em>drawers</em> o efectos de <em>backdrop</em>.</td>
-                                    </tr>
-                                </tbody>
-                            </table>
 
                     </section>
 
 
 
-                    <section id="tokens-surface" class="flex flex-col gap-8">
+                    <section id="tokens-surface" class="container-col-md">
 
-                        <div class="flex flex-col gap-4">
-                            <h3 class="text-eyebrow">Surface</h3>
+                        <div class="container-text">
+                            <h3 class="text-xl">Surface</h3>
                             <p>Aplicables a las superficies contenedoras de componentes como tarjetas (<em>cards</em>), modales, botones, alertas y menús. Incluyen sus respectivos estados de interacción (<code>-hover</code>).</p>
                         </div>
 
@@ -167,14 +171,14 @@ import Aside from '@/components/showcase/Aside.vue'
                     </section>
 
 
-                    <section id="tokens-text" class="flex flex-col gap-8">
+                    <section id="tokens-text" class="container-col-md">
 
-                        <div class="flex flex-col gap-4">
-                            <h3 class="text-eyebrow">Text & Typography</h3>
+                        <div class="container-text">
+                            <h3>Text & Typography</h3>
                             <p>Garantizan el contraste del texto según la jerarquía y la superficie sobre la que se renderizan. Los tokens con el sufijo <code>-on-alt</code> se deben utilizar exclusivamente cuando el texto viva sobre fondos claros/alternativos (<code>--color-page-alt</code> o <code>--color-surface-alt</code>).</p>
                         </div>
 
-                        <div class="flex flex-col gap-4">
+                        <div class="container-text">
                             <h4 class="text-eyebrow">Eyebrow (Textos auxiliares y etiquetas superiores)</h4>
                             <ul>
                                 <li><code>--color-text-eyebrow-default</code>: Texto auxiliar en superficies oscuras estándar.</li>
@@ -254,10 +258,10 @@ import Aside from '@/components/showcase/Aside.vue'
                     </section>
 
 
-                    <section id="tokens-labels" class="flex flex-col gap-8">
+                    <section id="tokens-labels" class="container-col-md">
 
-                        <div class="flex flex-col gap-4">
-                            <h3 class="text-eyebrow">Labels & Tags</h3>
+                        <div class="container-text">
+                            <h3 class="text-xl">Labels & Tags</h3>
                             <p>Tokens específicos para el contenido de componentes tipo <em>Badges</em>, <em>Tags</em>, <em>Chips</em> o textos internos de botones interactivos.</p>
                         </div>
 
@@ -307,10 +311,10 @@ import Aside from '@/components/showcase/Aside.vue'
                     
                     </section>
 
-                    <section id="tokens-icons" class="flex flex-col gap-8">
+                    <section id="tokens-icons" class="container-col-md">
 
-                        <div class="flex flex-col gap-4">
-                            <h3 class="text-eyebrow">Icons</h3>
+                        <div class="container-text">
+                            <h3 class="text-xl">Icons</h3>
                             <p>Mapeo de color exclusivo para vectores SVG e iconografía de la aplicación.</p>
                         </div>
 
@@ -328,8 +332,8 @@ import Aside from '@/components/showcase/Aside.vue'
 
                     <section id="tokens-borders" class="flex flex-col gap-8">
 
-                        <div class="flex flex-col gap-4">
-                            <h3 class="text-eyebrow">Borders & Strokes</h3>
+                        <div class="container-text">
+                            <h3 class="text-xl">Borders & Strokes</h3>
                             <p>Líneas de contorno para inputs, divisores estructurales (<code>&lt;hr&gt;</code>), tablas y bordes de componentes interactivos.</p>
                         </div>
 
