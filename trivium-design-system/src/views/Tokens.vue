@@ -27,7 +27,7 @@ import Aside from '@/components/showcase/Aside.vue'
                     <section id="tokens-architecture" class="container-col-md">
                         
                             <div class="container-text">
-                                <h2 class="text-2xl">1. Arquitectura de Tokens</h2>
+                                <h2 class="text-3xl">1. Arquitectura de Tokens</h2>
                                 <p>Para mantener un balance óptimo entre flexibilidad y consistencia, la arquitectura de Trivium se divide en tres niveles. Como desarrollador, interactuarás casi exclusivamente con el nivel de componentes (Component Tokens).</p>
                             </div>
 
@@ -53,12 +53,12 @@ import Aside from '@/components/showcase/Aside.vue'
                     
                     <section id="tokens-page" class="container-col-lg">
 
-                            <h2 class="text-2xl">2. Catálogo de Component Tokens</h2>
+                            <h2 class="text-3xl">2. Catálogo de Component Tokens</h2>
 
                             <div class="container-col-md">
                                 
                                 <div class="container-text">
-                                    <h3 class="text-xl">Page & Overlay</h3>
+                                    <h3 class="text-2xl">Page & Overlay</h3>
                                     <p>Diseñados para los fondos generales de la aplicación, layouts principales y capas de superposición.</p>
                                 </div>
                                 
@@ -108,7 +108,7 @@ import Aside from '@/components/showcase/Aside.vue'
                     <section id="tokens-surface" class="container-col-md">
 
                         <div class="container-text">
-                            <h3 class="text-xl">Surface</h3>
+                            <h3 class="text-2xl">Surface</h3>
                             <p>Aplicables a las superficies contenedoras de componentes como tarjetas (<em>cards</em>), modales, botones, alertas y menús. Incluyen sus respectivos estados de interacción (<code>-hover</code>).</p>
                         </div>
 
@@ -174,7 +174,7 @@ import Aside from '@/components/showcase/Aside.vue'
                     <section id="tokens-text" class="container-col-md">
 
                         <div class="container-text">
-                            <h3>Text & Typography</h3>
+                            <h3 class="text-2xl">Text & Typography</h3>
                             <p>Garantizan el contraste del texto según la jerarquía y la superficie sobre la que se renderizan. Los tokens con el sufijo <code>-on-alt</code> se deben utilizar exclusivamente cuando el texto viva sobre fondos claros/alternativos (<code>--color-page-alt</code> o <code>--color-surface-alt</code>).</p>
                         </div>
 
@@ -261,7 +261,7 @@ import Aside from '@/components/showcase/Aside.vue'
                     <section id="tokens-labels" class="container-col-md">
 
                         <div class="container-text">
-                            <h3 class="text-xl">Labels & Tags</h3>
+                            <h3 class="text-2xl">Labels & Tags</h3>
                             <p>Tokens específicos para el contenido de componentes tipo <em>Badges</em>, <em>Tags</em>, <em>Chips</em> o textos internos de botones interactivos.</p>
                         </div>
 
@@ -314,7 +314,7 @@ import Aside from '@/components/showcase/Aside.vue'
                     <section id="tokens-icons" class="container-col-md">
 
                         <div class="container-text">
-                            <h3 class="text-xl">Icons</h3>
+                            <h3 class="text-2xl">Icons</h3>
                             <p>Mapeo de color exclusivo para vectores SVG e iconografía de la aplicación.</p>
                         </div>
 
@@ -333,7 +333,7 @@ import Aside from '@/components/showcase/Aside.vue'
                     <section id="tokens-borders" class="flex flex-col gap-8">
 
                         <div class="container-text">
-                            <h3 class="text-xl">Borders & Strokes</h3>
+                            <h3 class="text-2xl">Borders & Strokes</h3>
                             <p>Líneas de contorno para inputs, divisores estructurales (<code>&lt;hr&gt;</code>), tablas y bordes de componentes interactivos.</p>
                         </div>
 

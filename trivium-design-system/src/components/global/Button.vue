@@ -27,10 +27,14 @@ const props = defineProps({
     validator: (value) => ['left', 'right'].includes(value)
   },
 
+  ariaExpanded: { Boolean
+  },
+
   iconSize: {
     type: Number,
     default: 20
   }
+
 })
 
 const sizeClasses = {
@@ -51,6 +55,7 @@ const variantClasses = {
 <template>
   <button
     :disabled="disabled"
+    :aria-expanded="ariaExpanded"
     :class="[
       `
         inline-flex

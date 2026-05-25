@@ -37,9 +37,9 @@ import { PhPlusCircle } from "@phosphor-icons/vue";
                         
                         <section class="container-col-md">
                          
-                            <div class="contianer-text">
+                            <div class="container-text">
 
-                                <h2 class="text-2xl text-[var(--color-text-heading-secondary)]">Variantes</h2>
+                                <h2 class="text-3xl text-[var(--color-text-heading-secondary)]">Variantes</h2>
                                 <p>Los botones vienen en cuatro variantes: primary, primaryOutline, neutral y neutralOutline.</p>
                             
                             </div>
@@ -57,9 +57,9 @@ import { PhPlusCircle } from "@phosphor-icons/vue";
 
                         <section class="container-col-md">
 
-                            <div class="contianer-text">
+                            <div class="container-text">
 
-                                <h2 class="text-2xl">Tamaños</h2>
+                                <h2 class="text-3xl">Tamaños</h2>
                                 <p>Los botones vienen en tres tamaños: lg, md y sm.</p>
 
                             </div>
@@ -76,9 +76,9 @@ import { PhPlusCircle } from "@phosphor-icons/vue";
 
                         <section class="container-col-md">
 
-                            <div class="contianer-text">
+                            <div class="container-text">
 
-                                <h2 class="text-2xl">Estados</h2>
+                                <h2 class="text-3xl">Estados</h2>
                                 <p>Los botones pueden estar en diferentes estados: normal(con hover) y disabled.</p>
                             
                             </div>
@@ -95,8 +95,8 @@ import { PhPlusCircle } from "@phosphor-icons/vue";
 
                          <section class="container-col-md">
 
-                            <div class="contianer-text">
-                                <h2 class="text-2xl">Variante con iconos</h2>
+                            <div class="container-text">
+                                <h2 class="text-3xl">Variante con iconos</h2>
                                 <p>Los botones pueden contener iconos al inicio o al final.</p>
                             </div>
 

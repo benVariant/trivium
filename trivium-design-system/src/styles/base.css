@@ -141,3 +141,7 @@ td {
   font-size: var(--font-size-body-sm);
   color: var(--color-text-body-secondary);
 }
+
+.no-scroll {
+  overflow: hidden;
+}

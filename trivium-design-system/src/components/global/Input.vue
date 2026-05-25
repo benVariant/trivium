@@ -11,6 +11,11 @@ const props = defineProps({
     default: 'default'
   },
 
+  invalid: {
+    type: Boolean,
+    default: false
+  },
+
   disabled: {
     type: Boolean,
     default: false
@@ -51,7 +56,8 @@ const props = defineProps({
 const sizeClasses = {
   sm: 'input-sm',
   md: 'input-md',
-  lg: 'input-lg'
+  lg: 'input-lg',
+
 }
 
 const variantClasses = {
@@ -81,6 +87,7 @@ const variantClasses = {
             <input
                 :placeholder="showPlaceholder ? placeholderText : ''" v-bind="$attrs"
                 :disabled="disabled"
+                :aria-invalid="invalid"
                 :class="[
                     `
                     inline-flex
@@ -149,6 +156,10 @@ input:disabled {
     background-color: var(--color-surface-default-disabled);
     border-color: var(--color-border-secondary-disabled);
     color: var(--color-text-body-disabled);
+}
+
+input[aria-invalid="true"] {
+  border-color: var(--color-border-destructive);
 }
 
 

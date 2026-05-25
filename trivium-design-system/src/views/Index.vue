@@ -18,7 +18,7 @@ import Aside from '@/components/showcase/Aside.vue'
 
                     <section id="introduccion" class="container-text">
 
-                        <h2 class="text-5xl">Introducción</h2>
+                        <h2 class="text-4xl">Introducción</h2>
                         <p>Bienvenido al sistema de diseño de <strong>Trivium</strong>. Este documento sirve como la única fuente de verdad para diseñadores y desarrolladores, asegurando que el producto mantenga coherencia visual y de comportamiento.</p>
                     
                     </section>
@@ -34,7 +34,7 @@ import Aside from '@/components/showcase/Aside.vue'
                     <section class="container-text">
 
                         <h3 class="text-3xl">Arquitectura Tecnológica</h3>
-                        <ul>
+                        <ul> 
                             <li><strong>• Tailwind CSS:</strong> Utilizado para construir layouts y estructuras de componentes de forma rápida y eficiente.</li>
                             <li><strong>• Sistema de Tokens:</strong> Define todas las decisiones de diseño del producto, enfocado principalmente en la paleta de colores y valores de tipografía que aseguran coherencia visual.</li>
                         </ul>

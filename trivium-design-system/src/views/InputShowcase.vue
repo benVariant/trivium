@@ -38,14 +38,15 @@ import { PhPlusCircle } from "@phosphor-icons/vue";
                         
                         <div class="container-text">
                             
-                            <h2 class="text-2xl text-[var(--color-text-heading-secondary)]">Estados</h2>
-                            <p>Los inputs pueden estar en diferentes estados: normal(con hover) y disabled.</p>
+                            <h2 class="text-3xl text-[var(--color-text-heading-secondary)]">Estados</h2>
+                            <p>Los inputs pueden estar en diferentes estados: normal(con hover), invalid y disabled</p>
                         
                         </div>
 
-                        <div class="container-case-row">
+                        <div class="container-case-col">
                             
                             <Input label="Label"></Input>
+                            <Input label="Label" :invalid="true"></Input>
                             <Input label="Label" placeholder="Disabled" disabled></Input>
 
                         </div>
