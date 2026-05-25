@@ -2,7 +2,7 @@
 
 import Button from '@/components/global/Button.vue'
 import { ref, watch, onUnmounted } from 'vue'
-import { PhList } from '@phosphor-icons/vue';
+import { PhList, PhX } from '@phosphor-icons/vue';
 
 const isOpen = ref(false)
 
@@ -48,7 +48,7 @@ function toggleMenu() {
 
                 <nav
                     class="menu"
-                    :data-open="isOpen"
+                    :class="{ 'menu--open': isOpen }"
                     >
 
                     <div class="flex flex-row gap-6 w-full justify-between items-center py-6 px-6 md:px-6">   
@@ -64,10 +64,10 @@ function toggleMenu() {
                             class="md:hidden lg:hidden"
 
                             @click="toggleMenu"
-                            :aria-expanded="!isOpen"
+                            :aria-expanded="isOpen ? 'true' : 'false'"
                             variant="primaryOutline"
                             size="sm"
-                            :icon="PhList"
+                            :icon="PhX"
                             >
 
                         </Button>
@@ -112,9 +112,10 @@ function toggleMenu() {
 
 .menu {
     display: none;
+
 }
 
-.menu[data-open="true"] {
+.menu.menu--open {
   position: absolute;
   right: 0;
   bottom: 0;  
