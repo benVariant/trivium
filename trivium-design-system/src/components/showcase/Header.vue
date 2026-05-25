@@ -120,8 +120,8 @@ function toggleMenu() {
   bottom: 0;  
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  min-width: 100vw;
+  min-height: 100dvh;
+  min-width: 100dvw;
   background-color: var(--color-surface-default-deep);
 }
 
