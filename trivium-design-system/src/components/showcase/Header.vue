@@ -78,8 +78,8 @@ function toggleMenu() {
 
                         <div class="flex flex-col gap-4">
 
-                            <a><RouterLink to="/#introduccion" class="text-xs">Introducción</RouterLink></a>
-                            <a><RouterLink to="/tokens" class="text-xs">Tokens</RouterLink></a>
+                            <RouterLink to="/#introduccion" class="text-xs" variant="neutral">Introducción</RouterLink>
+                            <RouterLink to="/tokens" class="text-xs" variant="neutral">Tokens</RouterLink>
                        
                         </div>
 
@@ -87,8 +87,9 @@ function toggleMenu() {
                         
                         <div class="flex flex-col gap-4">
                             
-                            <a><RouterLink to="/button-showcase" class="text-xs">Botones</RouterLink></a>     
-                            <a><RouterLink to="/input-showcase" class="text-xs">Inputs</RouterLink></a> 
+                            <RouterLink to="/button-showcase" class="text-xs" variant="neutral">Botones</RouterLink>   
+                            <RouterLink to="/input-showcase" class="text-xs" variant="neutral">Inputs</RouterLink>
+                            <RouterLink to="/nav-link-showcase" class="text-xs" variant="neutral">Nav link</RouterLink>
                         
                         </div>
 
@@ -112,6 +113,7 @@ function toggleMenu() {
 
 .menu {
     display: none;
+    z-index: 1000;
 
 }
 

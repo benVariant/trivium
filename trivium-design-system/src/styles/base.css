@@ -21,17 +21,39 @@ body {
 ========================================================= */
 
 a {
-  color: var(--color-label-default);
-  font-family: 'Manrope', sans-serif;
-  font-weight: 600;
+    font-family: "Manrope", sans-serif;
+    position: relative;
+    width: fit-content;
+    text-decoration: none;
+    color: var(--color-label-default);
+    cursor: pointer;
+    font-weight: 600;
+}
 
-  transition:
-    color 150ms ease,
-    opacity 150ms ease;
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+
+  width: 100%;
+  height: 1px;
+
+  background-color: var(--color-surface-action);
+
+  transform: scaleX(0);
+  transform-origin: left;
+
+  transition: transform 0.25s ease;
+}
+
+/* hover animation */
+a:hover::after {
+  transform: scaleX(1);
 }
 
 a:hover {
-  color: var(--color-label-action);
+    color: var(--color-label-action);
 }
 
 /* =========================================================
