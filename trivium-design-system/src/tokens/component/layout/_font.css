@@ -8,20 +8,20 @@
      HEADINGS — Mobile
   ===================================================== */
 
-  --font-size-heading-5xl: 3rem;
-  --font-size-heading-3xl: 1.875rem;
-  --font-size-heading-2xl: 1.5rem;
-  --font-size-heading-xl: 1.25rem;
-  --font-size-heading-lg: 1.125rem;  
-  --font-size-heading-base: 1rem;
+  --font-size-heading-5xl: 2.25rem;
+  --font-size-heading-3xl: 1.5rem;
+  --font-size-heading-2xl: 1.25rem;
+  --font-size-heading-xl: 1.125rem;
+  --font-size-heading-lg: 1rem;  
+  --font-size-heading-base: 0.9375rem;
 
   /* =====================================================
      BODY — Mobile
   ===================================================== */
 
-   --font-size-body-lg: 1.125rem;
-   --font-size-body-base: 1rem;
-   --font-size-body-sm: 0.875rem;
+   --font-size-body-lg: 1rem;
+   --font-size-body-base: 0.9375rem;
+   --font-size-body-sm: 0.8125rem;
    --font-size-body-xsm: 0.75rem;
 }
 

@@ -115,14 +115,14 @@ const variantClasses = {
 .button-md {
     width: fit-content;
     padding: 0 18px;
-    height: 60px;
+    height: 52px;
     font-size: var(--font-size-body-md);
 }
 
 .button-lg {  
     width: fit-content;
     padding: 0 27px;
-    height: 68px;
+    height: 64px;
     font-size: var(--font-size-body-lg);
 }
 

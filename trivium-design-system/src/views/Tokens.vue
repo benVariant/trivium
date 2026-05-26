@@ -18,7 +18,7 @@ import Aside from '@/components/showcase/Aside.vue'
                     <section id="tokens-intro" class="container-col-md">
 
                         <div class="container-text">
-                            <h1>Documentación de Design Tokens</h1>
+                            <h1>Design Tokens</h1>
                             <p class="text-lg">Esta sección documenta el modelo de abstracción y el catálogo completo de Design Tokens de Trivium.</p>
                         </div>
 
