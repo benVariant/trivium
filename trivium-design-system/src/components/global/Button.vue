@@ -27,7 +27,8 @@ const props = defineProps({
     validator: (value) => ['left', 'right'].includes(value)
   },
 
-  ariaExpanded: { Boolean
+  ariaExpanded: { 
+    type: Boolean
   },
 
   iconSize: {
@@ -116,13 +117,13 @@ const variantClasses = {
     width: fit-content;
     padding: 0 18px;
     height: 52px;
-    font-size: var(--font-size-body-md);
+    font-size: var(--font-size-body-base);
 }
 
 .button-lg {  
     width: fit-content;
     padding: 0 27px;
-    height: 64px;
+    height: 60px;
     font-size: var(--font-size-body-lg);
 }
 

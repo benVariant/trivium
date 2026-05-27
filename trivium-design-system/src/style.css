@@ -33,15 +33,9 @@
 @import "tailwindcss";
 
 
-/* GLOBAL LAYOUTS 
-   Styles for layout components and page structures */
-   
-@import "./layouts/global/layouts.css";
-
-
 /* =========================================================
-   SHOWCASE LAYOUTS
-   Styles for layout components and page structures
+   LAYOUTS
+   Reusable layout utilities
 ========================================================= */
 
-@import "./layouts/showcase/layouts.css";
+@import "./styles/layouts.css";
