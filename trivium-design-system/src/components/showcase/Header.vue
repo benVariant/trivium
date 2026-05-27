@@ -74,23 +74,28 @@ function toggleMenu() {
 
                     </div>
 
-                    <div class="flex flex-col py-6 px-6 gap-12">
+                    <div class="flex flex-col py-6 px-6 gap-10">
 
                         <div class="flex flex-col gap-4">
-
-                            <RouterLink to="/#introduccion" class="text-xs" variant="neutral">Introducción</RouterLink>
-                            <RouterLink to="/tokens" class="text-xs" variant="neutral">Tokens</RouterLink>
-                       
+                            <RouterLink to="/" class="text-xs" @click="toggleMenu">Inicio</RouterLink>
                         </div>
 
-                        <h3 class="text-eyebrow">Componentes Básicos</h3>
-                        
                         <div class="flex flex-col gap-4">
-                            
-                            <RouterLink to="/button-showcase" class="text-xs" variant="neutral">Botones</RouterLink>   
-                            <RouterLink to="/input-showcase" class="text-xs" variant="neutral">Inputs</RouterLink>
-                            <RouterLink to="/nav-link-showcase" class="text-xs" variant="neutral">Nav link</RouterLink>
-                        
+                            <h3 class="text-eyebrow">Fundamentos</h3>
+                            <RouterLink to="/typography" class="text-xs" @click="toggleMenu">Tipografía</RouterLink>
+                            <RouterLink to="/colors" class="text-xs" @click="toggleMenu">Colores</RouterLink>
+                        </div>
+
+                        <div class="flex flex-col gap-4">
+                            <h3 class="text-eyebrow">Sistema de Tokens</h3>
+                            <RouterLink to="/tokens" class="text-xs" @click="toggleMenu">Tokens</RouterLink>
+                        </div>
+
+                        <div class="flex flex-col gap-4">
+                            <h3 class="text-eyebrow">Componentes Básicos</h3>
+                            <RouterLink to="/button-showcase" class="text-xs" @click="toggleMenu">Button</RouterLink>
+                            <RouterLink to="/input-showcase" class="text-xs" @click="toggleMenu">Input</RouterLink>
+                            <RouterLink to="/nav-link-showcase" class="text-xs" @click="toggleMenu">Nav Link</RouterLink>
                         </div>
 
                     </div> 
