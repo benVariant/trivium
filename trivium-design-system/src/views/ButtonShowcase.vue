@@ -106,9 +106,81 @@ import { PhPlusCircle } from "@phosphor-icons/vue";
                             </div>
 
                         </section>
+                    <section class="container-col-md">
+
+                        <div class="container-text">
+                            <h2>API — Props</h2>
+                            <p>Referencia completa de todas las props disponibles en el componente <code>Button</code>.</p>
+                        </div>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Prop</th>
+                                    <th>Tipo</th>
+                                    <th>Default</th>
+                                    <th>Valores</th>
+                                    <th>Descripción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>size</code></td>
+                                    <td>String</td>
+                                    <td><code>'md'</code></td>
+                                    <td><code>'sm'</code> <code>'md'</code> <code>'lg'</code></td>
+                                    <td>Altura del botón: 44px / 52px / 60px.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>variant</code></td>
+                                    <td>String</td>
+                                    <td><code>'primary'</code></td>
+                                    <td><code>'primary'</code> <code>'primaryOutline'</code> <code>'neutral'</code> <code>'neutralOutline'</code></td>
+                                    <td>Estilo visual del botón.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>disabled</code></td>
+                                    <td>Boolean</td>
+                                    <td><code>false</code></td>
+                                    <td>—</td>
+                                    <td>Deshabilita el botón y aplica estilos de estado desactivado.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>icon</code></td>
+                                    <td>Object | Function</td>
+                                    <td><code>null</code></td>
+                                    <td>Componente de Phosphor Icons</td>
+                                    <td>Ícono a mostrar. Se pasa como componente: <code>:icon="PhStar"</code>.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>iconPosition</code></td>
+                                    <td>String</td>
+                                    <td><code>'left'</code></td>
+                                    <td><code>'left'</code> <code>'right'</code></td>
+                                    <td>Posición del ícono relativa al texto del slot.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>iconSize</code></td>
+                                    <td>Number</td>
+                                    <td><code>20</code></td>
+                                    <td>Número en px</td>
+                                    <td>Tamaño del ícono en píxeles.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ariaExpanded</code></td>
+                                    <td>Boolean</td>
+                                    <td>—</td>
+                                    <td><code>true</code> <code>false</code></td>
+                                    <td>Valor del atributo <code>aria-expanded</code>. Úsalo cuando el botón controla un elemento expandible (menú, acordeón).</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </section>
+
                 </div>
 
             </div>
         </main>
- 
+
 </template>

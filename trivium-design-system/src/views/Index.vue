@@ -1,6 +1,5 @@
 <script setup>
 import Header from '@/components/showcase/Header.vue'
-import Button from '@/components/global/Button.vue'
 import Aside from '@/components/showcase/Aside.vue'
 </script>
 
@@ -13,84 +12,125 @@ import Aside from '@/components/showcase/Aside.vue'
             <div class="container-row-lg max-w-5xl w-full mx-auto py-12 items-start">
 
                 <Aside />
-                      
+
                 <div class="container-col-lg w-full px-6 md:px-6 lg:px-0">
 
                     <section id="introduccion" class="container-text">
-
-                        <h1>Introducción</h1>
-                        <p>Bienvenido al sistema de diseño de <strong>Trivium</strong>. Este documento sirve como la única fuente de verdad para diseñadores y desarrolladores, asegurando que el producto mantenga coherencia visual y de comportamiento.</p>
-                    
-                    </section>
-
-                    <hr>
-                        
-                    <section  id="estructura" class="container-text">
-
-                            <h2>Estructura del Proyecto</h2>
-                            <p>Trivium es un sistema de diseño modular construido con <strong>Vue 3 + TypeScript</strong>, que combina <strong>Tailwind CSS</strong> para la construcción de layouts con un <strong>sistema de tokens propio</strong> para las decisiones de diseño. Esta combinación permite escalabilidad, consistencia y reutilización en todos los productos de Trivium.</p>
-                    
+                        <span class="text-eyebrow">Trivium Design System</span>
+                        <h1>Inicio</h1>
+                        <p>Bienvenido al sistema de diseño de <strong>Trivium</strong>. Este sitio es la fuente de verdad para diseñadores y desarrolladores del equipo — aquí encontrarás los fundamentos visuales, el catálogo de tokens y la documentación de cada componente.</p>
                     </section>
 
                     <hr>
 
-                    <section class="container-text">
+                    <section id="instalacion" class="container-col-md">
 
-                        <h2>Arquitectura Tecnológica</h2>
-                        <ul> 
-                            <li><strong>• Tailwind CSS:</strong> Utilizado para construir layouts y estructuras de componentes de forma rápida y eficiente.</li>
-                            <li><strong>• Sistema de Tokens:</strong> Define todas las decisiones de diseño del producto, enfocado principalmente en la paleta de colores y valores de tipografía que aseguran coherencia visual.</li>
-                        </ul>
+                        <div class="container-text">
+                            <h2>Instalación</h2>
+                            <p>El paquete se instala directamente desde GitHub. No requiere publicación en npm.</p>
+                        </div>
+
+                        <div class="container-text">
+                            <h3>1. Instalar el paquete</h3>
+                            <p>En el proyecto consumidor, ejecuta:</p>
+                            <code>npm install github:tu-usuario/trivium-design-system</code>
+                        </div>
+
+                        <div class="container-text">
+                            <h3>2. Registrar el plugin en main.ts</h3>
+                            <p>Importa el design system y regístralo como plugin de Vue. Esto hace que todos los componentes estén disponibles globalmente sin necesidad de importarlos uno a uno.</p>
+                            <pre><code>import { createApp } from 'vue'
+import App from './App.vue'
+import TriviumDesignSystem from '@trivium/design-system'
+import '@trivium/design-system/styles'
+
+const app = createApp(App)
+app.use(TriviumDesignSystem)
+app.mount('#app')</code></pre>
+                        </div>
+
+                        <div class="container-text">
+                            <h3>3. Usar los componentes</h3>
+                            <p>Una vez registrado el plugin, los componentes están disponibles en cualquier template sin imports adicionales:</p>
+                            <pre><code>&lt;Button variant="primary" size="md"&gt;
+  Hola Trivium
+&lt;/Button&gt;</code></pre>
+                        </div>
+
+                        <div class="container-text">
+                            <h3>O importar individualmente</h3>
+                            <p>Si prefieres importar solo lo que necesitas:</p>
+                            <pre><code>import { Button, Input, NavLink } from '@trivium/design-system'
+import '@trivium/design-system/styles'</code></pre>
+                        </div>
 
                     </section>
 
                     <hr>
 
-                    <section class="container-text">
+                    <section id="peer-dependencies" class="container-col-md">
 
-                        <h2>Componentes (src/components/)</h2>
-                        <ul>
-                            <li><strong>global/:</strong> Componentes básicos reutilizables en todos los productos de Trivium. Son la piedra angular del sistema de diseño.</li>
-                            <li><strong>showcase/:</strong> Componentes de documentación y presentación que estructuran las vistas de este design system.</li>
-                        </ul>
+                        <div class="container-text">
+                            <h2>Dependencias requeridas</h2>
+                            <p>El design system tiene tres <strong>peerDependencies</strong> que el proyecto consumidor debe tener instaladas. Si ya usas Vue 3 con Vue Router y Phosphor Icons, no necesitas hacer nada adicional.</p>
+                        </div>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Paquete</th>
+                                    <th>Versión mínima</th>
+                                    <th>Por qué se necesita</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>vue</code></td>
+                                    <td><code>^3.5.0</code></td>
+                                    <td>Framework base de todos los componentes.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>vue-router</code></td>
+                                    <td><code>^5.0.0</code></td>
+                                    <td>Requerido por el componente <code>NavLink</code>, que usa <code>&lt;RouterLink&gt;</code> internamente.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>@phosphor-icons/vue</code></td>
+                                    <td><code>^2.2.0</code></td>
+                                    <td>Librería de iconos usada en <code>Button</code> e <code>Input</code>.</td>
+                                </tr>
+                            </tbody>
+                        </table>
 
                     </section>
 
                     <hr>
-                    
-                    <section class="container-text">
 
-                        <h2>Sistema de Tokens (src/tokens/)</h2>
-                        <p>Organización jerárquica de decisiones de diseño:</p>
-                        <ul>
-                            <li><strong>primitive/:</strong> Valores base - colores puros, espaciadores fundamentales.</li>
-                            <li><strong>semantic/:</strong> Tokens con significado - colores de acción, superficies, bordes.</li>
-                            <li><strong>component/:</strong> Tokens específicos de componentes - tipografía, layout.</li>
-                        </ul>
+                    <section id="decisiones" class="container-col-md">
+
+                        <div class="container-text">
+                            <h2>Decisiones de diseño</h2>
+                            <p>Dos decisiones técnicas definen cómo está construido este sistema y por qué funciona como funciona.</p>
+                        </div>
+
+                        <div class="container-text">
+                            <h3>Tokens CSS sobre clases de Tailwind en componentes</h3>
+                            <p>Los componentes globales (<code>Button</code>, <code>Input</code>, <code>NavLink</code>) usan CSS custom properties (<code>var(--color-surface-action)</code>) en sus estilos, no clases utilitarias de Tailwind. Esto permite dos cosas: que los tokens puedan cambiar en runtime (habilitando dark mode sin recompilar) y que el proyecto consumidor pueda sobrescribir tokens para personalizar el sistema sin modificar el código fuente.</p>
+                        </div>
+
+                        <div class="container-text">
+                            <h3>Tailwind para layouts, tokens para decisiones de diseño</h3>
+                            <p>Tailwind CSS se usa exclusivamente para construir estructuras y layouts (grid, flex, spacing, responsive breakpoints). Todas las decisiones de diseño — colores, tipografía — están modeladas en el sistema de tokens. Esta separación mantiene ambos sistemas en su área de responsabilidad y evita mezclar fuentes de verdad.</p>
+                        </div>
 
                     </section>
-
-                    <hr>
-                    
-                    <section class="container-text">
-
-                        <h2>Estilos Globales (src/styles/)</h2>
-                        <ul>
-                            <li><strong>reset.css:</strong> Normalización cross-browser.</li>
-                            <li><strong>base.css:</strong> Estilos base de elementos HTML.</li>
-                            <li><strong>typography.css:</strong> Definiciones de tipografía.</li>
-                        </ul>
-
-                    </section>                   
 
                 </div>
 
             </div>
 
-    <footer>
-    </footer>
+            <footer></footer>
 
         </main>
-   </body> 
-   
+    </body>
 </template>
