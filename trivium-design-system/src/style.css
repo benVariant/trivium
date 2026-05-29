@@ -32,6 +32,20 @@
 ========================================================= */
 @import "tailwindcss";
 
+@theme inline {
+  /* Escala de cuerpo */
+  --font-size-xs:   var(--font-size-body-xsm);
+  --font-size-sm:   var(--font-size-body-sm);
+  --font-size-base: var(--font-size-body-base);
+  --font-size-lg:   var(--font-size-body-lg);
+
+  /* Escala de headings — permite aplicar tamaño de heading a cualquier elemento */
+  --font-size-xl:  var(--font-size-heading-xl);
+  --font-size-2xl: var(--font-size-heading-2xl);
+  --font-size-3xl: var(--font-size-heading-3xl);
+  --font-size-5xl: var(--font-size-heading-5xl);
+}
+
 
 /* =========================================================
    LAYOUTS

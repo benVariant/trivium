@@ -1,6 +1,189 @@
 <script setup>
+import { ref } from 'vue'
 import Header from '@/components/showcase/Header.vue'
 import Aside from '@/components/showcase/Aside.vue'
+import Button from '@/components/global/Button.vue'
+import { PhCopy, PhCheck } from '@phosphor-icons/vue'
+
+const copied = ref(false)
+
+// Actualizar este contexto cuando cambien componentes, tokens o convenciones del sistema.
+const PROJECT_CONTEXT = `# Trivium Design System — Contexto para agentes de IA
+
+## Descripción
+Sistema de diseño de la marca Trivium. Provee componentes Vue 3 reutilizables, tokens de diseño y clases de layout globales. Se distribuye como paquete npm interno y se documenta en este sitio.
+
+## Stack
+- Vue 3 + TypeScript, Vite 8
+- Tailwind CSS v4 (@tailwindcss/vite)
+- Phosphor Icons (@phosphor-icons/vue)
+- Vue Router 5
+
+## Convenciones de código
+- Componentes globales usan CSS custom properties (var(--color-*)) para colores y tipografía — NO clases Tailwind en componentes
+- Tailwind se usa exclusivamente para estructura y layout (flex, grid, spacing, responsive)
+- Tailwind v4: sintaxis \`border-(--color-border-secondary)\` — no usar \`border-[var(...)]\`
+- Componentes en src/components/global/, vistas de documentación en src/views/
+
+## Escala tipográfica de Tailwind (src/style.css — @theme inline)
+Toda la escala text-* de Tailwind está mapeada a los tokens del sistema. NO usar valores hardcoded de font-size.
+
+Escala de cuerpo:
+- text-xs   → --font-size-body-xsm  (0.75rem / 0.75rem)
+- text-sm   → --font-size-body-sm   (0.8125rem / 0.875rem)
+- text-base → --font-size-body-base (0.9375rem / 1rem)
+- text-lg   → --font-size-body-lg   (1rem / 1.125rem)
+
+Escala de headings (solo para desacoplar tamaño visual de semántica HTML):
+- text-xl   → --font-size-heading-xl   = h4 visual
+- text-2xl  → --font-size-heading-2xl  = h3 visual
+- text-3xl  → --font-size-heading-3xl  = h2 visual
+- text-5xl  → --font-size-heading-5xl  = h1 visual
+
+Regla: usar text-xl/2xl/3xl/5xl SOLO cuando el nivel semántico del elemento (h1-h6) no coincide con el tamaño visual requerido por diseño. Por defecto, h1-h6 ya tienen su tamaño correcto via typography.css. Combinar con .text-heading para mantener la fuente serif: \`<h1 class="text-2xl text-heading">\`.
+
+## Sistema de tokens (3 capas)
+1. Primitivos — valores raw (hex, px): src/tokens/primitive/
+2. Semánticos — roles semánticos (--color-surface-action, --color-label-default): src/tokens/semantic/
+3. Componente/Tema — tokens por componente o tema dark/light: src/tokens/component/
+
+Usar siempre tokens semánticos en componentes, nunca primitivos directamente.
+
+## Clases de layout globales (src/styles/layouts.css)
+- container-text: flex column, gap 1rem — heading + párrafo descriptivo
+- container-col-md: flex column, gap 2rem — sección (container-text + contenido)
+- container-col-lg: flex column, gap 4rem — columna de página (múltiples secciones)
+- container-row-lg: flex row, gap 4rem — layout de página (aside + contenido)
+
+Jerarquía: container-row-lg > container-col-lg > section.container-col-md > div.container-text
+
+## Clases tipográficas (src/styles/utilities.css)
+- text-eyebrow: Manrope 700, font-size body-sm, color eyebrow
+- text-heading: Latienne Pro 700, line-height 1.2, color heading
+
+## Componentes disponibles
+
+### Button
+Props:
+- variant: 'primary' | 'primaryOutline' | 'neutral' | 'neutralOutline' (default: 'primary')
+- size: 'sm' | 'md' | 'lg' (default: 'md')
+- disabled: boolean (default: false)
+- icon: componente Phosphor (default: null)
+- iconPosition: 'left' | 'right' (default: 'left')
+- iconSize: number en px (default: 20)
+- ariaExpanded: boolean
+
+### Input
+Props:
+- size: 'sm' | 'md' | 'lg' (default: 'md')
+- variant: 'default' (default: 'default')
+- invalid: boolean (default: false)
+- disabled: boolean (default: false)
+- label: string
+- placeholderText: string (default: 'Placeholder')
+- showPlaceholder: boolean (default: true)
+- icon: componente Phosphor (default: null)
+- iconPosition: 'left' | 'right' (default: 'left')
+- iconSize: number en px (default: 20)
+
+### NavLink
+Props:
+- to: string (requerido) — ruta de Vue Router
+- size: 'sm' | 'md' | 'lg' (default: 'md')
+- variant: 'primary' | 'neutral' | 'neutralSecondary' (default: 'primary')
+
+### Accordion
+Props:
+- items: Array<{ title: string, content: string }>
+- size: 'sm' | 'md' | 'lg' (default: 'md')
+- variant: 'default' (default: 'default')
+Comportamiento: solo un ítem abierto a la vez (acordeón exclusivo).
+
+### Select
+Props:
+- size: 'sm' | 'md' | 'lg' (default: 'md')
+- disabled: boolean (default: false)
+- invalid: boolean (default: false)
+- label: string
+- options: Array<{ value: string, label: string }>
+- placeholderText: string (default: 'Selecciona una opción')
+
+### Textarea
+Props:
+- size: 'sm' | 'md' | 'lg' (default: 'md')
+- disabled: boolean (default: false)
+- invalid: boolean (default: false)
+- label: string
+- placeholderText: string (default: 'Escribe aquí')
+- rows: number (default: 4)
+
+### Checkbox
+Props:
+- label: string
+- modelValue: boolean — soporta v-model
+- disabled: boolean (default: false)
+
+### RadioButton
+Props:
+- label: string
+- value: any (requerido) — valor de esta opción
+- modelValue: any — soporta v-model
+- name: string — agrupa los radio buttons del mismo grupo
+- disabled: boolean (default: false)
+
+### Toggle
+Props:
+- label: string
+- modelValue: boolean — soporta v-model
+- disabled: boolean (default: false)
+
+### DatePicker
+Props:
+- size: 'sm' | 'md' | 'lg' (default: 'md')
+- disabled: boolean (default: false)
+- invalid: boolean (default: false)
+- label: string
+
+### PhoneInput
+Props:
+- size: 'sm' | 'md' | 'lg' (default: 'md')
+- disabled: boolean (default: false)
+- invalid: boolean (default: false)
+- label: string
+- modelValue: string — soporta v-model
+- defaultCountry: string código ISO (default: 'ES')
+
+### Filete
+Divisor decorativo de marca.
+Props:
+- variant: 'default' | 'secondary' (default: 'default')
+- iconPosition: 'start' | 'center' | 'end' (default: 'start')
+
+## Instalación
+\`\`\`
+npm install github:tu-usuario/trivium-design-system
+\`\`\`
+
+\`\`\`ts
+// main.ts — registro global de todos los componentes
+import TriviumDesignSystem from '@trivium/design-system'
+import '@trivium/design-system/styles'
+app.use(TriviumDesignSystem)
+
+// O importar individualmente
+import { Button, Input, NavLink } from '@trivium/design-system'
+import '@trivium/design-system/styles'
+\`\`\``
+
+async function copyContext() {
+  try {
+    await navigator.clipboard.writeText(PROJECT_CONTEXT)
+    copied.value = true
+    setTimeout(() => { copied.value = false }, 2500)
+  } catch {
+    console.error('No se pudo acceder al portapapeles.')
+  }
+}
 </script>
 
 <template>
@@ -20,6 +203,20 @@ import Aside from '@/components/showcase/Aside.vue'
                         <h1>Inicio</h1>
                         <p>Bienvenido al sistema de diseño de <strong>Trivium</strong>. Este sitio es la fuente de verdad para diseñadores y desarrolladores del equipo — aquí encontrarás los fundamentos visuales, el catálogo de tokens y la documentación de cada componente.</p>
                     </section>
+
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-(--color-surface-default) border border-(--color-border-secondary) rounded-lg px-6 py-5">
+                        <div class="container-text">
+                            <h3>Contexto para agentes de IA</h3>
+                            <p class="text-sm">Copia una descripción estructurada del proyecto para pegar en Claude, Cursor, Copilot u otros agentes.</p>
+                        </div>
+                        <Button
+                            @click="copyContext"
+                            :icon="copied ? PhCheck : PhCopy"
+                            variant="neutralOutline"
+                            size="sm"
+                            class="shrink-0"
+                        >{{ copied ? 'Copiado' : 'Copiar contexto' }}</Button>
+                    </div>
 
                     <hr>
 

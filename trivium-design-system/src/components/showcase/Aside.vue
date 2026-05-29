@@ -17,6 +17,7 @@ import NavLink from '@/components/global/NavLink.vue'
                 <ul>
                     <li><NavLink to="/typography" size="sm" variant="neutral">Tipografía</NavLink></li>
                     <li><NavLink to="/colors" size="sm" variant="neutral">Colores</NavLink></li>
+                    <li><NavLink to="/layout" size="sm" variant="neutral">Layout</NavLink></li>
                 </ul>
             </div>
 

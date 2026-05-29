@@ -135,10 +135,10 @@ import Aside from '@/components/showcase/Aside.vue'
                         </div>
 
                         <div class="container-case-col items-start gap-6">
-                            <p style="font-size: var(--font-size-body-lg);">Body lg — Texto de introducción o destacado.</p>
-                            <p>Body base — Párrafos de contenido general.</p>
-                            <p style="font-size: var(--font-size-body-sm);">Body sm — Texto secundario, labels, metadatos.</p>
-                            <p style="font-size: var(--font-size-body-xsm);">Body xsm — Captions, placeholders, texto auxiliar.</p>
+                            <p class="text-lg">Body lg — Texto de introducción o destacado.</p>
+                            <p class="text-base">Body base — Párrafos de contenido general.</p>
+                            <p class="text-sm">Body sm — Texto secundario, labels, metadatos.</p>
+                            <p class="text-xs">Body xsm — Captions, placeholders, texto auxiliar.</p>
                         </div>
 
                         <table>
@@ -177,6 +177,120 @@ import Aside from '@/components/showcase/Aside.vue'
                                 </tr>
                             </tbody>
                         </table>
+
+                    </section>
+
+                    <hr>
+
+                    <section id="tailwind" class="container-col-md">
+
+                        <div class="container-text">
+                            <h2>Integración con Tailwind</h2>
+                            <p>Toda la escala de texto de Tailwind está mapeada a los tokens del sistema mediante <code>@theme inline</code> en <code>style.css</code>. Las clases de cuerpo (<code>text-xs</code>–<code>text-lg</code>) apuntan a los tokens de body; las de heading (<code>text-xl</code>–<code>text-5xl</code>) apuntan a los tokens de heading. Todos son responsivos automáticamente.</p>
+                        </div>
+
+                        <div class="container-text">
+                            <h3>Escala de cuerpo</h3>
+                        </div>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Clase Tailwind</th>
+                                    <th>Token</th>
+                                    <th>Móvil</th>
+                                    <th>Tablet / Desktop</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>text-xs</code></td>
+                                    <td><code>--font-size-body-xsm</code></td>
+                                    <td>0.75rem (12px)</td>
+                                    <td>0.75rem (12px)</td>
+                                </tr>
+                                <tr>
+                                    <td><code>text-sm</code></td>
+                                    <td><code>--font-size-body-sm</code></td>
+                                    <td>0.8125rem (13px)</td>
+                                    <td>0.875rem (14px)</td>
+                                </tr>
+                                <tr>
+                                    <td><code>text-base</code></td>
+                                    <td><code>--font-size-body-base</code></td>
+                                    <td>0.9375rem (15px)</td>
+                                    <td>1rem (16px)</td>
+                                </tr>
+                                <tr>
+                                    <td><code>text-lg</code></td>
+                                    <td><code>--font-size-body-lg</code></td>
+                                    <td>1rem (16px)</td>
+                                    <td>1.125rem (18px)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="container-text">
+                            <h3>Escala de headings</h3>
+                            <p>Por defecto, <strong>no necesitas estas clases</strong>. Cada elemento <code>h1</code>–<code>h6</code> ya recibe su tamaño correcto automáticamente desde <code>typography.css</code>.</p>
+                            <p>Úsalas únicamente cuando el tamaño visual que necesitas no corresponde al nivel semántico del elemento — es decir, cuando diseño y estructura deben ir por caminos distintos. Dos casos concretos:</p>
+                            <ul>
+                                <li><strong>Un <code>h1</code> visualmente pequeño:</strong> la página tiene un solo título principal (correcto para SEO y lectores de pantalla) pero el diseño lo pide discreto. Se usa <code>h1</code> con <code>text-2xl</code> en lugar de cambiar el elemento a <code>h3</code>.</li>
+                                <li><strong>Un <code>h3</code> visualmente grande:</strong> una subsección necesita impacto visual de titular pero su posición en la jerarquía de la página es de nivel 3. Se usa <code>h3</code> con <code>text-5xl</code> sin romper el outline del documento.</li>
+                            </ul>
+                        </div>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Clase Tailwind</th>
+                                    <th>Token</th>
+                                    <th>Equivalente visual</th>
+                                    <th>Móvil</th>
+                                    <th>Tablet / Desktop</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>text-xl</code></td>
+                                    <td><code>--font-size-heading-xl</code></td>
+                                    <td><code>h4</code></td>
+                                    <td>1.125rem (18px)</td>
+                                    <td>1.25rem (20px)</td>
+                                </tr>
+                                <tr>
+                                    <td><code>text-2xl</code></td>
+                                    <td><code>--font-size-heading-2xl</code></td>
+                                    <td><code>h3</code></td>
+                                    <td>1.25rem (20px)</td>
+                                    <td>1.5rem (24px)</td>
+                                </tr>
+                                <tr>
+                                    <td><code>text-3xl</code></td>
+                                    <td><code>--font-size-heading-3xl</code></td>
+                                    <td><code>h2</code></td>
+                                    <td>1.5rem (24px)</td>
+                                    <td>1.875rem (30px)</td>
+                                </tr>
+                                <tr>
+                                    <td><code>text-5xl</code></td>
+                                    <td><code>--font-size-heading-5xl</code></td>
+                                    <td><code>h1</code></td>
+                                    <td>2.25rem (36px)</td>
+                                    <td>3rem (48px)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="container-text">
+                            <p>Estas clases solo sobreescriben el tamaño. Para mantener también la familia tipográfica serif, combínalas con <code>.text-heading</code>:</p>
+                            <pre><code>&lt;!-- h1 que parece h3 visualmente --&gt;
+&lt;h1 class="text-2xl text-heading"&gt;Título principal&lt;/h1&gt;
+
+&lt;!-- h3 que parece h1 visualmente --&gt;
+&lt;h3 class="text-5xl text-heading"&gt;Sección destacada&lt;/h3&gt;</code></pre>
+                            <p>La clase <code>text-4xl</code> (2.25rem) no tiene token equivalente en desktop y conserva el valor por defecto de Tailwind.</p>
+                        </div>
 
                     </section>
 

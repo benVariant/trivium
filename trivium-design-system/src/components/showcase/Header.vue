@@ -84,6 +84,7 @@ function toggleMenu() {
                             <h3 class="text-eyebrow">Fundamentos</h3>
                             <RouterLink to="/typography" class="text-xs" @click="toggleMenu">Tipografía</RouterLink>
                             <RouterLink to="/colors" class="text-xs" @click="toggleMenu">Colores</RouterLink>
+                            <RouterLink to="/layout" class="text-xs" @click="toggleMenu">Layout</RouterLink>
                         </div>
 
                         <div class="flex flex-col gap-4">
