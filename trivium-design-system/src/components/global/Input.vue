@@ -161,7 +161,7 @@ input:hover {
 input:disabled {
     cursor: not-allowed;
     background-color: var(--color-surface-default-disabled);
-    border-color: var(--color-border-secondary-disabled);
+    border-color: var(--color-border-disabled);
     color: var(--color-text-body-disabled);
 }
 

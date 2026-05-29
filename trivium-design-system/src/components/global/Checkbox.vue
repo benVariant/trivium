@@ -19,29 +19,47 @@ defineProps({
   modelValue: {
     type: Boolean,
     default: false
+  },
+
+  hint: {
+    type: String,
+    default: ''
   }
 })
+
+import { PhSquare } from '@phosphor-icons/vue'
 
 defineEmits(['update:modelValue'])
 </script>
 
 <template>
-  <label class="checkbox-wrapper" :class="{ 'checkbox-wrapper--disabled': disabled }">
+  <div class="checkbox-root">
+    <label class="checkbox-wrapper" :class="{ 'checkbox-wrapper--disabled': disabled }">
 
-    <input
-      type="checkbox"
-      :checked="modelValue"
-      :disabled="disabled"
-      :aria-invalid="invalid"
-      class="checkbox-input"
-      @change="$emit('update:modelValue', $event.target.checked)"
-    />
+      <input
+        type="checkbox"
+        :checked="modelValue"
+        :disabled="disabled"
+        :aria-invalid="invalid"
+        class="checkbox-input"
+        @change="$emit('update:modelValue', $event.target.checked)"
+      />
 
-    <span class="checkbox-box" :class="{ 'checkbox-box--checked': modelValue, 'checkbox-box--invalid': invalid }" />
+      <span class="checkbox-box" :class="{ 'checkbox-box--checked': modelValue, 'checkbox-box--invalid': invalid }">
+        <PhSquare
+          v-if="modelValue"
+          :size="12"
+          weight="fill"
+          color="currentColor"
+        />
+      </span>
 
-    <span v-if="label" class="checkbox-label">{{ label }}</span>
+      <span v-if="label" class="checkbox-label">{{ label }}</span>
 
-  </label>
+    </label>
+
+    <p v-if="hint" class="checkbox-hint">{{ hint }}</p>
+  </div>
 </template>
 
 <style scoped>
@@ -70,6 +88,9 @@ defineEmits(['update:modelValue'])
   width: 20px;
   height: 20px;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid var(--color-border-secondary);
   background-color: var(--color-surface-default);
   transition: border-color 0.15s, background-color 0.15s;
@@ -82,17 +103,7 @@ defineEmits(['update:modelValue'])
 .checkbox-box--checked {
   background-color: var(--color-surface-action);
   border-color: var(--color-surface-action);
-
-  &::after {
-    content: '';
-    display: block;
-    width: 5px;
-    height: 9px;
-    border: 2px solid var(--color-label-on-action);
-    border-top: none;
-    border-left: none;
-    transform: rotate(45deg) translate(4px, 1px);
-  }
+  color: var(--color-label-on-action);
 }
 
 .checkbox-box--invalid {
@@ -102,6 +113,13 @@ defineEmits(['update:modelValue'])
 .checkbox-label {
   font-size: var(--font-size-body-base);
   color: var(--color-text-body-default);
+}
+
+.checkbox-hint {
+  font-size: var(--font-size-body-sm);
+  color: var(--color-text-body-secondary);
+  margin-top: 0.25rem;
+  
 }
 
 </style>

@@ -25,6 +25,8 @@ defineProps({
   }
 })
 
+import { PhCircle } from '@phosphor-icons/vue'
+
 defineEmits(['update:modelValue'])
 </script>
 
@@ -41,7 +43,14 @@ defineEmits(['update:modelValue'])
       @change="$emit('update:modelValue', value)"
     />
 
-    <span class="radio-circle" :class="{ 'radio-circle--checked': modelValue === value }" />
+    <span class="radio-circle" :class="{ 'radio-circle--checked': modelValue === value }">
+      <PhCircle
+        v-if="modelValue === value"
+        :size="10"
+        weight="fill"
+        color="currentColor"
+      />
+    </span>
 
     <span v-if="label" class="radio-label">{{ label }}</span>
 
@@ -88,15 +97,9 @@ defineEmits(['update:modelValue'])
 }
 
 .radio-circle--checked {
+  background-color: var(--color-surface-action);
   border-color: var(--color-surface-action);
-
-  &::after {
-    content: '';
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: var(--color-surface-action);
-  }
+  color: var(--color-label-on-action);
 }
 
 .radio-label {

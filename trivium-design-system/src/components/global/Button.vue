@@ -71,7 +71,7 @@ const variantClasses = {
 
         focus:outline-none
         focus:ring-2
-        focus:ring-[var(--color-border-action)]
+        focus:ring-var(--color-border-action)
         focus:ring-offset-0
 
         disabled:pointer-events-none

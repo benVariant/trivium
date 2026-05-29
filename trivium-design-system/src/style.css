@@ -39,3 +39,13 @@
 ========================================================= */
 
 @import "./styles/layouts.css";
+
+/* =========================================================
+   FLAG ICONS
+========================================================= */
+@import "flag-icons/css/flag-icons.min.css";
+
+.fi {
+  border: 1px solid var(--color-border-secondary);
+  border-radius: 1px;
+}

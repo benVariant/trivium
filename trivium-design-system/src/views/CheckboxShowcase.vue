@@ -32,12 +32,29 @@ const checkedTrue = ref(true)
             <p>El Checkbox puede estar marcado, sin marcar, inválido o deshabilitado.</p>
           </div>
           <div class="container-case-col">
-            <Checkbox :model-value="false" label="Sin marcar" />
-            <Checkbox :model-value="true" label="Marcado" />
-            <Checkbox :model-value="false" :invalid="true" label="Inválido" />
-            <Checkbox :model-value="false" :disabled="true" label="Deshabilitado" />
-            <Checkbox :model-value="true" :disabled="true" label="Marcado y deshabilitado" />
+            <div class="container-col-md">
+              <Checkbox :model-value="false" label="Sin marcar" />
+              <Checkbox :model-value="true" label="Marcado" />
+              <Checkbox :model-value="false" :invalid="true" label="Inválido" />
+              <Checkbox :model-value="false" :disabled="true" label="Deshabilitado" />
+              <Checkbox :model-value="true" :disabled="true" label="Marcado y deshabilitado" />
+            </div>
           </div>
+        </section>
+
+        <section class="container-col-md">
+          
+          <div class="container-text">
+            <h2>Hint</h2>
+            <p>La prop <code>hint</code> muestra un texto auxiliar debajo del checkbox, alineado con el label.</p>
+          </div>
+          <div class="container-case-col">
+            <div class="container-col-md">
+              <Checkbox :model-value="false" label="Acepto los términos y condiciones" hint="Debes aceptar los términos para continuar con el registro." />
+              <Checkbox :model-value="true" label="Suscribirme al newsletter" hint="Puedes cancelar tu suscripción en cualquier momento." />
+            </div>
+          </div>
+
         </section>
 
         <section class="container-col-md">
@@ -67,6 +84,10 @@ const checkedTrue = ref(true)
               <tr>
                 <td><code>invalid</code></td><td>Boolean</td><td><code>false</code></td>
                 <td>—</td><td>Aplica estilos de estado de error.</td>
+              </tr>
+              <tr>
+                <td><code>hint</code></td><td>String</td><td><code>''</code></td>
+                <td>—</td><td>Texto auxiliar debajo del checkbox. Solo se muestra si se provee un valor.</td>
               </tr>
             </tbody>
           </table>

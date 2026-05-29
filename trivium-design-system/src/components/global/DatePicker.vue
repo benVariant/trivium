@@ -1,4 +1,5 @@
 <script setup>
+import { PhCalendar } from '@phosphor-icons/vue'
 
 defineProps({
   size: {
@@ -34,13 +35,24 @@ const sizeClasses = {
 
     <label v-if="label" class="text-sm">{{ label }}</label>
 
-    <input
-      type="date"
-      :disabled="disabled"
-      :aria-invalid="invalid"
-      :class="['datepicker-field', sizeClasses[size]]"
-      v-bind="$attrs"
-    />
+    <div class="relative flex items-center">
+
+      <input
+        type="date"
+        :disabled="disabled"
+        :aria-invalid="invalid"
+        :class="['datepicker-field', sizeClasses[size]]"
+        v-bind="$attrs"
+      />
+
+      <PhCalendar
+        :size="18"
+        weight="fill"
+        color="currentColor"
+        class="datepicker-icon"
+      />
+
+    </div>
 
   </div>
 </template>
@@ -49,7 +61,7 @@ const sizeClasses = {
 
 .datepicker-field {
   width: 100%;
-  padding: 0 1rem;
+  padding: 0 2.5rem 0 1rem;
   cursor: pointer;
 
   border: 1px solid var(--color-border-secondary);
@@ -80,9 +92,20 @@ const sizeClasses = {
   }
 
   &::-webkit-calendar-picker-indicator {
-    filter: invert(1);
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    width: 2.5rem;
+    height: 100%;
     cursor: pointer;
   }
+}
+
+.datepicker-icon {
+  position: absolute;
+  right: 0.75rem;
+  pointer-events: none;
+  color: var(--color-icon-default);
 }
 
 /* Tamaños */
