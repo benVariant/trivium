@@ -53,6 +53,26 @@ import NavLink from '@/components/global/NavLink.vue'
 
                          </section>
 
+                         <section class="container-col-md">
+
+                            <div class="container-text">
+
+                                <h2>Tamaños</h2>
+                                <p class="text-lg">Existen 4 tamaños: xs, sm, md y lg</p>
+
+                            </div>
+
+                            <div class="container-case-col">
+
+                                <NavLink to="#" size="xs">Extra Small Link</NavLink>
+                                <NavLink to="#" size="sm">Small Link</NavLink>
+                                <NavLink to="#" size="md">Medium Link</NavLink>
+                                <NavLink to="#" size="lg">Large Link</NavLink>
+
+                            </div>
+
+                         </section>
+
                     <section class="container-col-md">
 
                         <div class="container-text">
@@ -89,7 +109,7 @@ import NavLink from '@/components/global/NavLink.vue'
                                     <td><code>size</code></td>
                                     <td>String</td>
                                     <td><code>'md'</code></td>
-                                    <td><code>'sm'</code> <code>'md'</code> <code>'lg'</code></td>
+                                    <td><code>'xs'</code> <code>'sm'</code> <code>'md'</code> <code>'lg'</code></td>
                                     <td>Tamaño tipográfico del enlace. Mapea a las clases de texto de Tailwind.</td>
                                 </tr>
                             </tbody>

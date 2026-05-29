@@ -34,7 +34,6 @@
 
 @theme inline {
   /* Escala de cuerpo */
-  --text-xsm:       var(--font-size-body-xsm);
   --font-size-xs:   var(--font-size-body-xsm);
   --font-size-sm:   var(--font-size-body-sm);
   --font-size-base: var(--font-size-body-base);

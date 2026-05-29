@@ -20,7 +20,7 @@ const props = defineProps({
 })  
 
 const sizeClasses = {
-    xsm: 'text-xsm',
+    xs: 'text-xs',
     sm: 'text-sm',
     md: 'text-md',
     lg: 'text-lg'
