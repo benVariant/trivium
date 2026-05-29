@@ -27,6 +27,26 @@ const phone = ref('')
 
         <section class="container-col-md">
           <div class="container-text">
+            <h2>Dependencia: flag-icons</h2>
+            <p>
+              El selector de país usa las banderas de <code>flag-icons</code>. Para no inflar
+              el CSS de la librería, este paquete <strong>no se empaqueta</strong> y se declara
+              como <code>peerDependency</code> opcional. Al consumir <code>PhoneInput</code>
+              desde la librería debes instalar e importar su CSS manualmente:
+            </p>
+            <pre><code>npm install flag-icons</code></pre>
+            <p>Y en el punto de entrada de tu app (p. ej. <code>main.ts</code>):</p>
+            <pre><code>import 'flag-icons/css/flag-icons.min.css'</code></pre>
+            <p>
+              Si no lo importas, el componente funciona igual pero las banderas no se
+              mostrarán. Dentro de este sitio de documentación ya está importado, por eso
+              se ven correctamente.
+            </p>
+          </div>
+        </section>
+
+        <section class="container-col-md">
+          <div class="container-text">
             <h2>País por defecto</h2>
             <p>El país inicial se configura con la prop <code>defaultCountry</code> usando el código ISO de 2 letras.</p>
           </div>
