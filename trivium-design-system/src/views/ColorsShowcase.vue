@@ -162,7 +162,6 @@ const feedbackPalettes = [
 </script>
 
 <template>
-    <body>
         <Header />
 
         <main class="flex flex-col items-center py-4 md:py-12">
@@ -304,5 +303,4 @@ const feedbackPalettes = [
             <footer></footer>
 
         </main>
-    </body>
 </template>

@@ -8,6 +8,7 @@ import NavLinkShowcase from '@/views/NavLinkShowcase.vue'
 import TypographyShowcase from '@/views/TypographyShowcase.vue'
 import ColorsShowcase from '@/views/ColorsShowcase.vue'
 import LayoutShowcase from '@/views/LayoutShowcase.vue'
+import CardShowcase from '@/views/CardShowcase.vue'
 import AccordionShowcase from '@/views/AccordionShowcase.vue'
 import FileteShowcase from '@/views/FileteShowcase.vue'
 import SelectShowcase from '@/views/SelectShowcase.vue'
@@ -27,6 +28,7 @@ const routes = [
   { path: '/button-showcase', component: ButtonShowcase },
   { path: '/input-showcase', component: InputShowcase },
   { path: '/nav-link-showcase', component: NavLinkShowcase },
+  { path: '/card-showcase', component: CardShowcase },
   { path: '/accordion-showcase', component: AccordionShowcase },
   { path: '/filete-showcase', component: FileteShowcase },
   { path: '/select-showcase', component: SelectShowcase },

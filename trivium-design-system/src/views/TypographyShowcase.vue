@@ -4,7 +4,6 @@ import Aside from '@/components/showcase/Aside.vue'
 </script>
 
 <template>
-    <body>
         <Header />
 
         <main class="flex flex-col items-center py-4 md:py-12">
@@ -342,5 +341,4 @@ import Aside from '@/components/showcase/Aside.vue'
             <footer></footer>
 
         </main>
-    </body>
 </template>

@@ -1,41 +1,23 @@
-<script setup>
+<script setup lang="ts">
+import type { Component } from 'vue'
 
-const props = defineProps({
-  size: {
-    type: String,
-    default: 'md'
-  },
+interface Props {
+  size?: 'sm' | 'md' | 'lg'
+  variant?: 'primary' | 'primaryOutline' | 'neutral' | 'neutralOutline'
+  disabled?: boolean
+  icon?: Component | null
+  iconPosition?: 'left' | 'right'
+  iconSize?: number
+  ariaExpanded?: boolean
+}
 
-  variant: {
-    type: String,
-    default: 'primary'
-  },
-
-  disabled: {
-    type: Boolean,
-    default: false
-  },
-
-  icon: {
-    type: [Object, Function],
-    default: null
-  },
-
-  iconPosition: {
-    type: String,
-    default: 'left',
-    validator: (value) => ['left', 'right'].includes(value)
-  },
-
-  ariaExpanded: { 
-    type: Boolean
-  },
-
-  iconSize: {
-    type: Number,
-    default: 20
-  }
-
+const props = withDefaults(defineProps<Props>(), {
+  size: 'md',
+  variant: 'primary',
+  disabled: false,
+  icon: null,
+  iconPosition: 'left',
+  iconSize: 20,
 })
 
 const sizeClasses = {

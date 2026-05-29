@@ -31,6 +31,7 @@ import NavLink from '@/components/global/NavLink.vue'
             <div class="flex flex-col gap-3">
                 <h3 class="text-eyebrow">Componentes Básicos</h3>
                 <ul>
+                    <li><NavLink to="/card-showcase" size="sm" variant="neutral">Card</NavLink></li>
                     <li><NavLink to="/accordion-showcase" size="sm" variant="neutral">Accordion</NavLink></li>
                     <li><NavLink to="/button-showcase" size="sm" variant="neutral">Button</NavLink></li>
                     <li><NavLink to="/nav-link-showcase" size="sm" variant="neutral">Nav Link</NavLink></li>

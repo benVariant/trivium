@@ -63,6 +63,13 @@ Jerarquía: container-row-lg > container-col-lg > section.container-col-md > div
 
 ## Componentes disponibles
 
+### Card
+Props:
+- variant: 'default' | 'secondary' | 'action' | 'deep-default' | 'deep-secondary' | 'deep-action' (default: 'default')
+- cornerIcon: 'default' | 'primary' | 'action' (opcional) — muestra PhDiamond fill en los 4 vértices. Sin esta prop no aparece ningún ícono.
+
+Lógica de variantes: base (surface-default) + deep-* (surface-default-deep). El sufijo determina el borde: sin sufijo = border-default, secondary = border-secondary, action = border-action.
+
 ### Button
 Props:
 - variant: 'primary' | 'primaryOutline' | 'neutral' | 'neutralOutline' (default: 'primary')
@@ -187,7 +194,6 @@ async function copyContext() {
 </script>
 
 <template>
-    <body>
         <Header />
 
         <main class="flex flex-col items-center py-4 md:py-12">
@@ -329,5 +335,4 @@ import '@trivium/design-system/styles'</code></pre>
             <footer></footer>
 
         </main>
-    </body>
 </template>

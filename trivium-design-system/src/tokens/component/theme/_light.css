@@ -236,7 +236,7 @@
   --color-border-alt-hover: var(--color-neutral-950);
 
   /* Secondary borders */
-  --color-border-secondary: var(--color-neutral-300);
+  --color-border-secondary: var(--color-neutral-600);
   --color-border-secondary-hover: var(--color-neutral-400);
 
   --color-border-secondary-on-alt: var(--color-neutral-700);

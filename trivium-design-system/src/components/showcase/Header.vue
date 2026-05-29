@@ -94,6 +94,7 @@ function toggleMenu() {
 
                         <div class="flex flex-col gap-4">
                             <h3 class="text-eyebrow">Componentes Básicos</h3>
+                            <RouterLink to="/card-showcase" class="text-xs" @click="toggleMenu">Card</RouterLink>
                             <RouterLink to="/accordion-showcase" class="text-xs" @click="toggleMenu">Accordion</RouterLink>
                             <RouterLink to="/button-showcase" class="text-xs" @click="toggleMenu">Button</RouterLink>
                             <RouterLink to="/nav-link-showcase" class="text-xs" @click="toggleMenu">Nav Link</RouterLink>

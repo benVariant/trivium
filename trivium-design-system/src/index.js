@@ -3,6 +3,7 @@ import './style.css'
 
 // Exports nombrados
 export { default as Button } from './components/global/Button.vue'
+export { default as Card } from './components/global/Card.vue'
 export { default as Input } from './components/global/Input.vue'
 export { default as NavLink } from './components/global/NavLink.vue'
 export { default as Accordion } from './components/global/Accordion.vue'
