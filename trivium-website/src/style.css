@@ -1,0 +1,30 @@
+/* =========================================================
+   Tailwind — genera utilidades para las plantillas del website
+========================================================= */
+@import "tailwindcss";
+
+/* =========================================================
+   Design System — tokens, reset, typography, utilities,
+   layouts y fuentes (bundle compilado del paquete)
+========================================================= */
+@import "@trivium/design-system/styles";
+
+/* =========================================================
+   @theme inline — re-declara el mapeo de la escala text-*
+   a los tokens del DS para que funcione en las plantillas
+   del website (el bundle del DS solo lo aplica a su propio
+   contenido).
+========================================================= */
+@theme inline {
+  /* Escala de cuerpo */
+  --font-size-xs:   var(--font-size-body-xsm);
+  --font-size-sm:   var(--font-size-body-sm);
+  --font-size-base: var(--font-size-body-base);
+  --font-size-lg:   var(--font-size-body-lg);
+
+  /* Escala de headings — aplica tamaño de heading a cualquier elemento */
+  --font-size-xl:  var(--font-size-heading-xl);
+  --font-size-2xl: var(--font-size-heading-2xl);
+  --font-size-3xl: var(--font-size-heading-3xl);
+  --font-size-5xl: var(--font-size-heading-5xl);
+}
