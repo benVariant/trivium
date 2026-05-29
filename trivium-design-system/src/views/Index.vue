@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import Header from '@/components/showcase/Header.vue'
 import Aside from '@/components/showcase/Aside.vue'
 import Button from '@/components/global/Button.vue'
+import Card from '@/components/global/Card.vue'
 import { PhCopy, PhCheck } from '@phosphor-icons/vue'
 
 const copied = ref(false)
@@ -210,7 +211,8 @@ async function copyContext() {
                         <p>Bienvenido al sistema de diseño de <strong>Trivium</strong>. Este sitio es la fuente de verdad para diseñadores y desarrolladores del equipo — aquí encontrarás los fundamentos visuales, el catálogo de tokens y la documentación de cada componente.</p>
                     </section>
 
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-(--color-surface-default) border border-(--color-border-secondary) rounded-lg px-6 py-5">
+                    <Card variant="deep-secondary">
+                        <img src="/src/assets/IA-agents.webp" width="200" alt="Contexto para agentes de IA">
                         <div class="container-text">
                             <h3>Contexto para agentes de IA</h3>
                             <p class="text-sm">Copia una descripción estructurada del proyecto para pegar en Claude, Cursor, Copilot u otros agentes.</p>
@@ -222,7 +224,7 @@ async function copyContext() {
                             size="sm"
                             class="shrink-0"
                         >{{ copied ? 'Copiado' : 'Copiar contexto' }}</Button>
-                    </div>
+                    </Card>
 
                     <hr>
 

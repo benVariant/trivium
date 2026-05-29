@@ -32,8 +32,11 @@ const iconColors = {
 
 <style scoped>
 .card {
+  display: flex;
+  flex-direction: column;
   position: relative;
-  padding: 1.5rem;
+  padding: 2rem;
+  gap: 2rem;
 }
 
 .card--default {
