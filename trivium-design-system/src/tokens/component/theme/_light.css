@@ -10,9 +10,15 @@
   --color-page-default-deep: var(--color-foundation-ultrablack);
 
   /* Overlay / backdrop */
-  --color-overlay: color-mix(
+  --color-overlay-hard: color-mix(
     in srgb,
     var(--color-foundation-black) 80%,
+    transparent
+  );
+
+  --color-overlay-soft: color-mix(
+    in srgb,
+    var(--color-foundation-black) 50%,
     transparent
   );
 
@@ -223,7 +229,7 @@
 
   /* Default borders */
   --color-border-default: var(--color-foundation-white);
-  --color-border-default-hover: var(--color-neutral-100);
+  --color-border-default-hover: var(--color-neutral-200);
 
   /* Borders on alt surfaces */
   --color-border-alt: var(--color-foundation-black);

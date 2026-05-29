@@ -67,7 +67,6 @@ const variantClasses = {
 
         font-bold
 
-        rounded-md
         transition-colors
 
         focus:outline-none

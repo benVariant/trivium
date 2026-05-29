@@ -1,4 +1,5 @@
 <script setup>
+import { computed } from 'vue'
 
 const props = defineProps({
   size: {
@@ -64,6 +65,12 @@ const variantClasses = {
 
 }
 
+const inputPaddingClass = computed(() => {
+  const left = props.icon && props.iconPosition === 'left' ? 'pl-10' : 'pl-4'
+  const right = props.icon && props.iconPosition === 'right' ? 'pr-10' : 'pr-4'
+  return `${left} ${right}`
+})
+
 </script>
 
 
@@ -82,7 +89,16 @@ const variantClasses = {
         {{ label }}
         </label>
 
-        <div class=" flex flex-row gap-2">
+        <div class="relative flex items-center">
+
+            <component
+                v-if="icon && iconPosition === 'left'"
+                :is="icon"
+                :size="iconSize"
+                weight="fill"
+                color="currentColor"
+                class="absolute left-3 pointer-events-none text-(--color-text-body-default)"
+            />
 
             <input
                 :placeholder="showPlaceholder ? placeholderText : ''" v-bind="$attrs"
@@ -92,50 +108,41 @@ const variantClasses = {
                     `
                     inline-flex
                     w-full
-                    
-                    px-4
 
-                    rounded-sm
                     border
-                    border-[var(--color-border-secondary)]
-                    bg-[var(--color-surface-default)]
+                    border-(--color-border-secondary)
+                    bg-(--color-surface-default)
 
-                    text-[var(--color-text-body-default)]
-                    
+                    text-(--color-text-body-default)
+
                     focus:outline-none
                     focus:ring-0
-                    focus:ring-[var(--color-primary-default)]
+                    focus:ring-(--color-primary-default)
                     focus:ring-offset-0
-                    focus:ring-offset-[var(--color-surface-default)]
+                    focus:ring-offset-(--color-surface-default)
 
                     disabled:cursor-not-allowed
-                    disabled:bg-[var(--color-surface-default-disabled)]
-                    disabled:border-[var(--color-border-secondary-disabled)]
-                    disabled:text-[var(--color-text-body-disabled)]
+                    disabled:bg-(--color-surface-default-disabled)
+                    disabled:border-(--color-border-secondary-disabled)
+                    disabled:text-(--color-text-body-disabled)
 
                 `,
+                inputPaddingClass,
                 sizeClasses[size],
                 variantClasses[variant]
             ]"
             />
 
             <component
-                v-if="icon && iconPosition === 'left'"
-                :is="icon"
-                :size="iconSize"
-                weight="fill"
-                color="currentColor"
-            />
-            
-            <slot />
-            
-            <component
                 v-if="icon && iconPosition === 'right'"
                 :is="icon"
                 :size="iconSize"
                 weight="fill"
                 color="currentColor"
+                class="absolute right-3 pointer-events-none text-(--color-text-body-default)"
             />
+
+            <slot />
 
         </div>
     </div>
@@ -165,7 +172,7 @@ input[aria-invalid="true"] {
 
 /* Size variants */
 .input-md {
-    height: 60px;
+    height: 52px;
 }
 
 

@@ -53,6 +53,21 @@ import { PhPlusCircle } from "@phosphor-icons/vue";
                    
                     </section>    
 
+                    <section id="icon" class="container-col-md">
+
+                        <div class="container-text">
+                            <h2>Ícono interno</h2>
+                            <p>Usa la prop <code>:icon</code> para mostrar un ícono dentro del campo, a la izquierda del placeholder o del valor. El ícono es decorativo y no interfiere con la escritura. La prop <code>iconPosition</code> también acepta <code>'right'</code>.</p>
+                        </div>
+
+                        <div class="container-case-col">
+                            <Input label="Label" :icon="PhPlusCircle" />
+                            <Input label="Label" :icon="PhPlusCircle" iconPosition="right" />
+                            <Input label="Label" :icon="PhPlusCircle" :disabled="true" />
+                        </div>
+
+                    </section>
+
                     <section class="container-col-md">
 
                         <div class="container-text">
@@ -118,7 +133,7 @@ import { PhPlusCircle } from "@phosphor-icons/vue";
                                     <td>Object | Function</td>
                                     <td><code>null</code></td>
                                     <td>Componente de Phosphor Icons</td>
-                                    <td>Ícono a mostrar junto al input. Se pasa como componente: <code>:icon="PhStar"</code>.</td>
+                                    <td>Ícono decorativo a mostrar dentro del campo. Se pasa como componente de Phosphor Icons: <code>:icon="PhStar"</code>.</td>
                                 </tr>
                                 <tr>
                                     <td><code>iconPosition</code></td>
