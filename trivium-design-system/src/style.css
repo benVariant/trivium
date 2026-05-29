@@ -56,9 +56,13 @@
 
 /* =========================================================
    FLAG ICONS
+   El CSS de flag-icons NO se empaqueta aquí para no inflar la
+   librería con todas las banderas. Solo lo necesita PhoneInput.
+   - App de showcase: se importa en main.ts
+   - Consumidores de la lib: importar "flag-icons/css/flag-icons.min.css"
+     manualmente si usan PhoneInput.
+   Lo de abajo es solo el override de borde de la bandera.
 ========================================================= */
-@import "flag-icons/css/flag-icons.min.css";
-
 .fi {
   border: 1px solid var(--color-border-secondary);
   border-radius: 1px;

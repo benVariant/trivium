@@ -22,16 +22,22 @@
   },
   "peerDependencies": {
     "@phosphor-icons/vue": "^2.2.0",
+    "flag-icons": "^7.5.0",
     "vue": "^3.5.0",
     "vue-router": "^5.0.0"
   },
+  "peerDependenciesMeta": {
+    "flag-icons": {
+      "optional": true
+    }
+  },
   "dependencies": {
-    "flag-icons": "^7.5.0",
     "vue": "^3.5.0"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.0",
     "@types/node": "^24.12.3",
+    "flag-icons": "^7.5.0",
     "@vitejs/plugin-vue": "^6.0.6",
     "@vue/tsconfig": "^0.9.1",
     "tailwindcss": "^4.3.0",

@@ -23,7 +23,7 @@ Sistema de diseño de la marca Trivium. Provee componentes Vue 3 reutilizables, 
 ## Convenciones de código
 - Componentes globales usan CSS custom properties (var(--color-*)) para colores y tipografía — NO clases Tailwind en componentes
 - Tailwind se usa exclusivamente para estructura y layout (flex, grid, spacing, responsive)
-- Tailwind v4: sintaxis \`border-(--color-border-secondary)\` — no usar \`border-[var(...)]\`
+- Tailwind v4: usar la sintaxis con paréntesis border-(--color-border-secondary) en vez de la sintaxis antigua de corchetes con var()
 - Componentes en src/components/global/, vistas de documentación en src/views/
 
 ## Escala tipográfica de Tailwind (src/style.css — @theme inline)
