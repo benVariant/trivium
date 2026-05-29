@@ -52,7 +52,7 @@ const columns = [
           <p class="footer-col__title">{{ col.title }}</p>
           <ul class="footer-col__links">
             <li v-for="link in col.links" :key="link.to">
-              <NavLink :to="link.to" variant="neutral">{{ link.label }}</NavLink>
+              <NavLink :to="link.to" variant="neutral" size="xs">{{ link.label }}</NavLink>
             </li>
           </ul>
         </div>
@@ -125,7 +125,7 @@ const columns = [
 /* Columnas */
 .app-footer__columns {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
 }
 
@@ -144,13 +144,14 @@ const columns = [
 .footer-col {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
 }
 
 .footer-col__title {
   font-family: "Manrope", sans-serif;
   font-weight: 700;
-  font-size: var(--font-size-body-sm);
+  font-size: var(--font-size-body-xsm);
   color: var(--color-text-heading-tertiary);
 }
 
@@ -160,6 +161,7 @@ const columns = [
   padding: 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 0.75rem;
 }
 

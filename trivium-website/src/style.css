@@ -10,6 +10,11 @@
 @import "@trivium/design-system/styles";
 
 /* =========================================================
+   Estilos propios del sitio (layouts y patrones reutilizables)
+========================================================= */
+@import "./styles/styles.css";
+
+/* =========================================================
    @theme inline — re-declara el mapeo de la escala text-*
    a los tokens del DS para que funcione en las plantillas
    del website (el bundle del DS solo lo aplica a su propio

@@ -1,0 +1,8 @@
+/* =========================================================
+   styles.css
+   Punto de entrada de los estilos propios del sitio Trivium
+   (lo que NO viene del Design System). Aquí se agregan las
+   hojas de estilo del proyecto a medida que crecen.
+========================================================= */
+
+@import "./layouts.css";

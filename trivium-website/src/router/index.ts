@@ -1,11 +1,12 @@
 import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router'
 import PageStub from '@/views/PageStub.vue'
+import HomeView from '@/views/HomeView.vue'
 
 // Rutas del sitio. Por ahora todas apuntan a PageStub (placeholder) para que
 // el layout (Header/Footer) navegue correctamente. Cada vista se irá
 // reemplazando por su maquetado real en rondas posteriores.
 const routes: RouteRecordRaw[] = [
-  { path: '/', name: 'inicio', component: PageStub, meta: { title: 'Inicio' } },
+  { path: '/', name: 'inicio', component: HomeView, meta: { title: 'Inicio', ownHeader: true } },
   { path: '/trivium', name: 'trivium', component: PageStub, meta: { title: 'Trivium' } },
   { path: '/membresia', name: 'membresia', component: PageStub, meta: { title: 'Membresía' } },
   { path: '/espacios', name: 'espacios', component: PageStub, meta: { title: 'Espacios' } },

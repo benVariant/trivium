@@ -5,6 +5,16 @@ import { NavLink, Button } from '@trivium/design-system'
 import { PhList, PhX, PhGlobe } from '@phosphor-icons/vue'
 import logoUrl from '@/assets/trivium-logo.svg'
 
+const props = withDefaults(
+  defineProps<{
+    /** Cuando es `true` el header no pinta fondo (útil para superponerlo sobre un hero). */
+    transparent?: boolean
+  }>(),
+  {
+    transparent: false,
+  },
+)
+
 const router = useRouter()
 const mobileOpen = ref(false)
 
@@ -27,7 +37,7 @@ function closeMobile() {
 </script>
 
 <template>
-  <header class="app-header">
+  <header class="app-header" :class="{ 'app-header--transparent': props.transparent && !mobileOpen }">
     <div class="app-header__bar">
       <!-- Logo -->
       <RouterLink to="/" class="app-header__logo" @click="closeMobile">
@@ -42,7 +52,7 @@ function closeMobile() {
             :key="item.to"
             :to="item.to"
             variant="neutral"
-            size="sm"
+            size="xs"
             @click="closeMobile"
           >
             {{ item.label }}
@@ -84,10 +94,13 @@ function closeMobile() {
 .app-header {
   display: flex;
   justify-content: center;
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 50;
   background-color: var(--color-surface-default);
+}
+
+.app-header--transparent {
+  background-color: transparent;
 }
 
 .app-header__bar {
