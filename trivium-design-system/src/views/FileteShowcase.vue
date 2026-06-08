@@ -19,7 +19,7 @@ import Filete from '@/components/global/Filete.vue'
 
           <div class="container-text">
             <h1>Filete</h1>
-            <p class="text-lg">Elemento decorativo de marca. Separa secciones de contenido con una línea horizontal y un adorno de diamantes.</p>
+            <p class="text-lg">Elemento decorativo de marca. Separa secciones de contenido con una línea horizontal y un adorno de estrellas.</p>
           </div>
 
           <div class="container-case-col">
@@ -32,7 +32,7 @@ import Filete from '@/components/global/Filete.vue'
 
           <div class="container-text">
             <h2>Default — Posición del ícono</h2>
-            <p>Un diamante único que puede colocarse al inicio, al centro o al final de la línea.</p>
+            <p>Una estrella única que puede colocarse al inicio, al centro o al final de la línea.</p>
           </div>
 
           <div class="container-case-col gap-8">
@@ -60,7 +60,7 @@ import Filete from '@/components/global/Filete.vue'
 
           <div class="container-text">
             <h2>Secondary — Posición del adorno</h2>
-            <p>Un bloque de tres diamantes: el central a tamaño base y los laterales a un tercio. Puede colocarse al inicio, al centro o al final.</p>
+            <p>Stack de tres líneas: la central (doble grosor, con la estrella) más una línea fina arriba y otra abajo. La estrella puede colocarse al inicio, al centro o al final.</p>
           </div>
 
           <div class="container-case-col gap-8">
@@ -107,7 +107,7 @@ import Filete from '@/components/global/Filete.vue'
                 <td>String</td>
                 <td><code>'default'</code></td>
                 <td><code>'default'</code> <code>'secondary'</code></td>
-                <td>Tipo de adorno: diamante único o bloque de tres diamantes.</td>
+                <td>Estilo del filete: una sola línea (<code>default</code>) o stack de tres líneas con la central a doble grosor (<code>secondary</code>).</td>
               </tr>
               <tr>
                 <td><code>iconPosition</code></td>
