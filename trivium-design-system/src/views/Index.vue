@@ -41,7 +41,7 @@ Escala de headings (solo para desacoplar tamaño visual de semántica HTML):
 - text-3xl  → --font-size-heading-3xl  = h2 visual
 - text-5xl  → --font-size-heading-5xl  = h1 visual
 
-Regla: usar text-xl/2xl/3xl/5xl SOLO cuando el nivel semántico del elemento (h1-h6) no coincide con el tamaño visual requerido por diseño. Por defecto, h1-h6 ya tienen su tamaño correcto via typography.css. Combinar con .text-heading para mantener la fuente serif: \`<h1 class="text-2xl text-heading">\`.
+Regla: usar text-xl/2xl/3xl/5xl SOLO cuando el nivel semántico del elemento (h1-h6) no coincide con el tamaño visual requerido por diseño. Por defecto, h1-h6 ya tienen su tamaño correcto via typography.css. Al aplicarlas sobre un h1-h6 se conserva la fuente serif automáticamente: \`<h1 class="text-2xl">\`.
 
 ## Sistema de tokens (3 capas)
 1. Primitivos — valores raw (hex, px): src/tokens/primitive/
@@ -60,7 +60,6 @@ Jerarquía: container-row-lg > container-col-lg > section.container-col-md > div
 
 ## Clases tipográficas (src/styles/utilities.css)
 - text-eyebrow: Manrope 700, font-size body-sm, color eyebrow
-- text-heading: Latienne Pro 700, line-height 1.2, color heading
 
 ## Componentes disponibles
 

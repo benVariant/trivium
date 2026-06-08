@@ -122,7 +122,7 @@ function toggleMenu() {
             
             <div class="flex-col text-end hidden md:hideen lg:flex">
 
-                <span class="text-heading text-xs">Trivium Design System</span>
+                <span class="text-xs" style="font-family: 'latienne-pro', serif; font-weight: 700; line-height: 1.2; color: var(--color-text-heading-default);">Trivium Design System</span>
                 <p class="text-xs">Versión 1.0.0 — Guía oficial de estilos y componentes de la marca.</p>
             
             </div> 

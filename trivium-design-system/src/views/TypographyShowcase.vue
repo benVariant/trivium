@@ -41,7 +41,7 @@ import Aside from '@/components/showcase/Aside.vue'
                                 <tr>
                                     <td style="font-family: 'latienne-pro', serif; font-size: 1.25rem;">Latienne Pro</td>
                                     <td><code>"latienne-pro", serif</code></td>
-                                    <td>Headings (h1–h6), clase <code>.text-heading</code></td>
+                                    <td>Headings (h1–h6)</td>
                                     <td>Adobe Fonts (TypeKit)</td>
                                 </tr>
                                 <tr>
@@ -134,10 +134,10 @@ import Aside from '@/components/showcase/Aside.vue'
                         </div>
 
                         <div class="container-case-col items-start gap-6">
-                            <p class="text-lg">Body lg — Texto de introducción o destacado.</p>
-                            <p class="text-base">Body base — Párrafos de contenido general.</p>
-                            <p class="text-sm">Body sm — Texto secundario, labels, metadatos.</p>
-                            <p class="text-xs">Body xsm — Captions, placeholders, texto auxiliar.</p>
+                            <p style="font-size: var(--font-size-body-lg)">Body lg — Texto de introducción o destacado.</p>
+                            <p style="font-size: var(--font-size-body-base)">Body base — Párrafos de contenido general.</p>
+                            <p style="font-size: var(--font-size-body-sm)">Body sm — Texto secundario, labels, metadatos.</p>
+                            <p style="font-size: var(--font-size-body-xsm)">Body xsm — Captions, placeholders, texto auxiliar.</p>
                         </div>
 
                         <table>
@@ -282,12 +282,12 @@ import Aside from '@/components/showcase/Aside.vue'
                         </table>
 
                         <div class="container-text">
-                            <p>Estas clases solo sobreescriben el tamaño. Para mantener también la familia tipográfica serif, combínalas con <code>.text-heading</code>:</p>
+                            <p>Estas clases solo sobreescriben el tamaño. Aplicadas sobre un <code>h1</code>–<code>h6</code>, el elemento conserva su familia tipográfica serif automáticamente:</p>
                             <pre><code>&lt;!-- h1 que parece h3 visualmente --&gt;
-&lt;h1 class="text-2xl text-heading"&gt;Título principal&lt;/h1&gt;
+&lt;h1 class="text-2xl"&gt;Título principal&lt;/h1&gt;
 
 &lt;!-- h3 que parece h1 visualmente --&gt;
-&lt;h3 class="text-5xl text-heading"&gt;Sección destacada&lt;/h3&gt;</code></pre>
+&lt;h3 class="text-5xl"&gt;Sección destacada&lt;/h3&gt;</code></pre>
                             <p>La clase <code>text-4xl</code> (2.25rem) no tiene token equivalente en desktop y conserva el valor por defecto de Tailwind.</p>
                         </div>
 
@@ -299,12 +299,11 @@ import Aside from '@/components/showcase/Aside.vue'
 
                         <div class="container-text">
                             <h2>Clases utilitarias</h2>
-                            <p>Dos clases de texto con estilos predefinidos para casos de uso específicos del sistema.</p>
+                            <p>Clase de texto con estilos predefinidos para un caso de uso específico del sistema.</p>
                         </div>
 
                         <div class="container-case-col items-start gap-6">
                             <span class="text-eyebrow">text-eyebrow — Etiqueta de sección</span>
-                            <span class="text-heading" style="font-size: var(--font-size-heading-2xl);">text-heading — Título con serif</span>
                         </div>
 
                         <table>
@@ -322,12 +321,6 @@ import Aside from '@/components/showcase/Aside.vue'
                                     <td>Manrope, 600</td>
                                     <td><code>--font-size-body-xsm</code></td>
                                     <td>Etiqueta de sección, categoría. Incluye subrayado.</td>
-                                </tr>
-                                <tr>
-                                    <td><code>.text-heading</code></td>
-                                    <td>Latienne Pro, 700</td>
-                                    <td>Heredado del elemento padre</td>
-                                    <td>Título con serif cuando el elemento no es un <code>h*</code>.</td>
                                 </tr>
                             </tbody>
                         </table>
