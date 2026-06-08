@@ -18,6 +18,7 @@ import CheckboxShowcase from '@/views/CheckboxShowcase.vue'
 import RadioButtonShowcase from '@/views/RadioButtonShowcase.vue'
 import ToggleShowcase from '@/views/ToggleShowcase.vue'
 import PhoneInputShowcase from '@/views/PhoneInputShowcase.vue'
+import PatternShowcase from '@/views/PatternShowcase.vue'
 
 const routes = [
   { path: '/', component: Index },
@@ -31,6 +32,7 @@ const routes = [
   { path: '/card-showcase', component: CardShowcase },
   { path: '/accordion-showcase', component: AccordionShowcase },
   { path: '/filete-showcase', component: FileteShowcase },
+  { path: '/pattern-showcase', component: PatternShowcase },
   { path: '/select-showcase', component: SelectShowcase },
   { path: '/datepicker-showcase', component: DatePickerShowcase },
   { path: '/textarea-showcase', component: TextareaShowcase },

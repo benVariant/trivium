@@ -1,0 +1,17 @@
+<svg width="140" height="80" viewBox="0 0 140 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="#B7963E" stroke-width="1" shape-rendering="geometricPrecision">
+    <!-- Verticales (x = 35, 105 → cada 70px al tilear) -->
+    <line x1="35"  y1="-20" x2="35"  y2="100"/>
+    <line x1="105" y1="-20" x2="105" y2="100"/>
+
+    <!-- Diagonales "+" (pendiente +4/7) -->
+    <line x1="-70" y1="-60"  x2="210" y2="100"/>
+    <line x1="-70" y1="20"   x2="210" y2="180"/>
+    <line x1="-70" y1="-140" x2="210" y2="20"/>
+
+    <!-- Diagonales "-" (pendiente -4/7) -->
+    <line x1="-70" y1="140" x2="210" y2="-20"/>
+    <line x1="-70" y1="60"  x2="210" y2="-100"/>
+    <line x1="-70" y1="220" x2="210" y2="60"/>
+  </g>
+</svg>

@@ -165,6 +165,12 @@ Props:
 - variant: 'default' | 'secondary' (default: 'default')
 - iconPosition: 'start' | 'center' | 'end' (default: 'start')
 
+### Pattern
+Retícula isométrica decorativa de marca. Capa absoluta (position:absolute, inset:0, pointer-events:none) que se usa como fondo de secciones: dale al contenedor padre position:relative y overflow:hidden, y coloca <Pattern /> como primer hijo.
+Props:
+- reveal: 'full' | 'left' | 'right' | 'sides' | 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right' (default: 'full')
+  full = retícula completa; laterales = fade horizontal; esquinas = fade diagonal que concentra el patrón en ese vértice.
+
 ## Instalación
 \`\`\`
 npm install github:tu-usuario/trivium-design-system

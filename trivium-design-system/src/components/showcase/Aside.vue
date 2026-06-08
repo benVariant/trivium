@@ -56,6 +56,7 @@ import NavLink from '@/components/global/NavLink.vue'
                 <h3 class="text-eyebrow">Brand Assets</h3>
                 <ul>
                     <li><NavLink to="/filete-showcase" size="sm" variant="neutral">Filete</NavLink></li>
+                    <li><NavLink to="/pattern-showcase" size="sm" variant="neutral">Pattern</NavLink></li>
                 </ul>
             </div>
 

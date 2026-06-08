@@ -115,6 +115,7 @@ function toggleMenu() {
                         <div class="flex flex-col gap-4">
                             <h3 class="text-eyebrow">Brand Assets</h3>
                             <RouterLink to="/filete-showcase" class="text-xs" @click="toggleMenu">Filete</RouterLink>
+                            <RouterLink to="/pattern-showcase" class="text-xs" @click="toggleMenu">Pattern</RouterLink>
                         </div>
 
                     </div> 
