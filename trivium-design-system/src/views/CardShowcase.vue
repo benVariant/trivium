@@ -16,85 +16,19 @@ import Card from '@/components/global/Card.vue'
         <section class="container-col-md">
           <div class="container-text">
             <h1>Card</h1>
-            <p class="text-lg">Contenedor de contenido con borde y fondo definidos por el sistema de tokens. Admite cualquier tipo de contenido a través de su slot.</p>
+            <p class="text-lg">Contenedor de contenido con fondo y drop shadow definidos por el sistema de tokens. Admite cualquier tipo de contenido a través de su slot.</p>
           </div>
           <div class="container-case-row flex-wrap">
             <Card class="flex-1 min-w-64">
               <div class="container-text">
                 <h3>Default</h3>
-                <p>Superficie estándar del sistema con borde secundario.</p>
+                <p>Superficie estándar (<code>surface-default</code>) con sombra <code>--shadow-lg</code>.</p>
               </div>
             </Card>
-          </div>
-        </section>
-
-        <section class="container-col-md">
-          <div class="container-text">
-            <h2>Variantes</h2>
-            <p>Las variantes se diferencian por el fondo y el color del borde, comunicando el rol semántico del contenido.</p>
-          </div>
-          <div class="container-case-col">
-            <Card variant="default" class="flex-1 w-full min-w-64">
+            <Card variant="deep" class="flex-1 min-w-64">
               <div class="container-text">
-                <h3>Default</h3>
-                <p>Contenido informativo o estructural sin jerarquía visual especial.</p>
-              </div>
-            </Card>
-            <Card variant="action" class="flex-1 w-full  min-w-64">
-              <div class="container-text">
-                <h3>Action</h3>
-                <p>Contenido que requiere atención o implica una acción por parte del usuario.</p>
-              </div>
-            </Card>
-            <Card variant="secondary" class="flex-1 w-full  min-w-64">
-              <div class="container-text">
-                <h3>Secondary</h3>
-                <p>Contenido complementario o de menor jerarquía dentro de una sección.</p>
-              </div>
-            </Card>
-            <Card variant="deep-default" class="flex-1 min-w-64">
-              <div class="container-text">
-                <h3>Deep Default</h3>
-                <p>Superficie más profunda que la default. Útil para anidar cards o crear capas de profundidad visual.</p>
-              </div>
-            </Card>
-            <Card variant="deep-secondary" class="flex-1 min-w-64">
-              <div class="container-text">
-                <h3>Deep Secondary</h3>
-                <p>Fondo profundo con borde secundario. Contenido complementario en contextos con mayor profundidad.</p>
-              </div>
-            </Card>
-            <Card variant="deep-action" class="flex-1 min-w-64">
-              <div class="container-text">
-                <h3>Deep Action</h3>
-                <p>Fondo profundo con borde de acción. Para destacar contenido sobre superficies de mayor profundidad.</p>
-              </div>
-            </Card>
-          </div>
-        </section>
-
-        <section class="container-col-md">
-          <div class="container-text">
-            <h2>Ícono en vértices</h2>
-            <p>La prop <code>cornerIcon</code> muestra un <code>PhDiamond</code> centrado en cada esquina del card. El color se elige entre tres valores del sistema de tokens.</p>
-          </div>
-          <div class="container-case-col">
-            <Card corner-icon="default" class="w-full">
-              <div class="container-text">
-                <h3>Default</h3>
-                <p>Ícono en color <code>icon-default</code>.</p>
-              </div>
-            </Card>
-            <Card corner-icon="primary" class="w-full">
-              <div class="container-text">
-                <h3>Primary</h3>
-                <p>Ícono en color <code>primary-500</code>.</p>
-              </div>
-            </Card>
-            <Card variant="action" corner-icon="action" class="w-full">
-              <div class="container-text">
-                <h3>Action</h3>
-                <p>Ícono en color <code>icon-action</code>. Combina naturalmente con la variante <code>action</code>.</p>
+                <h3>Deep</h3>
+                <p>Superficie más profunda (<code>surface-default-deep</code>) con sombra <code>--shadow-lg</code>.</p>
               </div>
             </Card>
           </div>
@@ -120,15 +54,8 @@ import Card from '@/components/global/Card.vue'
                 <td><code>variant</code></td>
                 <td>String</td>
                 <td><code>'default'</code></td>
-                <td><code>'default'</code> <code>'secondary'</code> <code>'action'</code> <code>'deep-default'</code> <code>'deep-secondary'</code> <code>'deep-action'</code></td>
-                <td>Estilo visual del contenedor. Las variantes base usan <code>surface-default</code>; las variantes <code>deep-*</code> usan <code>surface-default-deep</code>. El sufijo determina el color del borde.</td>
-              </tr>
-              <tr>
-                <td><code>cornerIcon</code></td>
-                <td>String</td>
-                <td>—</td>
-                <td><code>'default'</code> <code>'primary'</code> <code>'action'</code></td>
-                <td>Muestra un <code>PhDiamond</code> centrado en cada vértice del card. Cuando no se pasa, no se renderiza ningún ícono.</td>
+                <td><code>'default'</code> <code>'deep'</code></td>
+                <td>Estilo visual del contenedor (sin borde, con drop shadow <code>--shadow-lg</code>). <code>default</code> usa <code>surface-default</code>; <code>deep</code> usa <code>surface-default-deep</code> para crear capas de profundidad.</td>
               </tr>
             </tbody>
           </table>

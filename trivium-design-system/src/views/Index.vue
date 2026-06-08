@@ -65,10 +65,9 @@ Jerarquía: container-row-lg > container-col-lg > section.container-col-md > div
 
 ### Card
 Props:
-- variant: 'default' | 'secondary' | 'action' | 'deep-default' | 'deep-secondary' | 'deep-action' (default: 'default')
-- cornerIcon: 'default' | 'primary' | 'action' (opcional) — muestra PhDiamond fill en los 4 vértices. Sin esta prop no aparece ningún ícono.
+- variant: 'default' | 'deep' (default: 'default')
 
-Lógica de variantes: base (surface-default) + deep-* (surface-default-deep). El sufijo determina el borde: sin sufijo = border-default, secondary = border-secondary, action = border-action.
+Contenedor sin borde, con drop shadow --shadow-lg. default usa surface-default; deep usa surface-default-deep (capas de profundidad). Admite cualquier contenido vía slot.
 
 ### Button
 Props:
@@ -210,7 +209,7 @@ async function copyContext() {
                         <p>Bienvenido al sistema de diseño de <strong>Trivium</strong>. Este sitio es la fuente de verdad para diseñadores y desarrolladores del equipo — aquí encontrarás los fundamentos visuales, el catálogo de tokens y la documentación de cada componente.</p>
                     </section>
 
-                    <Card variant="deep-secondary">
+                    <Card>
                         <img src="/src/assets/IA-agents.webp" width="200" alt="Contexto para agentes de IA">
                         <div class="container-text">
                             <h3>Contexto para agentes de IA</h3>

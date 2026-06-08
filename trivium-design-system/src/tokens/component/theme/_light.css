@@ -257,4 +257,13 @@
 
   /* Disabled borders */
   --color-border-disabled: var(--color-neutral-600);
+
+  /* =========================================================
+     SHADOWS
+     Drop shadows para elevación de componentes (cards, modals, etc.)
+  ========================================================= */
+
+  --shadow-sm: 1px 1px 24px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 4px 4px 24px -2px rgb(0 0 0 / 0.10);
+  --shadow-lg: 12px 12px 24px -4px rgb(0 0 0 / 0.15);
 }

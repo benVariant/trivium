@@ -380,7 +380,49 @@ import Aside from '@/components/showcase/Aside.vue'
 
                         
                         <p><strong>Feedback de Validación y Estados:</strong> <code>--color-border-success</code> (Válido), <code>--color-border-destructive</code> (Error), <code>--color-border-info</code> (Informativo), <code>--color-border-warning</code> (Alerta), <code>--color-border-disabled</code> (Inactivo).</p>
-                    
+
+                    </section>
+
+                    <section id="tokens-shadows" class="flex flex-col gap-8">
+
+                        <div class="container-text">
+                            <h3>Shadows</h3>
+                            <p>Sombras (drop shadow) para comunicar elevación y profundidad. Se aplican vía <code>box-shadow</code>; a mayor nivel, mayor elevación percibida.</p>
+                        </div>
+
+                        <div class="container-case-row flex-wrap gap-8">
+                            <div class="flex-1 min-w-32 p-6 text-center" style="background: var(--color-surface-default); box-shadow: var(--shadow-sm);"><code>sm</code></div>
+                            <div class="flex-1 min-w-32 p-6 text-center" style="background: var(--color-surface-default); box-shadow: var(--shadow-md);"><code>md</code></div>
+                            <div class="flex-1 min-w-32 p-6 text-center" style="background: var(--color-surface-default); box-shadow: var(--shadow-lg);"><code>lg</code></div>
+                        </div>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Token</th>
+                                    <th>Elevación</th>
+                                    <th>Uso típico</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>--shadow-sm</code></td>
+                                    <td>Baja</td>
+                                    <td>Inputs, elementos sutilmente despegados de la superficie.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>--shadow-md</code></td>
+                                    <td>Media</td>
+                                    <td>Cards, dropdowns, popovers.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>--shadow-lg</code></td>
+                                    <td>Alta</td>
+                                    <td>Modales, overlays y contenedores destacados (p. ej. <code>Card</code>).</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
                     </section>
 
                 </div>
