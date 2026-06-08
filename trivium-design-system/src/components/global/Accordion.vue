@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import { PhDiamond } from '@phosphor-icons/vue'
+import { PhStarFour } from '@phosphor-icons/vue'
 
 const props = defineProps({
   items: {
@@ -51,7 +51,7 @@ const variantClasses = {
         @click="toggle(index)"
       >
         <span>{{ item.title }}</span>
-        <PhDiamond
+        <PhStarFour
           :size="16"
           :weight="openIndex === index ? 'fill' : 'regular'"
           color="currentColor"
